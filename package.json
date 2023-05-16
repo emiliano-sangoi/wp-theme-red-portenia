@@ -1,0 +1,34 @@
+{
+  "name": "wp-theme-red-portenia",
+  "version": "1.0.0",
+  "description": "Tema para la web institucional de la Red Porteña S.A.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emiliano-sangoi/wp-theme-red-portenia.git"
+  },
+  "keywords": [
+    "Wordpress",
+    "Themes",
+    "PHP",
+    "Red",
+    "Porteña"
+  ],
+  "author": "Emiliano Sangoi, Lauriana Cattaneo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emiliano-sangoi/wp-theme-red-portenia/issues"
+  },
+  "homepage": "https://github.com/emiliano-sangoi/wp-theme-red-portenia#readme",
+  "dependencies": {
+    "bootbox": "^6.0.0",
+    "bootstrap": "^5.2.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.7.0",
+    "magnific-popup": "^1.1.0",
+    "startbootstrap-agency": "^7.0.12"
+  }
+}
