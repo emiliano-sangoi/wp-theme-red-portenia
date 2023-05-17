@@ -26,7 +26,7 @@
   "dependencies": {
     "bootbox": "^6.0.0",
     "bootstrap": "^5.2.3",
-    "font-awesome": "^4.7.0",
+    "fontawesome-free": "^1.0.4",
     "jquery": "^3.7.0",
     "magnific-popup": "^1.1.0",
     "startbootstrap-agency": "^7.0.12"
