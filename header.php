@@ -15,13 +15,13 @@
 </head>
 <body id="page-top" <?php body_class(); ?> >
 <!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand fst-italic" href="#page-top">
-<!--            <img src="--><?php //echo RPT_THEME_DIR . '/assets/img/navbar-logo.svg'; ?><!--" alt="..." />-->
-            <?php
-                bloginfo('name');
-            ?>
+        <a class="navbar-brand fst-italic pb-0" href="#page-top">
+            <img src="<?php echo RPT_THEME_DIR . '/images/logos/navbar-brand-white.svg'; ?>" alt="..." />
+            <div class="mt-1 text-end d-none d-md-block">
+                <img src="<?php echo RPT_THEME_DIR . '/images/logos/navbar-brand-sub-white2.svg'; ?>" alt="..." class="w-75" />
+            </div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu

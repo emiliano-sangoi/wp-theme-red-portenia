@@ -6,9 +6,27 @@
 
 $yellow: #ffc800;
 
+/* https://clrs.cc/ */
+$red: #FF4136;
+$blue: #0074D9;
+$purple: #B10DC9;
+$navy: #001f3f;
+$maroon: #85144b;
+$orange: #FF851B;
+$green: #2ECC40;
+$olive: #3D9970;
+$silver: #DDDDDD;
+$white: #ffffff;
+$black: #111111;
+
+/* https://mybrandnewlogo.com/es/generador-de-paleta-de-colores */
+$blue: #0924aa;
+
+
+
 // Override Bootstrap state colors variables
 
-$primary: $yellow;
+$primary: $red;
 
 // Override Bootstrap contrast ratio
 
