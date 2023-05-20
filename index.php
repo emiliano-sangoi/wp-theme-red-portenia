@@ -104,12 +104,78 @@ get_header();
         <!--        </div>-->
 
         <div class="text-center mt-5">
-            <a class="btn btn-primary btn-xl text-uppercase" href="#services">
-                Ver más
+            <a class="btn btn-outline-primary btn-xl text-uppercase" href="#services">
+                <i class="fa-solid fa-plus"></i>&nbsp;Ver más
             </a>
         </div>
     </div>
 </section>
+
+<!-- -------------------------------------------------------------------------------------->
+<!-- Socios de la red-->
+<section class="page-section bg-primary text-white" id="sobre-nosotros">
+    <div class="container">
+        <div class="text-center mb-4 mb-lg-5">
+            <h2 class="section-heading text-uppercase">Socios de la red</h2>
+            <h3 class="section-subheading mb-0">Conoce los comercios adheridos y forma parte de nuestra red.</h3>
+            <!--            <hr class="border-white w-25 py-3 text-center" style="border-width: 3px;"/>-->
+        </div>
+        <div class="row text-center mt-5">
+            <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-navy"></i>
+                            <i class="fas fa-people-group fa-stack-1x fa-inverse text-white"></i>
+                        </span>
+                <h4 class="my-3">
+                    Conoce nuestros socios
+                </h4>
+                <p class="mb-4 mb-lg-5">
+                    En el siguiente enlace podrás acceder a la lista de socios de nuestra red
+                </p>
+                <div>
+                    <a href="" class="btn btn-outline-white">
+                        Ver socios
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-silver"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse text-primary"></i>
+                        </span>
+                <h4 class="my-3">
+                    Sumate
+                </h4>
+                <p class="mb-4 mb-lg-5">
+                    Podes sumarte fácilmente completando un formulario con tus datos, solo te llevara algunos minutos.
+                </p>
+                <div>
+                    <a href="" class="btn btn-outline-white">
+                        Completar formulario
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-success"></i>
+                            <i class="fas fa-question fa-stack-1x fa-inverse text-white"></i>
+                        </span>
+                <h4 class="my-3">
+                    ¿Tenés dudas?
+                </h4>
+                <p class="mb-4 mb-lg-5">
+                    Revis&aacute; la sección de preguntas frecuentes para evacuar alguna inquietud.
+                </p>
+                <div>
+                    <a href="" class="btn btn-outline-white">
+                        Preguntas frecuentes
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <!-- -------------------------------------------------------------------------------------->
 <!-- Services-->
