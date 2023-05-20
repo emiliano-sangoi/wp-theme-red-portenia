@@ -1,37 +1,10 @@
 <?php
 
-//$pagina = get_page_by_path(PAGINA_SOBRE_NOSOTROS);
-//if (!$pagina instanceof WP_Post || $pagina->post_status != 'publish') {
-//    wp_redirect(home_url(), 301);
-//    exit;
-//}
-    get_header();
+get_header();
 ?>
 
 <!-- Sobre Nosotros -->
-<!--
-<section class="mt-4 mb-3">
-    <div class='card-deck'>
-        <div class='card bg-secondary text-light shadow-sm' style="border-width: 2px;">
-            <div class='card-body py-3 py-lg-4'>
-                <h4 class="card-title font-weight-bold text-center mb-0">
-                    Visi&oacute;n
-                </h4>
-                <hr class="border-light w-75 my-3" style="border-width: 2px;" />
-                <div class="card-text px-2 px-lg-3 text-lead mb-2">
-                    <?php
-//                    $vision = get_field('vision', $pagina);
-//                    echo nl2br($vision);
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-</section>-->
-
-<div class="page-section bg-secondary text-white">
+<div class="page-section bg-info text-white">
     <div class="container ">
         <div class="text-center fst-italic col-12 offset-lg-3 col-lg-6 text-lg-start">
             <h2 class="section-heading text-white text-center">Sobre Nosotros</h2>
