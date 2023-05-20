@@ -2,21 +2,45 @@
 <footer class="footer">
 
     <div class="bg-secondary">
-        <div class="container py-4">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Oficinas</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        <div class="row text-left">
+            <div class="col-lg-8 py-3">
+                <h2 class="section-heading text-white">OFICINAS</h2>
+                <div class="row">    
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <h4 class="text-white ">COMERCIAL</h4>
+                        <p class="lead mb-0 text-white ">
+                            Av. J. Dgo. Peron 2101 (PAER)
+                            </br>
+                            (2300) Rafaela, Santa Fe.
+                            </br>
+                            comercial2@redportena.com.ar
+                            </br>
+                            03492 - 15650096 / 5707321
+                        </p>
+                    </div> 
+
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <h5 class="text-white">ADMINISTRATIVA</h5>
+                        <p class="lead mb-0 text-white">
+                            Av. J. Dgo. Peron 2101 (PAER)
+                            </br>
+                            (2300) Rafaela, Santa Fe.
+                            </br>
+                            facturacion@redportena.com.ar
+                            </br>
+                            03492 - 15650098 / 15338122
+                        </p>
+                    </div> 
+                </div> 
+            </div> 
+
+            <div class="col-lg-4 py-3">
+                <h2 class="section-heading text-white">REDES</h2>
             </div>
-            <div class="row">
-                <div class="col-12 offset-lg-3 col-lg-3 text-lg-start">
-                    Oficina 1
-                </div>
-                <div class="col-12 col-lg-3 text-lg-start">
-                    Oficina 2
-                </div>
-        </div>
         </div>
     </div>
+    </div>
+    
         <div class="container py-4">
             <div class="row align-items-center">
                 <div class="col-lg-6 text-lg-start">Copyright &copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?> ></div>
@@ -31,6 +55,7 @@
             </div>
         </div>
     </div>
+
 </footer>
 <!-- Portfolio Modals-->
 <!-- Portfolio item 1 modal popup-->

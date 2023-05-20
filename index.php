@@ -1,5 +1,5 @@
 <?php
-
+$pagina_sobre_nosotros = getLinkPagina(PAGINA_SOBRE_NOSOTROS);
 get_header();
 ?>
 
@@ -104,7 +104,7 @@ get_header();
         <!--        </div>-->
 
         <div class="text-center mt-5">
-            <a class="btn btn-outline-primary btn-xl text-uppercase" href="#services">
+            <a class="btn btn-outline-primary btn-xl text-uppercase" href="<?php echo $pagina_sobre_nosotros; ?>">
                 <i class="fa-solid fa-plus"></i>&nbsp;Ver más
             </a>
         </div>
@@ -112,6 +112,7 @@ get_header();
 </section>
 
 <!-- -------------------------------------------------------------------------------------->
+
 <!-- Socios de la red-->
 <section class="page-section bg-primary text-white" id="sobre-nosotros">
     <div class="container">
@@ -175,43 +176,47 @@ get_header();
         </div>
 
 
-
-
         <div id="carouselSocios" class="carousel slide mt-5 pt-5" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active text-center" data-bs-interval="5000">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/career.png'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/climbing.png'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/goal.png'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/alto_voltaje.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/aparicio.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/arc.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/casa_carranza.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/casa_costa.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
 
                 </div>
                 <div class="carousel-item text-center" data-bs-interval="5000">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/mission.png'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/partners.png'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/target.png'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/centrohogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/dm_hogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/eltrebol.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/todo_hogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/enriquetahogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
                 </div>
                 <div class="carousel-item text-center" data-bs-interval="5000">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/vision.png'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/montero.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/refricer.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/sanchez_hogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/suarez_hogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSocios" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselSocios" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselSocios" data-bs-slide="prev">-->
+                <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+                <!--<span class="visually-hidden">Previous</span>-->
+            <!--</button>-->
+            <!--<button class="carousel-control-next" type="button" data-bs-target="#carouselSocios" data-bs-slide="next">-->
+                <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+                <!--<span class="visually-hidden">Next</span>-->
+            <!--</button>-->
         </div>
-        
 
     </div>
 </section>
 
-
 <!-- -------------------------------------------------------------------------------------->
+
 <!-- Services-->
-<section class="page-section" id="services">
+<!--<section class="page-section" id="services">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Services</h2>
@@ -247,13 +252,14 @@ get_header();
             </div>
         </div>
     </div>
-</section>
+</section>-->
+
 <!-- Portfolio Grid-->
 <section class="page-section bg-light" id="portfolio">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">Portfolio</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">NOVEDADES</h2>
+            <h3 class="section-subheading text-muted">Aca pondria las ultmas 4 noticias.</h3>
         </div>
         <div class="row">
             <div class="col-lg-4 col-sm-6 mb-4">
@@ -261,14 +267,16 @@ get_header();
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                         <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i> Ver socios</div>
                         </div>
                         <img class="img-fluid" src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/1.jpg'; ?>"
                              alt="..."/>
                     </a>
+                <div>
+                </div>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Threads</div>
-                        <div class="portfolio-caption-subheading text-muted">Illustration</div>
+                        <div class="portfolio-caption-heading">SOCIOS</div>
+                        <div class="portfolio-caption-subheading text-muted">Conoce nuestros socios</div>
                     </div>
                 </div>
             </div>
@@ -277,41 +285,42 @@ get_header();
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                         <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i>Completar formulario</div>
                         </div>
                         <img class="img-fluid" src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/2.jpg'; ?>"
                              alt="..."/>
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Explore</div>
-                        <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+                        <div class="portfolio-caption-heading">SUMATE</div>
+                        <div class="portfolio-caption-subheading text-muted">completa el formulario con tus datos</div>
                     </div>
                 </div>
             </div>
+            
             <div class="col-lg-4 col-sm-6 mb-4">
                 <!-- Portfolio item 3-->
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                         <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i>Tenes dudas?</div>
                         </div>
                         <img class="img-fluid" src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/3.jpg'; ?>"
                              alt="..."/>
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Finish</div>
-                        <div class="portfolio-caption-subheading text-muted">Identity</div>
+                        <div class="portfolio-caption-heading">PREGUNTAS FRECUENTES</div>
+                        <div class="portfolio-caption-subheading text-muted">Ingresa y evacua tus dudas</div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                <!-- Portfolio item 4-->
+<!--            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                 Portfolio item 4
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/4.jpg'; ?>"
+                        <img class="img-fluid" src="<?php // echo RPT_THEME_DIR . '/assets/img/portfolio/4.jpg'; ?>"
                              alt="..."/>
                     </a>
                     <div class="portfolio-caption">
@@ -321,13 +330,13 @@ get_header();
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                <!-- Portfolio item 5-->
+                 Portfolio item 5
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/5.jpg'; ?>"
+                        <img class="img-fluid" src="<?php // echo RPT_THEME_DIR . '/assets/img/portfolio/5.jpg'; ?>"
                              alt="..."/>
                     </a>
                     <div class="portfolio-caption">
@@ -337,13 +346,13 @@ get_header();
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <!-- Portfolio item 6-->
+                 Portfolio item 6
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/6.jpg'; ?>"
+                        <img class="img-fluid" src="<?php // echo RPT_THEME_DIR . '/assets/img/portfolio/6.jpg'; ?>"
                              alt="..."/>
                     </a>
                     <div class="portfolio-caption">
@@ -351,12 +360,13 @@ get_header();
                         <div class="portfolio-caption-subheading text-muted">Photography</div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 </section>
+
 <!-- About-->
-<section class="page-section" id="about">
+<!--<section class="page-section" id="about">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">About</h2>
@@ -365,7 +375,7 @@ get_header();
         <ul class="timeline">
             <li>
                 <div class="timeline-image"><img class="rounded-circle img-fluid"
-                                                 src="<?php echo RPT_THEME_DIR . '/assets/img/about/1.jpg'; ?>"
+                                                 src="<?php // echo RPT_THEME_DIR . '/assets/img/about/1.jpg'; ?>"
                                                  alt="..."/></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -379,7 +389,7 @@ get_header();
             </li>
             <li class="timeline-inverted">
                 <div class="timeline-image"><img class="rounded-circle img-fluid"
-                                                 src="<?php echo RPT_THEME_DIR . '/assets/img/about/2.jpg'; ?>"
+                                                 src="<?php // echo RPT_THEME_DIR . '/assets/img/about/2.jpg'; ?>"
                                                  alt="..."/></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -393,7 +403,7 @@ get_header();
             </li>
             <li>
                 <div class="timeline-image"><img class="rounded-circle img-fluid"
-                                                 src="<?php echo RPT_THEME_DIR . '/assets/img/about/3.jpg'; ?>"
+                                                 src="<?php // echo RPT_THEME_DIR . '/assets/img/about/3.jpg'; ?>"
                                                  alt="..."/></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -407,7 +417,7 @@ get_header();
             </li>
             <li class="timeline-inverted">
                 <div class="timeline-image"><img class="rounded-circle img-fluid"
-                                                 src="<?php echo RPT_THEME_DIR . '/assets/img/about/4.jpg'; ?>"
+                                                 src="<?php // echo RPT_THEME_DIR . '/assets/img/about/4.jpg'; ?>"
                                                  alt="..."/></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -432,9 +442,9 @@ get_header();
             </li>
         </ul>
     </div>
-</section>
+</section>-->
 <!-- Team-->
-<section class="page-section bg-light" id="team">
+<!--<section class="page-section bg-light" id="team">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
@@ -443,7 +453,7 @@ get_header();
         <div class="row">
             <div class="col-lg-4">
                 <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="<?php echo RPT_THEME_DIR . '/assets/img/team/1.jpg'; ?>"
+                    <img class="mx-auto rounded-circle" src="<?php // echo RPT_THEME_DIR . '/assets/img/team/1.jpg'; ?>"
                          alt="..."/>
                     <h4>Parveen Anand</h4>
                     <p class="text-muted">Lead Designer</p>
@@ -457,7 +467,7 @@ get_header();
             </div>
             <div class="col-lg-4">
                 <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="<?php echo RPT_THEME_DIR . '/assets/img/team/2.jpg'; ?>"
+                    <img class="mx-auto rounded-circle" src="<?php // echo RPT_THEME_DIR . '/assets/img/team/2.jpg'; ?>"
                          alt="..."/>
                     <h4>Diana Petersen</h4>
                     <p class="text-muted">Lead Marketer</p>
@@ -471,7 +481,7 @@ get_header();
             </div>
             <div class="col-lg-4">
                 <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="<?php echo RPT_THEME_DIR . '/assets/img/team/3.jpg'; ?>"
+                    <img class="mx-auto rounded-circle" src="<?php // echo RPT_THEME_DIR . '/assets/img/team/3.jpg'; ?>"
                          alt="..."/>
                     <h4>Larry Parker</h4>
                     <p class="text-muted">Lead Developer</p>
@@ -490,49 +500,54 @@ get_header();
                     corporis ea, alias ut unde.</p></div>
         </div>
     </div>
-</section>
+</section>-->
 <!-- Clients-->
-<div class="py-5">
+<!--<div class="py-5">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-3 col-sm-6 my-3">
                 <a href="#!">
                     <img class="img-fluid img-brand d-block mx-auto"
-                         src="<?php echo RPT_THEME_DIR . '/assets/img/logos/microsoft.svg'; ?>" alt="..."
+                         src="<?php // echo RPT_THEME_DIR . '/assets/img/logos/microsoft.svg'; ?>" alt="..."
                          aria-label="Microsoft Logo"/>
                 </a>
             </div>
             <div class="col-md-3 col-sm-6 my-3">
                 <a href="#!">
                     <img class="img-fluid img-brand d-block mx-auto"
-                         src="<?php echo RPT_THEME_DIR . '/assets/img/logos/google.svg'; ?>" alt="..."
+                         src="<?php // echo RPT_THEME_DIR . '/assets/img/logos/google.svg'; ?>" alt="..."
                          aria-label="Google Logo"/>
                 </a>
             </div>
             <div class="col-md-3 col-sm-6 my-3">
                 <a href="#!">
                     <img class="img-fluid img-brand d-block mx-auto"
-                         src="<?php echo RPT_THEME_DIR . '/assets/img/logos/facebook.svg'; ?>" alt="..."
+                         src="<?php // echo RPT_THEME_DIR . '/assets/img/logos/facebook.svg'; ?>" alt="..."
                          aria-label="Facebook Logo"/>
                 </a>
             </div>
             <div class="col-md-3 col-sm-6 my-3">
                 <a href="#!">
                     <img class="img-fluid img-brand d-block mx-auto"
-                         src="<?php echo RPT_THEME_DIR . '/assets/img/logos/ibm.svg'; ?>" alt="..."
+                         src="<?php // echo RPT_THEME_DIR . '/assets/img/logos/ibm.svg'; ?>" alt="..."
                          aria-label="IBM Logo"/>
                 </a>
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <!-- Contact-->
-<section class="page-section" id="contact">
+<section class="page-section bg-black" id="contact">
     <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
+
+            <div class="text-center">
+            
+            <h2 class="section-heading text-uppercase">CONTACTO</h2>
+            <h3 class="section-subheading text-muted">
+                Si tenes alguna duda o querés realizar una consulta podes escribirnos y a la brevedad la responderemos.</h3>
+            </div>
+
+        
         <!-- * * * * * * * * * * * * * * *-->
         <!-- * * SB Forms Contact Form * *-->
         <!-- * * * * * * * * * * * * * * *-->
@@ -545,31 +560,37 @@ get_header();
                 <div class="col-md-6">
                     <div class="form-group">
                         <!-- Name input-->
-                        <input class="form-control" id="name" type="text" placeholder="Your Name *"
+                        <input class="form-control" id="apellido" type="text" placeholder="Apellidos *"
                                data-sb-validations="required"/>
-                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Ingrese su apellido.</div>
+                    </div>
+                    <div class="form-group">
+                        <!-- Name input-->
+                        <input class="form-control" id="nombre" type="text" placeholder=" Nombre *"
+                               data-sb-validations="required"/>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Ingrese su nombre.</div>
                     </div>
                     <div class="form-group">
                         <!-- Email address input-->
-                        <input class="form-control" id="email" type="email" placeholder="Your Email *"
+                        <input class="form-control" id="email" type="email" placeholder="Correo electrónico *"
                                data-sb-validations="required,email"/>
-                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">Ingrese un e-mail.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Correo ingresado incorrecto.</div>
                     </div>
                     <div class="form-group mb-md-0">
                         <!-- Phone number input-->
-                        <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
+                        <input class="form-control" id="phone" type="tel" placeholder="Teléfono*"
                                data-sb-validations="required"/>
-                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">Ingrese un numero de teléfono.
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group form-group-textarea mb-md-0">
                         <!-- Message input-->
-                        <textarea class="form-control" id="message" placeholder="Your Message *"
+                        <textarea class="form-control" id="message" placeholder="Escribí tu consulta ... *"
                                   data-sb-validations="required"></textarea>
-                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Ingrese su consulta..</div>
                     </div>
                 </div>
             </div>
@@ -579,8 +600,8 @@ get_header();
             <!-- has successfully submitted-->
             <div class="d-none" id="submitSuccessMessage">
                 <div class="text-center text-white mb-3">
-                    <div class="fw-bolder">Form submission successful!</div>
-                    To activate this form, sign up at
+                    <div class="fw-bolder">Mensaje enviado correctamente!</div>
+                    
                     <br/>
                     <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                 </div>
@@ -594,8 +615,7 @@ get_header();
             </div>
             <!-- Submit Button-->
             <div class="text-center">
-                <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send
-                    Message
+                <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar
                 </button>
             </div>
         </form>

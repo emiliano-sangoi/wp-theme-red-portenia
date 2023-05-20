@@ -1,6 +1,10 @@
 <?php
 
+//Paginas
 define('RPT_THEME_DIR', get_template_directory_uri());
+define('PAGINA_SOBRE_NOSOTROS', 'sobre-nosotros');
+define('PAGINA_CONTACTO', 'contacto');
+
 
 function rpt_register_scripts() {
 
@@ -38,3 +42,12 @@ function rpt_register_scripts() {
 
 // Hooks
 add_action( 'wp_enqueue_scripts', 'rpt_register_scripts' );
+
+function getLinkPagina($slug) {
+    $pagina = get_page_by_path($slug);
+    if ($pagina instanceof WP_Post && $pagina->post_status == 'publish') {
+        return get_permalink($pagina);
+    }
+    return null;
+}
+?>
