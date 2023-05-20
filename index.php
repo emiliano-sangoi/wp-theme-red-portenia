@@ -173,6 +173,38 @@ get_header();
                 </div>
             </div>
         </div>
+
+
+
+
+        <div id="carouselSocios" class="carousel slide mt-5 pt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center" data-bs-interval="5000">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/career.png'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/climbing.png'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/goal.png'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+
+                </div>
+                <div class="carousel-item text-center" data-bs-interval="5000">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/mission.png'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/partners.png'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/target.png'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                </div>
+                <div class="carousel-item text-center" data-bs-interval="5000">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/vision.png'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSocios" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselSocios" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+
     </div>
 </section>
 
