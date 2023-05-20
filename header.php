@@ -10,7 +10,10 @@
     <link rel="icon" type="image/x-icon" href="<?php echo RPT_THEME_DIR . '/assets/favicon.ico'; ?>"/>
 
     <?php
+    
     $pagina_sobre_nosotros  = getLinkPagina(PAGINA_SOBRE_NOSOTROS);
+    $pagina_contacto  = getLinkPagina(PAGINA_CONTACTO);
+    
     wp_head();
     ?>
 </head>
@@ -34,13 +37,22 @@
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                 <li class="nav-item"><a class="nav-link" href="#page-top">Inicio</a></li>
                 <!--<li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Sobre nosotros</a></li>-->
-                 <?php // if ($pagina_nosotros): ?> 
-                        <li class="nav-item"><a class="nav-link" href="<?php echo $pagina_sobre_nosotros; ?>">
-                                Sobre nosotros</a></li>
+                 <?php // if ($pagina_sobre_nosotros): ?> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php echo $pagina_sobre_nosotros; ?>">
+                                Sobre nosotros
+                            </a>
+                        </li>
                     <?php // endif; ?>
                 <li class="nav-item"><a class="nav-link" href="#team">Socios</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Noticias</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                   <?php // if ($pagina_contacto): ?> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php echo $pagina_contacto; ?>">
+                                Contacto
+                            </a>
+                        </li>
+                    <?php // endif; ?>
                 <li class="nav-item"><a class="btn btn-primary" href="#contact">
                         <i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;Acceso socios</a>
                 </li>
