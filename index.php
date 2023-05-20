@@ -4,96 +4,104 @@ get_header();
 ?>
 
 <!-- Sobre Nosotros -->
-<div class="page-section bg-light">
+<section class="page-section bg-light" id="sobre-nosotros">
     <div class="container">
         <div class="text-center mb-4 mb-lg-4">
             <h2 class="section-heading text-uppercase text-primary">Sobre Nosotros</h2>
             <h3 class="section-subheading text-muted mb-0">Conoce nuestros objetivos, valores e historia.</h3>
-<!--            <hr class="border-white w-25 py-3 text-center" style="border-width: 3px;"/>-->
+            <!--            <hr class="border-white w-25 py-3 text-center" style="border-width: 3px;"/>-->
         </div>
         <div class="row row-cols-1 row-cols-3 g-5 mt-2">
             <div class="col">
-                <div class="text-center">
-                <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/goal.png'; ?>" class="w-50" style="transform: rotate(0deg);">
+                <div class="text-center pe-lg-3">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/goal.png'; ?>" class="w-50"
+                         style="transform: rotate(0deg);">
                 </div>
                 <h4 class="mt-5 text-primary">Misión</h4>
-                <p class="text-navy fst-italic pe-lg-5">
+                <p class="text-navy fst-italic pe-lg-3">
                     La MISIÓN de Red Porteña S.A. es satisfacer las necesidades comerciales de nuestros
-                    socios y adherentes, a través de un servicio eficiente y eficáz, orientado a mejorar la rentabilidad
+                    socios y adherentes, a través de un servicio eficiente y eficáz, orientado a mejorar la
+                    rentabilidad
                     de cada sucursal adherida a la red.
-                    Buscamos la fidelización de nuestros socios por lo que trabajamos en forma transparente y honrada,
+                    Buscamos la fidelización de nuestros socios por lo que trabajamos en forma transparente y
+                    honrada,
                     siempre dentro de un marco de ética y legalidad, obteniendo el beneficio mutuo.
                 </p>
             </div>
             <div class="col">
                 <h4 class="text-primary">Visión</h4>
-                <p class="text-navy fst-italic pe-lg-5">
-                    La VISION de Red Porteña S.A. es la de ser una empresa de servicio que gestiones y centralice el mayor volúmen de las compras que generan las sucursales que
+                <p class="text-navy fst-italic pe-lg-3">
+                    La VISION de Red Porteña S.A. es la de ser una empresa de servicio que gestiones y centralice el
+                    mayor volúmen de las compras que generan las sucursales que
                     componen el grupo.
                     Tenemos una filosofía de trabajo que promueve la mejora continua en cada tarea realizada,
                     optimizando los recursos empleados y maximizando los beneficios para el socio.
                 </p>
-                <div class="text-center mt-5">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/vision.png'; ?>" class="w-50" style="transform: rotate(35deg);" >
+                <div class="text-center mt-5 pe-lg-3">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/vision.png'; ?>" class="w-50"
+                         style="transform: rotate(-45deg);">
                 </div>
             </div>
             <div class="col">
-                <div class="text-center">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/target.png'; ?>" class="w-50" style="transform: rotate(25deg);">
+                <div class="text-center pe-lg-3">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/target.png'; ?>" class="w-50"
+                         style="transform: rotate(25deg);">
                 </div>
                 <h4 class="mt-5 text-primary">Objetivos</h4>
-                <p class="text-navy fst-italic pe-lg-5">
-                    Con el objetivo de satisfacer las exigencias del mercado, y en búsqueda permanente de crecimiento y superación de las expectativas,
-                    Red Porteña S.A., es una empresa que ha sabido proyectar sus ideas en forma mesurada y contínua desde hace más de 30 años.
-                    Hoy consolida e integra <b>INTERGROUP ARGENTINA</b>, uno de los grupos de compras en artículos para el hogar más grande del país con mas de 300 comercios adheridos.
+                <p class="text-navy fst-italic pe-lg-3">
+                    Con el objetivo de satisfacer las exigencias del mercado, y en búsqueda permanente de
+                    crecimiento y superación de las expectativas,
+                    Red Porteña S.A., es una empresa que ha sabido proyectar sus ideas en forma mesurada y contínua
+                    desde hace más de 30 años.
+                    Hoy consolida e integra <b>INTERGROUP ARGENTINA</b>, uno de los grupos de compras en artículos
+                    para el hogar más grande del país con mas de 300 comercios adheridos.
                 </p>
             </div>
         </div>
 
 
-
-<!--        <div class="row row-cols-1 row-cols-md-2 g-md-2 g-lg-4">-->
-<!--            <div class="col">-->
-<!--                <div class="card bg-light text-danger text-lg-start" style="border-width: 2px;">-->
-<!--                    <div class='card-body py-3 py-lg-4'>-->
-<!--                        <h4 class="card-title font-weight-bold text-left mb-0">Transparencia</h4>-->
-<!--                        <p class="text-muted">En la gestión de los recursos, en la información emitida a los socios, en-->
-<!--                            las negociaciones con los proveedores y en el trato con el personal.</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col">-->
-<!--                <div class="card bg-light text-danger" style="border-width: 2px;">-->
-<!--                    <div class='card-body py-3 py-lg-4'>-->
-<!--                        <h4 class="card-title font-weight-bold text-left mb-0">Espiritu de Equipo</h4>-->
-<!--                        <p class="text-muted"> Entre los directivos, socios y los empleados. El éxito a largo plazo se-->
-<!--                            basa en los conocimientos y la motivación de nuestros socios adheridos.</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col">-->
-<!--                <div class="card bg-light text-danger" style="border-width: 2px;">-->
-<!--                    <div class='card-body py-3 py-lg-4'>-->
-<!--                        <h4 class="card-title font-weight-bold text-left mb-0">Compromiso</h4>-->
-<!--                        <p class="text-muted">-->
-<!--                            Estamos comprometidos en satisfacer las necesidades de nuestros clientes para el logro de-->
-<!--                            los objetivos a través de la mejora contínua.-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col">-->
-<!--                <div class="card bg-light text-danger" style="border-width: 2px;">-->
-<!--                    <div class='card-body py-3 py-lg-4'>-->
-<!--                        <h4 class="card-title font-weight-bold text-left mb-0">Respeto</h4>-->
-<!--                        <p class="text-muted">-->
-<!--                            Es un valor fundamental para nosotros, que se manifiesta entre los socios, con los socios,-->
-<!--                            entre el personal, para el personal, proveedores y clientes.-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="row row-cols-1 row-cols-md-2 g-md-2 g-lg-4">-->
+        <!--            <div class="col">-->
+        <!--                <div class="card bg-light text-danger text-lg-start" style="border-width: 2px;">-->
+        <!--                    <div class='card-body py-3 py-lg-4'>-->
+        <!--                        <h4 class="card-title font-weight-bold text-left mb-0">Transparencia</h4>-->
+        <!--                        <p class="text-muted">En la gestión de los recursos, en la información emitida a los socios, en-->
+        <!--                            las negociaciones con los proveedores y en el trato con el personal.</p>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            <div class="col">-->
+        <!--                <div class="card bg-light text-danger" style="border-width: 2px;">-->
+        <!--                    <div class='card-body py-3 py-lg-4'>-->
+        <!--                        <h4 class="card-title font-weight-bold text-left mb-0">Espiritu de Equipo</h4>-->
+        <!--                        <p class="text-muted"> Entre los directivos, socios y los empleados. El éxito a largo plazo se-->
+        <!--                            basa en los conocimientos y la motivación de nuestros socios adheridos.</p>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            <div class="col">-->
+        <!--                <div class="card bg-light text-danger" style="border-width: 2px;">-->
+        <!--                    <div class='card-body py-3 py-lg-4'>-->
+        <!--                        <h4 class="card-title font-weight-bold text-left mb-0">Compromiso</h4>-->
+        <!--                        <p class="text-muted">-->
+        <!--                            Estamos comprometidos en satisfacer las necesidades de nuestros clientes para el logro de-->
+        <!--                            los objetivos a través de la mejora contínua.-->
+        <!--                        </p>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            <div class="col">-->
+        <!--                <div class="card bg-light text-danger" style="border-width: 2px;">-->
+        <!--                    <div class='card-body py-3 py-lg-4'>-->
+        <!--                        <h4 class="card-title font-weight-bold text-left mb-0">Respeto</h4>-->
+        <!--                        <p class="text-muted">-->
+        <!--                            Es un valor fundamental para nosotros, que se manifiesta entre los socios, con los socios,-->
+        <!--                            entre el personal, para el personal, proveedores y clientes.-->
+        <!--                        </p>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
         <div class="text-center mt-5">
             <a class="btn btn-primary btn-xl text-uppercase" href="#services">
@@ -101,7 +109,7 @@ get_header();
             </a>
         </div>
     </div>
-</div>
+</section>
 
 <!-- -------------------------------------------------------------------------------------->
 <!-- Services-->
