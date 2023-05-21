@@ -10,10 +10,10 @@
     <link rel="icon" type="image/x-icon" href="<?php echo RPT_THEME_DIR . '/assets/favicon.ico'; ?>"/>
 
     <?php
-    
+
     $pagina_sobre_nosotros  = getLinkPagina(PAGINA_SOBRE_NOSOTROS);
     $pagina_contacto  = getLinkPagina(PAGINA_CONTACTO);
-    
+
     wp_head();
     ?>
 </head>
@@ -37,7 +37,7 @@
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                 <li class="nav-item"><a class="nav-link" href="#page-top">Inicio</a></li>
                 <!--<li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Sobre nosotros</a></li>-->
-                 <?php // if ($pagina_sobre_nosotros): ?> 
+                 <?php // if ($pagina_sobre_nosotros): ?>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo $pagina_sobre_nosotros; ?>">
                                 Sobre nosotros
@@ -46,7 +46,7 @@
                     <?php // endif; ?>
                 <li class="nav-item"><a class="nav-link" href="#team">Socios</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Noticias</a></li>
-                   <?php // if ($pagina_contacto): ?> 
+                   <?php // if ($pagina_contacto): ?>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo $pagina_contacto; ?>">
                                 Contacto
@@ -82,34 +82,42 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
-                    <a class="btn btn-primary btn-xl text-uppercase my-4" href="#services"></a>
+                    <a class="btn btn-primary btn-xl text-uppercase my-4" href="#services">
+                        Ver m&aacute;s
+                    </a>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="4000">
                 <!--                    <img src="..." class="d-block w-100" alt="...">-->
                 <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="1920" height="600"
                      xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide"
-                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                     preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#777"></rect>
                 </svg>
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Some representative placeholder content for the second slide.</p>
-                    <a class="btn btn-primary btn-xl text-uppercase my-4"  href="#services">Tell Me More></a>
-                    
+                    <a class="btn btn-primary btn-xl text-uppercase my-4"  href="#services">
+                        Ver m&aacute;s
+                    </a>
+
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="4000">
                 <!--                    <img src="..." class="d-block w-100" alt="...">-->
                 <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="1920" height="600"
                      xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide"
-                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                     preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#777"></rect>
                 </svg>
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>
-                    <a class="btn btn-primary btn-xl text-uppercase my-4" href="#services">Tell Me More</a>
+                    <a class="btn btn-primary btn-xl text-uppercase my-4" href="#services">
+                        Ver m&aacute;s
+                    </a>
                 </div>
             </div>
         </div>

@@ -124,8 +124,8 @@ get_header();
         <div class="row text-center mt-5">
             <div class="col-md-4">
                         <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-navy"></i>
-                            <i class="fas fa-people-group fa-stack-1x fa-inverse text-white"></i>
+                            <i class="fas fa-circle fa-stack-2x text-silver"></i>
+                            <i class="fas fa-people-group fa-stack-1x fa-inverse text-primary"></i>
                         </span>
                 <h4 class="my-3">
                     Conoce nuestros socios
@@ -158,8 +158,8 @@ get_header();
             </div>
             <div class="col-md-4">
                         <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-success"></i>
-                            <i class="fas fa-question fa-stack-1x fa-inverse text-white"></i>
+                            <i class="fas fa-circle fa-stack-2x text-silver"></i>
+                            <i class="fas fa-question fa-stack-1x fa-inverse text-primary"></i>
                         </span>
                 <h4 class="my-3">
                     ¿Tenés dudas?
@@ -168,7 +168,7 @@ get_header();
                     Revis&aacute; la sección de preguntas frecuentes para evacuar alguna inquietud.
                 </p>
                 <div>
-                    <a href="" class="btn btn-outline-white">
+                    <a class="btn btn-outline-white" data-bs-toggle="modal" href="#faqSociosModal">
                         Preguntas frecuentes
                     </a>
                 </div>
@@ -296,7 +296,6 @@ get_header();
                     </div>
                 </div>
             </div>
-            
             <div class="col-lg-4 col-sm-6 mb-4">
                 <!-- Portfolio item 3-->
                 <div class="portfolio-item">
@@ -541,13 +540,13 @@ get_header();
     <div class="container">
 
             <div class="text-center">
-            
+
             <h2 class="section-heading text-uppercase">CONTACTO</h2>
             <h3 class="section-subheading text-muted">
                 Si tenes alguna duda o querés realizar una consulta podes escribirnos y a la brevedad la responderemos.</h3>
             </div>
 
-        
+
         <!-- * * * * * * * * * * * * * * *-->
         <!-- * * SB Forms Contact Form * *-->
         <!-- * * * * * * * * * * * * * * *-->
@@ -601,7 +600,7 @@ get_header();
             <div class="d-none" id="submitSuccessMessage">
                 <div class="text-center text-white mb-3">
                     <div class="fw-bolder">Mensaje enviado correctamente!</div>
-                    
+
                     <br/>
                     <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                 </div>

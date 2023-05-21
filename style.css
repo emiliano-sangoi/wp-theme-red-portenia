@@ -10232,12 +10232,10 @@ p {
       font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 .portfolio-modal .modal-dialog {
-  margin: 1rem;
-  max-width: 100vw; }
+  max-width: 75vw; }
 .portfolio-modal .modal-content {
   padding-top: 6rem;
-  padding-bottom: 6rem;
-  text-align: center; }
+  padding-bottom: 6rem; }
   .portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
     font-size: 3rem;
     line-height: 3rem; }

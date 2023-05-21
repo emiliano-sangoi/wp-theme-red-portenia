@@ -50,4 +50,5 @@ function getLinkPagina($slug) {
     }
     return null;
 }
+
 ?>
