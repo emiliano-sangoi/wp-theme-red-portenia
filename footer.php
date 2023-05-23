@@ -204,7 +204,7 @@
     </div>
 </div>
 <!-- Portfolio item 3 modal popup-->
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-bs-dismiss="modal"><img
@@ -359,6 +359,44 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Noticia 1</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col col-md-4">
+                        <img src="<?php echo RPT_THEME_DIR . '/assets/img/foto-ej-noticia.png' ?>" class="img-fluid rounded" alt="...">
+                    </div>
+                    <div class="col col-md-8">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper id dolor vitae sollicitudin. Ut
+                            malesuada et orci id dignissim. Donec bibendum eget purus ut suscipit. Etiam accumsan luctus elit,
+                            vitae molestie est dignissim vitae. Praesent ex arcu, laoreet sollicitudin pretium vel, mattis nec
+                            nisl. Donec sagittis libero sit amet magna feugiat, id molestie arcu luctus. Praesent velit ligula,
+                            bibendum ac turpis ac, pulvinar ullamcorper tortor. Suspendisse ultricies arcu mauris, vel commodo
+                            tellus rhoncus at. Integer non diam consectetur, pretium massa at, volutpat sem. Pellentesque
+                            habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        </p>
+                        <p class="fst-italic text-muted text-end">
+                            Publicada el 23 de Mayo del 2023
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>

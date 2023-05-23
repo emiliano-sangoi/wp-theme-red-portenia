@@ -35,6 +35,11 @@ function rpt_register_scripts() {
     wp_register_script('bootbox_js', RPT_THEME_DIR . '/node_modules/bootbox/dist/bootbox.all.min.js', array('bootstrap_js', 'jquery' ), '6.0.0', true);
     wp_enqueue_script('bootbox_js');
 
+    // Masonry
+    // https://github.com/desandro/masonry
+//    wp_register_script('masonry_js', RPT_THEME_DIR . '/node_modules/masonry-layout/dist/masonry.pkgd.js', array(), '4.2.2', true);
+//    wp_enqueue_script('masonry_js');
+
     wp_register_script('custom_js', RPT_THEME_DIR . '/js/scripts.js', array('bootstrap_js', 'jquery' ), '', true);
     wp_enqueue_script('custom_js');
 }

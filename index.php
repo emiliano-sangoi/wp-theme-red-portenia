@@ -179,190 +179,141 @@ get_header();
         <div id="carouselSocios" class="carousel slide mt-5 pt-5" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active text-center" data-bs-interval="5000">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/alto_voltaje.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/aparicio.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/arc.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/casa_carranza.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/casa_costa.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/alto_voltaje.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/aparicio.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/arc.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/casa_carranza.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/casa_costa.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5" style="width: 12%;">
 
                 </div>
                 <div class="carousel-item text-center" data-bs-interval="5000">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/centrohogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/dm_hogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/eltrebol.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/todo_hogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/enriquetahogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/centrohogar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/dm_hogar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/eltrebol.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/todo_hogar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/enriquetahogar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5" style="width: 12%;">
                 </div>
                 <div class="carousel-item text-center" data-bs-interval="5000">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/montero.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/refricer.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/sanchez_hogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/suarez_hogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/montero.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/refricer.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/sanchez_hogar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/suarez_hogar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5" style="width: 12%;">
                 </div>
             </div>
             <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselSocios" data-bs-slide="prev">-->
-                <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
-                <!--<span class="visually-hidden">Previous</span>-->
+            <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+            <!--<span class="visually-hidden">Previous</span>-->
             <!--</button>-->
             <!--<button class="carousel-control-next" type="button" data-bs-target="#carouselSocios" data-bs-slide="next">-->
-                <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
-                <!--<span class="visually-hidden">Next</span>-->
+            <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+            <!--<span class="visually-hidden">Next</span>-->
             <!--</button>-->
         </div>
 
     </div>
 </section>
 
-<!-- -------------------------------------------------------------------------------------->
 
-<!-- Services-->
-<!--<section class="page-section" id="services">
+<section class="page-section bg-silver2" id="novedades">
     <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">Services</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                <h4 class="my-3">E-Commerce</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                    architecto quo inventore harum ex magni, dicta impedit.</p>
-            </div>
-            <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                <h4 class="my-3">Responsive Design</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                    architecto quo inventore harum ex magni, dicta impedit.</p>
-            </div>
-            <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                <h4 class="my-3">Web Security</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                    architecto quo inventore harum ex magni, dicta impedit.</p>
-            </div>
-        </div>
-    </div>
-</section>-->
-
-<!-- Portfolio Grid-->
-<section class="page-section bg-light" id="portfolio">
-    <div class="container">
-        <div class="text-center">
+        <div class="text-center text-navy">
             <h2 class="section-heading text-uppercase">NOVEDADES</h2>
-            <h3 class="section-subheading text-muted">Aca pondria las ultmas 4 noticias.</h3>
+            <h3 class="section-subheading">
+                Mantenete al tanto sobre novedades y eventos realizados por la Red
+            </h3>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <!-- Portfolio item 1-->
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i> Ver socios</div>
-                        </div>
-                        <img class="img-fluid" src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/1.jpg'; ?>"
-                             alt="..."/>
-                    </a>
-                <div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="card text-bg-light h-100 shadow border-silver2">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/foto-ej-noticia.png' ?>" class="card-img-top" alt="...">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title text-primary">Noticia 1</h5>
+                        <p class="card-text text-navy">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+<!--                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+<!--                        <a href="" class="btn btn-sm btn-secondary stretched-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">-->
+<!--                            Ver más-->
+<!--                        </a>-->
+                    </div>
+                    <div class="card-footer bg-light border-top-0 pb-3">
+                        <a href="" class="btn btn-sm btn-outline-navy stretched-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <i class="fa-solid fa-plus"></i>&nbsp;Leer más ...
+                        </a>
+                    </div>
+
                 </div>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">SOCIOS</div>
-                        <div class="portfolio-caption-subheading text-muted">Conoce nuestros socios</div>
+            </div>
+            <div class="col">
+                <div class="card text-bg-light h-100 shadow border-silver2">
+                    <img src="https://fakeimg.pl/750x500" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Noticia 2</h5>
+                        <p class="card-text text-navy">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+
+                    </div>
+                    <div class="card-footer bg-light border-top-0 pb-3">
+                        <a href="" class="btn btn-sm btn-outline-navy stretched-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <i class="fa-solid fa-plus"></i>&nbsp;Leer más ...
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <!-- Portfolio item 2-->
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i>Completar formulario</div>
-                        </div>
-                        <img class="img-fluid" src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/2.jpg'; ?>"
-                             alt="..."/>
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">SUMATE</div>
-                        <div class="portfolio-caption-subheading text-muted">completa el formulario con tus datos</div>
+            <div class="col">
+                <div class="card text-bg-light shadow border-silver2">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Noticia 3</h5>
+                        <p class="card-text text-navy">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <p class="card-text text-navy">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+<!--                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                    </div>
+                    <div class="card-footer bg-light border-top-0 pb-3">
+                        <a href="" class="btn btn-sm btn-outline-navy stretched-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <i class="fa-solid fa-plus"></i>&nbsp;Leer más ...
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <!-- Portfolio item 3-->
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i>Tenes dudas?</div>
-                        </div>
-                        <img class="img-fluid" src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/3.jpg'; ?>"
-                             alt="..."/>
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">PREGUNTAS FRECUENTES</div>
-                        <div class="portfolio-caption-subheading text-muted">Ingresa y evacua tus dudas</div>
+            <div class="col">
+                <div class="card text-bg-light h-100 shadow border-silver2">
+                    <img src="https://fakeimg.pl/800x600" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Noticia 4</h5>
+                        <p class="card-text text-navy">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. </p>
+                    </div>
+                    <div class="card-footer bg-light border-top-0 pb-3">
+                        <a href="" class="btn btn-sm btn-outline-navy stretched-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <i class="fa-solid fa-plus"></i>&nbsp;Leer más ...
+                        </a>
                     </div>
                 </div>
             </div>
-<!--            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                 Portfolio item 4
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="<?php // echo RPT_THEME_DIR . '/assets/img/portfolio/4.jpg'; ?>"
-                             alt="..."/>
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Lines</div>
-                        <div class="portfolio-caption-subheading text-muted">Branding</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                 Portfolio item 5
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="<?php // echo RPT_THEME_DIR . '/assets/img/portfolio/5.jpg'; ?>"
-                             alt="..."/>
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Southwest</div>
-                        <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                 Portfolio item 6
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="<?php // echo RPT_THEME_DIR . '/assets/img/portfolio/6.jpg'; ?>"
-                             alt="..."/>
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Window</div>
-                        <div class="portfolio-caption-subheading text-muted">Photography</div>
-                    </div>
-                </div>
-            </div>-->
+        </div>
+        <div class="text-center mt-5 pt-4">
+            <a class="btn btn-navy btn-xl text-uppercase" href="<?php echo $pagina_sobre_nosotros; ?>">
+                <i class="fa-solid fa-plus"></i>&nbsp;Más novedades
+            </a>
         </div>
     </div>
 </section>
+
 
 <!-- About-->
 <!--<section class="page-section" id="about">
@@ -539,12 +490,13 @@ get_header();
 <section class="page-section bg-black" id="contact">
     <div class="container">
 
-            <div class="text-center">
+        <div class="text-center">
 
             <h2 class="section-heading text-uppercase">CONTACTO</h2>
             <h3 class="section-subheading text-muted">
-                Si tenes alguna duda o querés realizar una consulta podes escribirnos y a la brevedad la responderemos.</h3>
-            </div>
+                Si tenes alguna duda o querés realizar una consulta podes escribirnos y a la brevedad la
+                responderemos.</h3>
+        </div>
 
 
         <!-- * * * * * * * * * * * * * * *-->

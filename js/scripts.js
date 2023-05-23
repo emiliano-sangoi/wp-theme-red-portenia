@@ -5,7 +5,7 @@
 */
 //
 // Scripts
-// 
+//
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     };
 
-    // Shrink the navbar 
+    // Shrink the navbar
     navbarShrink();
 
     // Shrink the navbar when page is scrolled
@@ -50,5 +50,15 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+
+    // Masonry
+    // =============================================================================================================
+    // vanilla JS
+    // init with selector
+    // var msnry = new Masonry( '.grid', {
+    //     itemSelector: '.grid-item',
+    //     columnWidth: '.grid-sizer',
+    //     percentPosition: true
+    // });
 
 });

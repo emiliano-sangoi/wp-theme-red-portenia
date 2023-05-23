@@ -28,9 +28,11 @@ $theme-colors: map-merge($theme-colors, (
     'green':      $green,
     'olive':      $olive,
     'silver':     $silver,
+    'silver2':     $silver2,
     'white':      $white,
     'black':      $black,
     'blue':       $blue
+    //'blue2':       $blue2
 ));
 
 // 5. Include remainder of required parts
@@ -98,4 +100,13 @@ $theme-colors: map-merge($theme-colors, (
 
 body{
 
+}
+
+.card{
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
