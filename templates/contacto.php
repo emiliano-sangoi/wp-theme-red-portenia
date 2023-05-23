@@ -41,22 +41,23 @@ get_header();
             ?>
             <div class="mt-4 bg-light px-3 px-lg-5 pb-5 pt-4 border border-secondary">
                 <h3 class="text-center font-weight-bold">
-                    CONTACTO
+                    Envianos tu consulta
                 </h3>
-                <!--<hr class="w-50 mx-auto"/>-->
+                <hr class="w-50 mx-auto"/>
+                <p class="text-center text-navy fst-italic">
+                    Si tenés dudas o querés realizar una consulta podes escribirnos y a la brevedad la responderemos. 
+                </p>
                 <?php
-//                echo do_shortcode($pagina->post_content);
+                echo do_shortcode($pagina->post_content);
                 ?>
             </div>
         <?php endif; ?>
     </div>
-</div>
-
-
+   </div>
 
 <?php get_footer(); ?>
 
 <script>
 //    $('a.nav-link').removeClass('active');
-//    $('.nav-link-contacto').addClass('active');
+    $('.nav-link-contacto').addClass('active');
 </script>
