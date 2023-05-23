@@ -178,7 +178,7 @@ get_header();
 
         <div id="carouselSocios" class="carousel slide mt-5 pt-5" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active text-center" data-bs-interval="5000">
+                <div class="carousel-item active text-center" data-bs-interval="2500">
                     <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/alto_voltaje.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
                     <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/aparicio.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
                     <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/arc.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
@@ -186,14 +186,14 @@ get_header();
                     <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/casa_costa.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
 
                 </div>
-                <div class="carousel-item text-center" data-bs-interval="5000">
+                <div class="carousel-item text-center" data-bs-interval="2500">
                     <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/centrohogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
                     <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/dm_hogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
                     <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/eltrebol.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
                     <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/todo_hogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
                     <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/enriquetahogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
                 </div>
-                <div class="carousel-item text-center" data-bs-interval="5000">
+                <div class="carousel-item text-center" data-bs-interval="2500">
                     <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/montero.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
                     <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/refricer.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
                     <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/sanchez_hogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5" style="width: 12%;">
@@ -610,7 +610,7 @@ get_header();
             <!-- This is what your users will see when there is-->
             <!-- an error submitting the form-->
             <div class="d-none" id="submitErrorMessage">
-                <div class="text-center text-danger mb-3">Error sending message!</div>
+                <div class="text-center text-danger mb-3">Error al enviar el mensaje!</div>
             </div>
             <!-- Submit Button-->
             <div class="text-center">
@@ -624,3 +624,8 @@ get_header();
 <?php
 get_footer();
 ?>
+
+<script>
+//    $('a.nav-link').removeClass('active');
+    $('.nav-link-contacto').addClass('active');
+</script>
