@@ -175,47 +175,61 @@ get_header();
             </div>
         </div>
 
+    </div>
 
+    <div class="container-fluid">
         <div id="carouselSocios" class="carousel slide mt-5 pt-5" data-bs-ride="carousel">
-<!--            <div class="carousel-indicators">-->
-<!--                <button type="button" data-bs-target="#carouselSocios" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>-->
-<!--                <button type="button" data-bs-target="#carouselSocios" data-bs-slide-to="1" aria-label="Slide 2"></button>-->
-<!--                <button type="button" data-bs-target="#carouselSocios" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
-<!--            </div>-->
+            <!--            <div class="carousel-indicators">-->
+            <!--                <button type="button" data-bs-target="#carouselSocios" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>-->
+            <!--                <button type="button" data-bs-target="#carouselSocios" data-bs-slide-to="1" aria-label="Slide 2"></button>-->
+            <!--                <button type="button" data-bs-target="#carouselSocios" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
+            <!--            </div>-->
             <div class="carousel-inner">
                 <div class="carousel-item active text-center" data-bs-interval="4000">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/alto_voltaje.jpg'; ?>" class="d-inline-block mx-4 rounded-5 align-middle" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/aparicio.jpg'; ?>" class="d-inline-block mx-4 rounded-5 align-middle" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/arc.jpg'; ?>" class="d-inline-block mx-4 rounded-5 align-middle" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/casa_carranza.jpg'; ?>" class="d-inline-block mx-4 rounded-5 align-middle" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/alto_voltaje.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/aparicio.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/arc.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10"
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/casa_carranza.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/casa_costa.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/centrohogar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
                 </div>
                 <div class="carousel-item text-center" data-bs-interval="4000">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/casa_costa.jpg'; ?>" class="d-inline-block mx-4 rounded-5 align-middle" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/centrohogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5 align-middle" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/dm_hogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5 align-middle" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/eltrebol.jpg'; ?>" class="d-inline-block mx-4 rounded-5 align-middle" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/dm_hogar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/eltrebol.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/todo_hogar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/enriquetahogar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/montero.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
                 </div>
                 <div class="carousel-item text-center" data-bs-interval="4000">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/todo_hogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5 align-middle" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/enriquetahogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5 align-middle" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/montero.jpg'; ?>" class="d-inline-block mx-4 rounded-5 align-middle" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/refricer.jpg'; ?>" class="d-inline-block mx-4 rounded-5 align-middle" style="width: 12%;">
-                </div>
-                <div class="carousel-item text-center" data-bs-interval="4000">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/sanchez_hogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5 align-middle" style="width: 12%;">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/suarez_hogar.jpg'; ?>" class="d-inline-block mx-4 rounded-5 align-middle" style="width: 12%;">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/refricer.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/sanchez_hogar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/suarez_hogar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSocios" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselSocios" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSocios" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselSocios" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
 
+        </div>
     </div>
 </section>
 
@@ -231,18 +245,21 @@ get_header();
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
             <div class="col">
                 <div class="card text-bg-light h-100 shadow border-silver2">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/foto-ej-noticia.png' ?>" class="card-img-top" alt="...">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/foto-ej-noticia.png' ?>" class="card-img-top"
+                         alt="...">
                     <div class="card-body bg-light">
                         <h5 class="card-title text-primary">Noticia 1</h5>
-                        <p class="card-text text-navy">This is a wider card with supporting text below as a natural lead-in to
+                        <p class="card-text text-navy">This is a wider card with supporting text below as a natural
+                            lead-in to
                             additional content. This content is a little bit longer.</p>
-<!--                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-<!--                        <a href="" class="btn btn-sm btn-secondary stretched-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">-->
-<!--                            Ver más-->
-<!--                        </a>-->
+                        <!--                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                        <!--                        <a href="" class="btn btn-sm btn-secondary stretched-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">-->
+                        <!--                            Ver más-->
+                        <!--                        </a>-->
                     </div>
                     <div class="card-footer bg-light border-top-0 pb-3">
-                        <a href="" class="btn btn-sm btn-outline-navy stretched-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <a href="" class="btn btn-sm btn-outline-navy stretched-link" data-bs-toggle="modal"
+                           data-bs-target="#staticBackdrop">
                             <i class="fa-solid fa-plus"></i>&nbsp;Leer más ...
                         </a>
                     </div>
@@ -254,12 +271,14 @@ get_header();
                     <img src="https://fakeimg.pl/750x500" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-primary">Noticia 2</h5>
-                        <p class="card-text text-navy">This card has supporting text below as a natural lead-in to additional
+                        <p class="card-text text-navy">This card has supporting text below as a natural lead-in to
+                            additional
                             content.</p>
 
                     </div>
                     <div class="card-footer bg-light border-top-0 pb-3">
-                        <a href="" class="btn btn-sm btn-outline-navy stretched-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <a href="" class="btn btn-sm btn-outline-navy stretched-link" data-bs-toggle="modal"
+                           data-bs-target="#staticBackdrop">
                             <i class="fa-solid fa-plus"></i>&nbsp;Leer más ...
                         </a>
                     </div>
@@ -269,14 +288,17 @@ get_header();
                 <div class="card text-bg-light shadow border-silver2">
                     <div class="card-body">
                         <h5 class="card-title text-primary">Noticia 3</h5>
-                        <p class="card-text text-navy">This card has supporting text below as a natural lead-in to additional
+                        <p class="card-text text-navy">This card has supporting text below as a natural lead-in to
+                            additional
                             content.</p>
-                        <p class="card-text text-navy">This card has supporting text below as a natural lead-in to additional
+                        <p class="card-text text-navy">This card has supporting text below as a natural lead-in to
+                            additional
                             content.</p>
-<!--                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                        <!--                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
                     </div>
                     <div class="card-footer bg-light border-top-0 pb-3">
-                        <a href="" class="btn btn-sm btn-outline-navy stretched-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <a href="" class="btn btn-sm btn-outline-navy stretched-link" data-bs-toggle="modal"
+                           data-bs-target="#staticBackdrop">
                             <i class="fa-solid fa-plus"></i>&nbsp;Leer más ...
                         </a>
                     </div>
@@ -287,11 +309,13 @@ get_header();
                     <img src="https://fakeimg.pl/800x600" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-primary">Noticia 4</h5>
-                        <p class="card-text text-navy">This is a wider card with supporting text below as a natural lead-in to
+                        <p class="card-text text-navy">This is a wider card with supporting text below as a natural
+                            lead-in to
                             additional content. </p>
                     </div>
                     <div class="card-footer bg-light border-top-0 pb-3">
-                        <a href="" class="btn btn-sm btn-outline-navy stretched-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <a href="" class="btn btn-sm btn-outline-navy stretched-link" data-bs-toggle="modal"
+                           data-bs-target="#staticBackdrop">
                             <i class="fa-solid fa-plus"></i>&nbsp;Leer más ...
                         </a>
                     </div>
@@ -570,6 +594,6 @@ get_footer();
 ?>
 
 <script>
-//    $('a.nav-link').removeClass('active');
+    //    $('a.nav-link').removeClass('active');
     $('.nav-link-contacto').addClass('active');
 </script>
