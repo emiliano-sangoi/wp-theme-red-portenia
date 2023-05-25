@@ -11,7 +11,7 @@ get_header();
                 </h1>
                 <hr class="border-primary opacity-100 w-25" style="border-width: 5px"/>
                 <?php
-                    // Flexy breadcrumb                 
+                    // Flexy breadcrumb
                     // https://wordpress.org/plugins/flexy-breadcrumb/
                     if ( is_plugin_active( 'flexy-breadcrumb/flexy-breadcrumb.php' ) ) {
                         echo do_shortcode('[flexy_breadcrumb]');
