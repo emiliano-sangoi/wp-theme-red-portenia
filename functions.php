@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', true);
+
+// Incluir este archivo permite la utilizacion de la funcion is_plugin_active() en el frontend.
+include_once(ABSPATH .'wp-admin/includes/plugin.php');
 
 //Paginas
 define('RPT_THEME_DIR', get_template_directory_uri());
