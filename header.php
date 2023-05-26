@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html <?php language_attributes(); ?> >
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="<?php bloginfo('charset'); ?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <title>Agency - Start Bootstrap Theme</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="<?php echo RPT_THEME_DIR . '/assets/favicon.ico'; ?>"/>
 
     <?php
 
-    $pagina_sobre_nosotros  = getLinkPagina(PAGINA_SOBRE_NOSOTROS);
-    $pagina_contacto  = getLinkPagina(PAGINA_CONTACTO);
+    $pagina_sobre_nosotros = getLinkPagina(PAGINA_SOBRE_NOSOTROS);
+    $pagina_contacto = getLinkPagina(PAGINA_CONTACTO);
+
+    $is_home_page = is_home() || is_front_page();
+    global $pagename;
 
     wp_head();
     ?>
@@ -21,7 +23,7 @@
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand fst-italic pb-0" href="#page-top">
+        <a class="navbar-brand fst-italic pb-0" href="<?php echo site_url(); ?>">
             <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/navbar-brand-white.svg'; ?>" alt="..."/>
             <div class="mt-1 text-end d-none d-md-block">
                 <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/navbar-brand-sub-white2.svg'; ?>" alt="..."
@@ -35,24 +37,39 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#page-top">Inicio</a></li>
+
+                <li class="nav-item">
+                    <a class="nav-link <?php echo $pagename == '' ? 'active' : ''; ?>"
+                       href="<?php echo $is_home_page ? '#inicio' : site_url(); ?>">
+                        Inicio
+                    </a>
+                </li>
                 <!--<li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Sobre nosotros</a></li>-->
-                 <?php // if ($pagina_sobre_nosotros): ?>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $pagina_sobre_nosotros; ?>">
-                                Sobre nosotros
-                            </a>
-                        </li>
-                    <?php // endif; ?>
-                <li class="nav-item"><a class="nav-link" href="#team">Socios</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Noticias</a></li>
-                   <?php // if ($pagina_contacto): ?>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $pagina_contacto; ?>">
-                                Contacto
-                            </a>
-                        </li>
-                    <?php // endif; ?>
+                <?php // if ($pagina_sobre_nosotros): ?>
+                <li class="nav-item">
+                    <a class="nav-link <?php echo $pagename == PAGINA_SOBRE_NOSOTROS ? 'active' : ''; ?>"
+                       href="<?php echo $is_home_page ? '#sobre-nosotros' : site_url('/' . PAGINA_SOBRE_NOSOTROS); ?>">
+                        Sobre nosotros
+                    </a>
+                </li>
+                <?php // endif; ?>
+                <li class="nav-item">
+                    <a class="nav-link <?php echo $pagename == 'socios' ? 'active' : ''; ?>"
+                       href="<?php echo $is_home_page ? '#socios' : site_url('/socios'); ?>">
+                        Socios
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?php echo $pagename == 'novedades' ? 'active' : ''; ?>"
+                       href="<?php echo $is_home_page ? '#novedades' : site_url('/novedades'); ?>">
+                        Novedades
+                    </a>
+                </li>
+                <li class="nav-item <?php echo $pagename == 'contacto' ? 'active' : ''; ?>">
+                    <a class="nav-link" href="<?php echo $is_home_page ? '#contacto' : site_url('/contacto'); ?>">
+                        Contacto
+                    </a>
+                </li>
                 <li class="nav-item"><a class="btn btn-primary" href="#contact">
                         <i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;Acceso socios</a>
                 </li>

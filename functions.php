@@ -2,7 +2,7 @@
 ini_set('display_errors', true);
 
 // Incluir este archivo permite la utilizacion de la funcion is_plugin_active() en el frontend.
-include_once(ABSPATH .'wp-admin/includes/plugin.php');
+//include_once(ABSPATH .'wp-admin/includes/plugin.php');
 
 //Paginas
 define('RPT_THEME_DIR', get_template_directory_uri());
@@ -59,5 +59,19 @@ function getLinkPagina($slug) {
     }
     return null;
 }
+
+function getPagina($slug) {
+    $pagina = get_page_by_path($slug);
+    if ($pagina instanceof WP_Post && $pagina->post_status == 'publish') {
+        return $pagina;
+    }
+    return null;
+}
+
+function rpt_theme_features(){
+    add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'rpt_theme_features');
 
 ?>

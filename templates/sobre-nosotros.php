@@ -14,13 +14,18 @@ get_header();
                             <?php the_title(); ?>
                         </h1>
                         <hr class="border-primary opacity-100 w-25" style="border-width: 5px"/>
-                        <?php
-                        // Flexy breadcrumb
-                        // https://wordpress.org/plugins/flexy-breadcrumb/
-                        if (is_plugin_active('flexy-breadcrumb/flexy-breadcrumb.php')) {
-                            echo do_shortcode('[flexy_breadcrumb]');
-                        }
-                        ?>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="<?php echo site_url(); ?>" class="text-decoration-none">
+                                        <i class="fa-solid fa-house"></i>&nbsp;Inicio
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    <?php the_title(); ?>
+                                </li>
+                            </ol>
+                        </nav>
                     </div>
                 </header>
                 <main>
