@@ -125,3 +125,7 @@ body{
         //min-height: 70vh;
     }
 }
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-blue);
+}

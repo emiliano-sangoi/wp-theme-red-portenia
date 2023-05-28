@@ -282,85 +282,30 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
                 Mantenete al tanto sobre novedades y eventos realizados por la Red
             </h3>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-            <div class="col">
-                <div class="card text-bg-light h-100 shadow border-silver2">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/foto-ej-noticia.png' ?>" class="card-img-top"
-                         alt="...">
-                    <div class="card-body bg-light">
-                        <h5 class="card-title text-primary">Noticia 1</h5>
-                        <p class="card-text text-navy">This is a wider card with supporting text below as a natural
-                            lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <!--                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-                        <!--                        <a href="" class="btn btn-sm btn-secondary stretched-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">-->
-                        <!--                            Ver más-->
-                        <!--                        </a>-->
-                    </div>
-                    <div class="card-footer bg-light border-top-0 pb-3">
-                        <a href="" class="btn btn-sm btn-outline-navy stretched-link" data-bs-toggle="modal"
-                           data-bs-target="#staticBackdrop">
-                            <i class="fa-solid fa-plus"></i>&nbsp;Leer más ...
-                        </a>
-                    </div>
+        <div class="row position-relative" data-masonry='{"percentPosition": true }'>
+            <?php
 
-                </div>
-            </div>
-            <div class="col">
-                <div class="card text-bg-light h-100 shadow border-silver2">
-                    <img src="https://fakeimg.pl/750x500" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary">Noticia 2</h5>
-                        <p class="card-text text-navy">This card has supporting text below as a natural lead-in to
-                            additional
-                            content.</p>
+            $query = new WP_Query([
+                'category_name' => RPT_CATEGORIA_NOVEDADES,
+                'posts_per_page' => 3,
+                'post_status' => 'publish'
+            ]);
 
+            if ($query->have_posts()):
+                //var_dump($novedades);
+                while ( $query->have_posts() ) : ?>
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <?php
+                        $query->the_post();
+                        include locate_template('partials/novedad.php');
+                        /* https://developer.wordpress.org/reference/functions/wp_reset_postdata/ */
+                        wp_reset_postdata();
+                        ?>
                     </div>
-                    <div class="card-footer bg-light border-top-0 pb-3">
-                        <a href="" class="btn btn-sm btn-outline-navy stretched-link" data-bs-toggle="modal"
-                           data-bs-target="#staticBackdrop">
-                            <i class="fa-solid fa-plus"></i>&nbsp;Leer más ...
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card text-bg-light shadow border-silver2">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary">Noticia 3</h5>
-                        <p class="card-text text-navy">This card has supporting text below as a natural lead-in to
-                            additional
-                            content.</p>
-                        <p class="card-text text-navy">This card has supporting text below as a natural lead-in to
-                            additional
-                            content.</p>
-                        <!--                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-                    </div>
-                    <div class="card-footer bg-light border-top-0 pb-3">
-                        <a href="" class="btn btn-sm btn-outline-navy stretched-link" data-bs-toggle="modal"
-                           data-bs-target="#staticBackdrop">
-                            <i class="fa-solid fa-plus"></i>&nbsp;Leer más ...
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card text-bg-light h-100 shadow border-silver2">
-                    <img src="https://fakeimg.pl/800x600" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary">Noticia 4</h5>
-                        <p class="card-text text-navy">This is a wider card with supporting text below as a natural
-                            lead-in to
-                            additional content. </p>
-                    </div>
-                    <div class="card-footer bg-light border-top-0 pb-3">
-                        <a href="" class="btn btn-sm btn-outline-navy stretched-link" data-bs-toggle="modal"
-                           data-bs-target="#staticBackdrop">
-                            <i class="fa-solid fa-plus"></i>&nbsp;Leer más ...
-                        </a>
-                    </div>
-                </div>
-            </div>
+                <?php
+                endwhile;
+            endif;
+            ?>
         </div>
         <div class="text-center mt-5 pt-4">
             <a class="btn btn-navy btn-xl text-uppercase" href="<?php echo site_url('/novedades'); ?>">
@@ -461,8 +406,3 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
 <?php
 get_footer();
 ?>
-
-<script>
-    //    $('a.nav-link').removeClass('active');
-    $('.nav-link-contacto').addClass('active');
-</script>

@@ -61,4 +61,13 @@ window.addEventListener('DOMContentLoaded', event => {
     //     percentPosition: true
     // });
 
+    //$('.nav-link-contacto').addClass('active');
+
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 });
+
+$(document).ready(function () {
+    $('.nav-link-contacto').addClass('active')
+})
+

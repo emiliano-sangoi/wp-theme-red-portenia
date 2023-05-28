@@ -10544,4 +10544,7 @@ section#contacto {
   color: #f8f9fa;
   background-color: #FF4136; }
 
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-blue); }
+
 /*# sourceMappingURL=style.css.map */

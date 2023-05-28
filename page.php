@@ -24,8 +24,8 @@ get_header();
                 </nav>
             </div>
         </header>
-        <main>
-            <div class="container py-5">
+        <main class="mt-5 pt-5">
+            <div class="container pb-5">
                 <?php the_content(); ?>
             </div>
 

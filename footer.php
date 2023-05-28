@@ -1,41 +1,41 @@
 <!-- Footer-->
 <footer class="footer">
-<!--    <div class="bg-secondary">-->
-<!--        <div class="row text-left">-->
-<!--            <div class="col-lg-8 py-3">-->
-<!--                <h2 class="section-heading text-white">OFICINAS</h2>-->
-<!--                <div class="row">-->
-<!--                    <div class="col-lg-4 col-sm-6 mb-4">-->
-<!--                        <h4 class="text-white ">COMERCIAL</h4>-->
-<!--                        <p class="lead mb-0 text-white ">-->
-<!--                            Av. J. Dgo. Peron 2101 (PAER)-->
-<!--                            </br>-->
-<!--                            (2300) Rafaela, Santa Fe.-->
-<!--                            </br>-->
-<!--                            comercial2@redportena.com.ar-->
-<!--                            </br>-->
-<!--                            03492 - 15650096 / 5707321-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                    <div class="col-lg-4 col-sm-6 mb-4">-->
-<!--                        <h5 class="text-white">ADMINISTRATIVA</h5>-->
-<!--                        <p class="lead mb-0 text-white">-->
-<!--                            Av. J. Dgo. Peron 2101 (PAER)-->
-<!--                            </br>-->
-<!--                            (2300) Rafaela, Santa Fe.-->
-<!--                            </br>-->
-<!--                            facturacion@redportena.com.ar-->
-<!--                            </br>-->
-<!--                            03492 - 15650098 / 15338122-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 py-3">-->
-<!--                <h2 class="section-heading text-white">REDES</h2>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
+    <!--    <div class="bg-secondary">-->
+    <!--        <div class="row text-left">-->
+    <!--            <div class="col-lg-8 py-3">-->
+    <!--                <h2 class="section-heading text-white">OFICINAS</h2>-->
+    <!--                <div class="row">-->
+    <!--                    <div class="col-lg-4 col-sm-6 mb-4">-->
+    <!--                        <h4 class="text-white ">COMERCIAL</h4>-->
+    <!--                        <p class="lead mb-0 text-white ">-->
+    <!--                            Av. J. Dgo. Peron 2101 (PAER)-->
+    <!--                            </br>-->
+    <!--                            (2300) Rafaela, Santa Fe.-->
+    <!--                            </br>-->
+    <!--                            comercial2@redportena.com.ar-->
+    <!--                            </br>-->
+    <!--                            03492 - 15650096 / 5707321-->
+    <!--                        </p>-->
+    <!--                    </div>-->
+    <!--                    <div class="col-lg-4 col-sm-6 mb-4">-->
+    <!--                        <h5 class="text-white">ADMINISTRATIVA</h5>-->
+    <!--                        <p class="lead mb-0 text-white">-->
+    <!--                            Av. J. Dgo. Peron 2101 (PAER)-->
+    <!--                            </br>-->
+    <!--                            (2300) Rafaela, Santa Fe.-->
+    <!--                            </br>-->
+    <!--                            facturacion@redportena.com.ar-->
+    <!--                            </br>-->
+    <!--                            03492 - 15650098 / 15338122-->
+    <!--                        </p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-4 py-3">-->
+    <!--                <h2 class="section-heading text-white">REDES</h2>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
     <div class="container py-4">
         <div class="row align-items-center">
             <div class="col-lg-6 text-lg-start">Copyright &copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?>>
@@ -51,6 +51,15 @@
         </div>
     </div>
 </footer>
+
+<a href="#" class="btn btn-blue rounded-circle" style="position: fixed; right: 1.5rem; bottom: 1.5rem;width: 5em; height: 5em;"
+   data-bs-toggle="tooltip"
+   data-bs-placement="left"
+   data-bs-custom-class="custom-tooltip"
+   data-bs-title="Sumate a la Red!">
+    <i class="fas fa-plus text-silver h-100 w-100"></i>
+</a>
+
 <!-- Portfolio Modals-->
 <div class="portfolio-modal modal fade" id="faqSociosModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
@@ -129,16 +138,23 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col col-md-4">
-                        <img src="<?php echo RPT_THEME_DIR . '/assets/img/foto-ej-noticia.png' ?>" class="img-fluid rounded" alt="...">
+                        <img src="<?php echo RPT_THEME_DIR . '/assets/img/foto-ej-noticia.png' ?>"
+                             class="img-fluid rounded" alt="...">
                     </div>
                     <div class="col col-md-8">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper id dolor vitae sollicitudin. Ut
-                            malesuada et orci id dignissim. Donec bibendum eget purus ut suscipit. Etiam accumsan luctus elit,
-                            vitae molestie est dignissim vitae. Praesent ex arcu, laoreet sollicitudin pretium vel, mattis nec
-                            nisl. Donec sagittis libero sit amet magna feugiat, id molestie arcu luctus. Praesent velit ligula,
-                            bibendum ac turpis ac, pulvinar ullamcorper tortor. Suspendisse ultricies arcu mauris, vel commodo
-                            tellus rhoncus at. Integer non diam consectetur, pretium massa at, volutpat sem. Pellentesque
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper id dolor vitae
+                            sollicitudin. Ut
+                            malesuada et orci id dignissim. Donec bibendum eget purus ut suscipit. Etiam accumsan luctus
+                            elit,
+                            vitae molestie est dignissim vitae. Praesent ex arcu, laoreet sollicitudin pretium vel,
+                            mattis nec
+                            nisl. Donec sagittis libero sit amet magna feugiat, id molestie arcu luctus. Praesent velit
+                            ligula,
+                            bibendum ac turpis ac, pulvinar ullamcorper tortor. Suspendisse ultricies arcu mauris, vel
+                            commodo
+                            tellus rhoncus at. Integer non diam consectetur, pretium massa at, volutpat sem.
+                            Pellentesque
                             habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                         </p>
                         <p class="fst-italic text-muted text-end">
