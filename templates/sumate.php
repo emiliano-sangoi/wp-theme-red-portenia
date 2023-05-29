@@ -1,60 +1,50 @@
 <?php
 /* Template Name: Sumate */
-//En caso de no encontrar la pagina -> redireccionar a la home
-// La ubicacion de este codigo debe ser al principio del archivo.
-$pagina = get_page_by_path(PAGINA_SUMATE);
-if (!$pagina instanceof WP_Post || $pagina->post_status != 'publish') {
-    wp_redirect(home_url(), 301);
-    exit;
-}
+
 get_header();
-
 ?>
+<div class="py-5 bg-light" id="sumate">
+    <?php
+        if (have_posts()) :
+            while (have_posts()) : the_post(); ?>
 
-<div class="container-lg navbar-separator px-3 px-lg-5 pt-3 pb-5 altura-minima" id="sumate">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="<?php // echo get_home_url(); ?>">
-                    Inicio
-                </a>
-            </li>    
-            <li class="breadcrumb-item active" aria-current="page">
-                <?php // echo $pagina->post_title; ?>
-            </li>
-        </ol>
-    </nav>
-
-
-    <h1 class="font-weight-bold text-primary">
-        <?php echo $pagina->post_title; ?>
-    </h1>
-    <hr/>
-
-    <p class="text-center text-navy fst-italic">
-        Sumate a nuestra red comercial, dejanos tus datos y comenzá a vivir los beneficios de trabajar con Red Porteña S.A. 
-    </p>
-
-    <div>
-        <?php if (empty($pagina->post_content)): ?>
-            <p class="text-muted">
-                No se ha cargado ning&uacute;n contenido en esta secci&oacute;n.
-            </p>
-            <?php
-        else:
-            ?>
-            <div class="mt-4 bg-light px-3 px-lg-5 pb-5 pt-4 border border-secondary">
+                <header class="bg-silver py-5 shadow-sm">
+                    <div class="container pt-5">
+                        <h1 class="fw-bold text-primary text-uppercase mt-5">
+                            <?php the_title(); ?>
+                        </h1>
+                        <hr class="border-primary opacity-100 w-25" style="border-width: 5px"/>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="<?php echo site_url(); ?>" class="text-decoration-none">
+                                        <i class="fa-solid fa-house"></i>&nbsp;Inicio
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    <?php the_title(); ?>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </header>
+                <main class="mt-5">
+                     <div class="container pb-5">
+                    <p class="text-left text-navy fst-italic">
+                        Sumate a nuestra red comercial, dejanos tus datos y comenzá a vivir los beneficios de trabajar con Red Porteña S.A. 
+                    </p>
+                    &nbsp;
                 <h3 class="text-center font-weight-bold">
                     Completa con los datos
                 </h3>
-                <hr class="w-50 mx-auto"/>
-                
-                <?php
-                echo do_shortcode($pagina->post_content);
-                ?>
-            </div>
-        <?php endif; ?>
-    </div>
-   </div>
+                <hr class="w-50 mx-auto" />
 
+                    <div class="container pb-5">
+                        <?php the_content(); ?>
+                    </div>
+                     </div>
+            </main>
+            <?php endwhile; ?>
+        <?php endif; ?>
+</div>
 <?php get_footer(); ?>

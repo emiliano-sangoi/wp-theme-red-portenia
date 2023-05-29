@@ -10,6 +10,7 @@ define('PAGINA_SOBRE_NOSOTROS', 'sobre-nosotros');
 define('PAGINA_CONTACTO', 'contacto');
 define('RPT_CATEGORIA_NOVEDADES', 'novedades');
 define('PAGINA_SUMATE', 'sumate');
+define('RPT_CATEGORIA_OFICINAS', 'oficinas');
 
 
 function rpt_register_scripts()

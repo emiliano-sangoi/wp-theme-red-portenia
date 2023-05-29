@@ -1,60 +1,76 @@
 <?php
 /* Template Name: Contacto */
-//En caso de no encontrar la pagina -> redireccionar a la home
-// La ubicacion de este codigo debe ser al principio del archivo.
-$pagina = get_page_by_path(PAGINA_CONTACTO);
-if (!$pagina instanceof WP_Post || $pagina->post_status != 'publish') {
-    wp_redirect(home_url(), 301);
-    exit;
-}
+
 get_header();
-
 ?>
+<div class="py-5 bg-light" id="contacto">
+    <?php
+        if (have_posts()) :
+            while (have_posts()) : the_post(); ?>
 
-<div class="container-lg navbar-separator px-3 px-lg-5 pt-3 pb-5 altura-minima" id="contacto">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="<?php echo get_home_url(); ?>">
-                    Inicio
-                </a>
-            </li>    
-            <li class="breadcrumb-item active" aria-current="page">
-                <?php echo $pagina->post_title; ?>
-            </li>
-        </ol>
-    </nav>
+                <header class="bg-silver py-5 shadow-sm">
+                    <div class="container pt-5">
+                        <h1 class="fw-bold text-primary text-uppercase mt-5">
+                            <?php the_title(); ?>
+                        </h1>
+                        <hr class="border-primary opacity-100 w-25" style="border-width: 5px"/>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="<?php echo site_url(); ?>" class="text-decoration-none">
+                                        <i class="fa-solid fa-house"></i>&nbsp;Inicio
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    <?php the_title(); ?>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </header>
+              <main class="mt-5">
+            <div class="container pb-5">
+                <h3 class="text-left font-weight-bold">Oficinas de atención al público</h3>
+                <div class="row position-relative" data-masonry='{"percentPosition": true }'>
 
-
-    <h1 class="font-weight-bold text-primary">
-        <?php echo $pagina->post_title; ?>
-    </h1>
-    <hr/>
-
-    <div>
-        <?php if (empty($pagina->post_content)): ?>
-            <p class="text-muted">
-                No se ha cargado ning&uacute;n contenido en esta secci&oacute;n.
-            </p>
-            <?php
-        else:
-            ?>
-            <div class="mt-4 bg-light px-3 px-lg-5 pb-5 pt-4 border border-secondary">
-                <h3 class="text-center font-weight-bold">
-                    Envianos tu consulta
-                </h3>
-                <hr class="w-50 mx-auto"/>
-                <p class="text-center text-navy fst-italic">
-                    Si tenés dudas o querés realizar una consulta podes escribirnos y a la brevedad la responderemos. 
-                </p>
-                <?php
-                echo do_shortcode($pagina->post_content);
-                ?>
+                    <?php
+                    $id_cat = get_cat_id(RPT_CATEGORIA_OFICINAS);
+                    if ($id_cat) {
+                        $args_otros = array('category' => $id_cat, 'posts_per_page' => -1, 'post_status' => 'publish');
+                        $post_oficinas = get_posts($args_otros);
+                    }
+                 ?>
+                    <div class="row row-cols-1 row-cols-3 g-4 mt-1">
+                     <?php if (isset($post_oficinas[0])): ?>    
+                            <?php
+                                foreach ($post_oficinas as $post):
+                            ?>
+                            <div class="col-4">
+                        
+                            <?php
+                                include locate_template('partials/contacto.php');
+                            ?>
+                            </div>
+                             <?php
+                            endforeach;
+                            ?> 
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <h2 class="text-center font-weight-bold py-5">Envianos tu consulta</h2>
+                    <hr class="w-50 mx-auto" />
+                <p class="text-center text-navy fst-italic">Si tenés dudas o querés realizar una consulta podes escribirnos y a la brevedad la responderemos.</p>
+                <div>
+                    <?php the_content(); ?>
+                </div>
+                
             </div>
-        <?php endif; ?>
-    </div>
-   </div>
 
+        </main>
+
+            <?php endwhile; ?>
+        <?php endif; ?>
+</div>
 <?php get_footer(); ?>
 
 <script>
