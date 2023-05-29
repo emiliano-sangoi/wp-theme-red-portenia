@@ -396,7 +396,7 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
             </div>
             <!-- Submit Button-->
             <div class="text-center">
-                <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar
+                <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Enviar
                 </button>
             </div>
         </form>

@@ -52,7 +52,7 @@
     </div>
 </footer>
 
-<a href="#" class="btn btn-blue rounded-circle" style="position: fixed; right: 1.5rem; bottom: 1.5rem;width: 5em; height: 5em;"
+<a href="<?php echo site_url('/' . PAGINA_SUMATE); ?>" class="btn btn-blue rounded-circle" style="position: fixed; right: 1.5rem; bottom: 1.5rem;width: 5em; height: 5em;"
    data-bs-toggle="tooltip"
    data-bs-placement="left"
    data-bs-custom-class="custom-tooltip"

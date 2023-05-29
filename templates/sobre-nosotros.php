@@ -111,7 +111,7 @@ get_header();
                                             Esp&iacute;ritu de equipo
                                         </h4>
                                         <div class="lead">
-                                            <?php echo isset($custom_fields['espiritu_de_equipo']) ? nl2br($custom_fields['espiritu_de_equipo']) : ''; ?>
+                                            <?php echo isset($custom_fields['espiritu_equipo']) ? nl2br($custom_fields['espiritu_equipo']) : ''; ?>
                                         </div>
                                     </div>
                                 </div>
