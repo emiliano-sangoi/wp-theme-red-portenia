@@ -225,38 +225,98 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
             <!--                <button type="button" data-bs-target="#carouselSocios" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
             <!--            </div>-->
             <div class="carousel-inner">
-                <div class="carousel-item active text-center" data-bs-interval="4000">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/alto_voltaje.jpg'; ?>"
+                <div class="carousel-item active text-center" data-bs-interval="2500">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/6-aparicio-tv.jpg'; ?>"
                          class="d-inline-block mx-4 rounded-5 align-middle w-10">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/aparicio.jpg'; ?>"
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/7-arc.jpg'; ?>"
                          class="d-inline-block mx-4 rounded-5 align-middle w-10">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/arc.jpg'; ?>"
-                         class="d-inline-block mx-4 rounded-5 align-middle w-10"
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/casa_carranza.jpg'; ?>"
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/9-casa-mergen.jpg'; ?>"
                          class="d-inline-block mx-4 rounded-5 align-middle w-10">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/casa_costa.jpg'; ?>"
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/20-enriqueta-hogar.jpg'; ?>"
                          class="d-inline-block mx-4 rounded-5 align-middle w-10">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/centrohogar.jpg'; ?>"
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/12-centro-hogar.jpg'; ?>"
                          class="d-inline-block mx-4 rounded-5 align-middle w-10">
                 </div>
-                <div class="carousel-item text-center" data-bs-interval="4000">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/dm_hogar.jpg'; ?>"
+                <div class="carousel-item text-center" data-bs-interval="2500">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/15-dm-hogar.jpg'; ?>"
                          class="d-inline-block mx-4 rounded-5 align-middle w-10">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/eltrebol.jpg'; ?>"
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/19-el-trebol.jpg'; ?>"
                          class="d-inline-block mx-4 rounded-5 align-middle w-10">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/todo_hogar.jpg'; ?>"
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/39-todo-hogar.jpg'; ?>"
                          class="d-inline-block mx-4 rounded-5 align-middle w-10">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/enriquetahogar.jpg'; ?>"
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/17-duilio-hogar.jpg'; ?>"
                          class="d-inline-block mx-4 rounded-5 align-middle w-10">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/montero.jpg'; ?>"
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/31-montero.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">  
+                </div>
+                <div class="carousel-item text-center" data-bs-interval="2500">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/1-5competencia.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/35-sanchez-hogar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/37-suarez-hogar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/16-don-solis.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/11-centro-gar.jpg'; ?>"
                          class="d-inline-block mx-4 rounded-5 align-middle w-10">
                 </div>
-                <div class="carousel-item text-center" data-bs-interval="4000">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/refricer.jpg'; ?>"
+                <div class="carousel-item text-center" data-bs-interval="2500">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/5-aparicio-television.jpg'; ?>"
                          class="d-inline-block mx-4 rounded-5 align-middle w-10">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/sanchez_hogar.jpg'; ?>"
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/8-casa-costa.jpg'; ?>"
                          class="d-inline-block mx-4 rounded-5 align-middle w-10">
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/suarez_hogar.jpg'; ?>"
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/22-fachin-muebles.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/13-collage.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/3-amasca.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                </div>
+                <div class="carousel-item text-center" data-bs-interval="2500">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/30-mi-grey.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/23-gran-bazar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/32-mutual-pilar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/25-jb.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/4-ammpe.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                </div>
+                <div class="carousel-item text-center" data-bs-interval="2500">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/24-innova.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/14-dall-agata.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/21-eureka-hogar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/29-mci.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/27-liendos-muebleria.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                </div>
+                <div class="carousel-item text-center" data-bs-interval="2500">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/10-casa-sarmiento.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/28-masut.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/38-tecno-frio.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/36-selex.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/18-el-mate.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                </div>
+                <div class="carousel-item text-center" data-bs-interval="2500">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/2-alto-voltaje.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/34-refricer.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/26-lauser-hogar.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/33-novedades-melly.jpg'; ?>"
                          class="d-inline-block mx-4 rounded-5 align-middle w-10">
                 </div>
             </div>

@@ -30,7 +30,7 @@ get_header();
                 </header>
               <main class="mt-5">
             <div class="container pb-5">
-                <h3 class="text-left font-weight-bold">Oficinas de atención al público</h3>
+                <!--<h3 class="text-left font-weight-bold">Oficinas de atención al público</h3>-->
                 <div class="row position-relative" data-masonry='{"percentPosition": true }'>
 
                     <?php
