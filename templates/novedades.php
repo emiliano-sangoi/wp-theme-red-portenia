@@ -2,7 +2,7 @@
 /* Template Name: Novedades */
 get_header();
 ?>
-<div class="py-5 bg-light">
+<div class="py-5 bg-light" id="novedades">
     <?php if (have_posts()) while (have_posts()) : the_post(); ?>
 
         <header class="bg-silver py-5 shadow-sm">
