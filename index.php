@@ -144,7 +144,8 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
         </div>
 
         <div class="text-center mt-5">
-            <a class="btn btn-navy grow btn-xl text-uppercase" href="<?php echo site_url('/' . PAGINA_SOBRE_NOSOTROS); ?>">
+            <a class="btn btn-navy grow btn-xl text-uppercase"
+               href="<?php echo site_url('/' . PAGINA_SOBRE_NOSOTROS); ?>">
                 <i class="fa-solid fa-plus"></i>&nbsp;Ver más
             </a>
         </div>
@@ -161,59 +162,130 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
             <h3 class="section-subheading mb-0">Conoce los comercios adheridos y forma parte de nuestra red.</h3>
             <!--            <hr class="border-white w-25 py-3 text-center" style="border-width: 3px;"/>-->
         </div>
-        <div class="row mt-5">
-            <div class="col col-md-4 align-self-start">
-                        <span class="fa-stack fa-3x mx-0">
-                            <i class="fas fa-circle fa-stack-2x text-silver"></i>
-                            <i class="fas fa-people-group fa-stack-1x fa-inverse text-primary"></i>
+
+        <div class="row g-5">
+            <div class="col">
+                <div class="card bg-silver position-relative h-100 shadow">
+                    <div class="card-header py-4 bg-silver border-blue" style="border-bottom-width: 5px">
+                        <span class="fa-stack fa-2x mx-0">
+                            <i class="fas fa-circle fa-stack-2x text-blue"></i>
+                            <i class="fas fa-people-group fa-stack-1x fa-inverse text-light"></i>
                         </span>
-                <h5 class="my-3 text-start">
-                    Conoce nuestros socios
-                </h5>
-                <p class="mb-3 mb-lg-4 small pe-lg-5">
-                    En el siguiente enlace podrás acceder a la lista de socios de nuestra red
-                </p>
-                <div>
-                    <a href="<?php echo site_url('/socios') ?>" class="btn btn-outline-white align-self-baseline">
-                        Ver socios
-                    </a>
+                        <h5 class="my-3 text-start  text-blue fw-bold text-uppercase d-inline-block text-wrap">
+                            Conocenos!
+                        </h5>
+                    </div>
+                    <div class="card-body px-4 text-navy fst-italic">
+                            En el siguiente enlace podrás acceder a la lista de socios de nuestra red
+                    </div>
+                    <div class="card-footer border-top-0 bg-silver">
+                        <a href="<?php echo site_url('/socios') ?>" class="btn btn-blue stretched-link">
+                            Ver socios
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="col col-md-4 px-lg-5 align-self-start">
-                        <span class="fa-stack fa-3x">
-                            <i class="fas fa-circle fa-stack-2x text-silver"></i>
-                            <i class="fas fa-plus fa-stack-1x fa-inverse text-primary"></i>
+            <div class="col">
+                <div class="card bg-silver position-relative h-100 shadow">
+                    <div class="card-header py-4 bg-silver border-blue" style="border-bottom-width: 5px">
+                        <span class="fa-stack fa-2x">
+                            <i class="fas fa-circle fa-stack-2x text-blue"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse text-light"></i>
                         </span>
-                <h5 class="my-3">
-                    Sumate
-                </h5>
-                <p class="mb-3 mb-lg-4 small">
-                    Podes sumarte fácilmente completando un formulario con tus datos, solo te llevara algunos minutos.
-                </p>
-                <div>
-                    <a href="<?php echo site_url('/' . PAGINA_SUMATE); ?>" class="btn btn-outline-white align-self-baseline">
-                        Completar formulario
-                    </a>
+                        <h5 class="my-3 text-start text-blue fw-bold text-uppercase d-inline-block">
+                            Sumate!
+                        </h5>
+                    </div>
+                    <div class="card-body px-4 text-navy fst-italic">
+                            Podes sumarte fácilmente completando un formulario con tus datos, solo te llevara algunos minutos.
+                    </div>
+                    <div class="card-footer border-top-0 bg-silver">
+                        <a href="<?php echo site_url('/socios') ?>" class="btn btn-blue stretched-link">
+                            Completar formulario
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="col col-md-4 ps-lg-5 align-self-start">
-                        <span class="fa-stack fa-3x">
-                            <i class="fas fa-circle fa-stack-2x text-silver"></i>
-                            <i class="fas fa-question fa-stack-1x fa-inverse text-primary"></i>
+            <div class="col">
+                <div class="card bg-silver position-relative h-100 shadow">
+                    <div class="card-header py-4 bg-silver border-blue" style="border-bottom-width: 5px">
+                        <span class="fa-stack fa-2x">
+                            <i class="fas fa-circle fa-stack-2x text-blue"></i>
+                            <i class="fas fa-question fa-stack-1x fa-inverse text-light"></i>
                         </span>
-                <h5 class="my-3">
-                    ¿Tenés dudas?
-                </h5>
-                <p class="mb-3 mb-lg-4 small">
-                    Revis&aacute; la sección de preguntas frecuentes para evacuar alguna inquietud.
-                </p>
-                <div>
-                    <a class="btn btn-outline-white align-self-baseline" data-bs-toggle="modal" href="#faqSociosModal">
-                        Preguntas frecuentes
-                    </a>
+                        <h5 class="my-3 text-start  text-blue fw-bold text-uppercase d-inline-block text-wrap">
+                            ¿Dudas?
+                        </h5>
+                    </div>
+                    <div class="card-body px-4 text-navy fst-italic">
+                            Revis&aacute; la sección de preguntas frecuentes para evacuar alguna inquietud.
+                    </div>
+                    <div class="card-footer border-top-0 bg-silver">
+                        <a href="<?php echo site_url('/socios') ?>" class="btn btn-blue stretched-link">
+                            Preguntas frecuentes
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+
+
+<!--        <div class="row mt-5">-->
+<!--            <div class="col col-md-4 align-self-start">-->
+<!--                        <span class="fa-stack fa-3x mx-0">-->
+<!--                            <i class="fas fa-circle fa-stack-2x text-silver"></i>-->
+<!--                            <i class="fas fa-people-group fa-stack-1x fa-inverse text-primary"></i>-->
+<!--                        </span>-->
+<!--                <h5 class="my-3 text-start">-->
+<!--                    Conoce nuestros socios-->
+<!--                </h5>-->
+<!--                <p class="mb-3 mb-lg-4 small pe-lg-5">-->
+<!--                    En el siguiente enlace podrás acceder a la lista de socios de nuestra red-->
+<!--                </p>-->
+<!--                <div>-->
+<!--                    <a href="--><?php //echo site_url('/socios') ?><!--" class="btn btn-outline-white align-self-baseline">-->
+<!--                        Ver socios-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col col-md-4 px-lg-5 align-self-start">-->
+<!--                        <span class="fa-stack fa-3x">-->
+<!--                            <i class="fas fa-circle fa-stack-2x text-silver"></i>-->
+<!--                            <i class="fas fa-plus fa-stack-1x fa-inverse text-primary"></i>-->
+<!--                        </span>-->
+<!--                <h5 class="my-3">-->
+<!--                    Sumate-->
+<!--                </h5>-->
+<!--                <p class="mb-3 mb-lg-4 small">-->
+<!--                    Podes sumarte fácilmente completando un formulario con tus datos, solo te llevara algunos-->
+<!--                    minutos.-->
+<!--                </p>-->
+<!--                <div>-->
+<!--                    <a href="--><?php //echo site_url('/' . PAGINA_SUMATE); ?><!--"-->
+<!--                       class="btn btn-outline-white align-self-baseline">-->
+<!--                        Completar formulario-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col col-md-4 ps-lg-5 align-self-start">-->
+<!--                        <span class="fa-stack fa-3x">-->
+<!--                            <i class="fas fa-circle fa-stack-2x text-silver"></i>-->
+<!--                            <i class="fas fa-question fa-stack-1x fa-inverse text-primary"></i>-->
+<!--                        </span>-->
+<!--                <h5 class="my-3">-->
+<!--                    ¿Tenés dudas?-->
+<!--                </h5>-->
+<!--                <p class="mb-3 mb-lg-4 small">-->
+<!--                    Revis&aacute; la sección de preguntas frecuentes para evacuar alguna inquietud.-->
+<!--                </p>-->
+<!--                <div>-->
+<!--                    <a class="btn btn-outline-white align-self-baseline" data-bs-toggle="modal"-->
+<!--                       href="#faqSociosModal">-->
+<!--                        Preguntas frecuentes-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
     </div>
 
@@ -320,11 +392,13 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
                          class="d-inline-block mx-4 rounded-5 align-middle w-10">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSocios" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSocios"
+                    data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselSocios" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselSocios"
+                    data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -353,7 +427,7 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
 
             if ($query->have_posts()):
                 //var_dump($novedades);
-                while ( $query->have_posts() ) : ?>
+                while ($query->have_posts()) : ?>
                     <div class="col-sm-6 col-lg-4 mb-4">
                         <?php
                         $query->the_post();
