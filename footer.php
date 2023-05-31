@@ -1,5 +1,5 @@
 <!-- Footer-->
-<footer class="footer">
+<footer class="footer bg-light">
     <!--    <div class="bg-secondary">-->
     <!--        <div class="row text-left">-->
     <!--            <div class="col-lg-8 py-3">-->
@@ -7,15 +7,7 @@
     <!--                <div class="row">-->
     <!--                    <div class="col-lg-4 col-sm-6 mb-4">-->
     <!--                        <h4 class="text-white ">COMERCIAL</h4>-->
-    <!--                        <p class="lead mb-0 text-white ">-->
-    <!--                            Av. J. Dgo. Peron 2101 (PAER)-->
-    <!--                            </br>-->
-    <!--                            (2300) Rafaela, Santa Fe.-->
-    <!--                            </br>-->
-    <!--                            comercial2@redportena.com.ar-->
-    <!--                            </br>-->
-    <!--                            03492 - 15650096 / 5707321-->
-    <!--                        </p>-->
+
     <!--                    </div>-->
     <!--                    <div class="col-lg-4 col-sm-6 mb-4">-->
     <!--                        <h5 class="text-white">ADMINISTRATIVA</h5>-->
@@ -36,23 +28,129 @@
     <!--            </div>-->
     <!--        </div>-->
     <!--    </div>-->
-    <div class="container py-4">
-        <div class="row align-items-center">
-            <div class="col-lg-6 text-lg-start">Copyright &copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?>>
+    <div class="py-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col col-lg-3 align-self-start text-start">
+                    <h6 class="text-light mb-3">Oficina Comercial</h6>
+                    <address class="text-light">
+                        <table>
+                            <tr>
+                                <td class="text-center py-1">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </td>
+                                <td class="ps-2 py-1">
+                                    Av. J. Dgo. Peron 2101 (PAER)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center py-1">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                </td>
+                                <td class="ps-2 py-1">
+                                    CP 2300, Rafaela, Santa Fe
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center py-1">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </td>
+                                <td class="ps-2 py-1">
+                                    <a href="mailto:comercial2@redportena.com.ar"
+                                       class="text-light text-decoration-none">
+                                        comercial2@redportena.com.ar
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center py-1">
+                                    <i class="fa-solid fa-phone"></i>
+                                </td>
+                                <td class="ps-2 py-1">
+                                    03492 - 15650096 / 5707321
+                                </td>
+                            </tr>
+                        </table>
+                    </address>
+                </div>
+                <div class="col col-lg-3 align-self-start text-start">
+                    <h6 class="text-light mb-3">Oficina Administrativa</h6>
+                    <address class="text-light">
+                        <table>
+                            <tr>
+                                <td class="text-center py-1">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </td>
+                                <td class="ps-2 py-1">
+                                    Av. J. Dgo. Peron 2101 (PAER)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center py-1">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                </td>
+                                <td class="ps-2 py-1">
+                                    CP 2300, Rafaela, Santa Fe
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center py-1">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </td>
+                                <td class="ps-2 py-1">
+                                    <a href="mailto:facturacion@redportena.com.ar"
+                                       class="text-light text-decoration-none">
+                                        facturacion@redportena.com.ar
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center py-1">
+                                    <i class="fa-solid fa-phone"></i>
+                                </td>
+                                <td class="ps-2 py-1">
+                                    03492 - 15650098 / 15338122
+                                </td>
+                            </tr>
+                        </table>
+                    </address>
+                </div>
+                <div class="col-lg-6 text-lg-start align-self-start">
+                    <iframe class="w-100 rounded" height="350"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.817253841684!2d-61.5084177!3d-31.225792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95caae00a9e3f68f%3A0x49f2714d1610ceb9!2sRED%20PORTE%C3%91A%20SA!5e0!3m2!1sen!2sar!4v1685492620983!5m2!1sen!2sar"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-            <div class="col-lg-6 text-lg-end">
-                <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i
-                        class="fab fa-twitter"></i></a>
-                <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i
-                        class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <div class="py-3 bg-black text-primary">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-lg-start">
+                    Copyright &copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary btn-social me-1" href="#!" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-primary btn-social me-1" href="#!" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-primary btn-social me-1" href="#!" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-primary btn-social" href="#!" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </footer>
 
-<a href="<?php echo site_url('/' . PAGINA_SUMATE); ?>" class="btn btn-blue rounded-circle" style="position: fixed; right: 1.5rem; bottom: 1.5rem;width: 5em; height: 5em;"
+<a href="<?php echo site_url('/' . PAGINA_SUMATE); ?>" class="btn btn-blue rounded-circle grow"
+   style="position: fixed; right: 1.5rem; bottom: 1.5rem;width: 5em; height: 5em;"
    data-bs-toggle="tooltip"
    data-bs-placement="left"
    data-bs-custom-class="custom-tooltip"

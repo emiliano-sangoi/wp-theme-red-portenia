@@ -10184,7 +10184,7 @@ p {
   line-height: 1.75; }
 
 .page-section {
-  padding: 6rem 0; }
+  padding: 5rem 0; }
   .page-section h2.section-heading, .page-section .section-heading.h2 {
     font-size: 2.5rem;
     margin-top: 0;
@@ -10546,5 +10546,11 @@ section#contacto {
 
 .custom-tooltip {
   --bs-tooltip-bg: var(--bs-blue); }
+
+.grow {
+  transition: all .2s ease-in-out; }
+
+.grow:hover {
+  transform: scale(1.1); }
 
 /*# sourceMappingURL=style.css.map */
