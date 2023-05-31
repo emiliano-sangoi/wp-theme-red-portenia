@@ -91,7 +91,7 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
                     <i class="fa-solid fa-phone"></i>&nbsp;(03492) 570727 / 5707321
                 </div>
                 <div class="col text-center">
-                    <i class="fa-solid fa-location-dot"></i>&nbsp;Av. Pte. Perón 2101 (CP 2300), Rafaela, Santa Fe
+                    <i class="fa-solid fa-location-dot"></i>&nbsp;Av. Pte. Perón 2101 (2300), Rafaela, Santa Fe
                 </div>
             </div>
         </div>
