@@ -116,7 +116,7 @@
                     </address>
                 </div>
                 <div class="col-lg-6 text-lg-start align-self-start">
-                    <iframe class="w-100 rounded" height="350"
+                    <iframe class="w-100 rounded" height="200"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.817253841684!2d-61.5084177!3d-31.225792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95caae00a9e3f68f%3A0x49f2714d1610ceb9!2sRED%20PORTE%C3%91A%20SA!5e0!3m2!1sen!2sar!4v1685492620983!5m2!1sen!2sar"
                             style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>

@@ -9,6 +9,7 @@ define('RPT_THEME_DIR', get_template_directory_uri());
 define('PAGINA_SOBRE_NOSOTROS', 'sobre-nosotros');
 define('PAGINA_CONTACTO', 'contacto');
 define('RPT_CATEGORIA_NOVEDADES', 'novedades');
+define('RPT_CATEGORIA_SOCIOS', 'socios');
 define('PAGINA_SUMATE', 'sumate');
 define('RPT_CATEGORIA_OFICINAS', 'oficinas');
 

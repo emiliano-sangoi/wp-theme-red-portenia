@@ -390,6 +390,8 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
                          class="d-inline-block mx-4 rounded-5 align-middle w-10">
                     <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/33-novedades-melly.jpg'; ?>"
                          class="d-inline-block mx-4 rounded-5 align-middle w-10">
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/socios/40-mutual-sarmiento.jpg'; ?>"
+                         class="d-inline-block mx-4 rounded-5 align-middle w-10">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselSocios"
