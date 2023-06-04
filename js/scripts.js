@@ -36,7 +36,8 @@ window.addEventListener('DOMContentLoaded', event => {
             target: '#mainNav',
             rootMargin: '0px 0px -40%',
         });
-    };
+    }
+    ;
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
@@ -67,7 +68,76 @@ window.addEventListener('DOMContentLoaded', event => {
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 });
 
+function inicializarGrillaMasonry(grilla){
+    var masonry_args = {
+        percentPosition : true,
+        //horizontalOrder: true,
+        // columnWidth: '.col-lg-4',
+        //itemSelector: '.col-card-socio',
+        //columnWidth: $('.col-card-socio card').width()
+    };
+
+    grilla.masonry(masonry_args);
+
+    // window.setTimeout(function() {
+    //     grilla.masonry(masonry_args);
+    // }, 1000);
+}
+
 $(document).ready(function () {
-    $('.nav-link-contacto').addClass('active')
+    $('.nav-link-contacto').addClass('active');
+
+   //var grilla_socios = $('#listado-socios');
+   //inicializarGrillaMasonry(grilla_socios);
+
+
+    $("#filtro-socios").on('keyup', function () {
+        var value = $(this).val().toLowerCase();
+        //grilla_socios.hide().
+        $("#listado-socios .col-card-socio").each(function () {
+
+            var col_card_socio = $(this);
+            var full_str = '';
+
+            col_card_socio.find('.searchable-text').each(function () {
+                full_str += $(this).text().replace(/\s/g, '').toLowerCase();
+            });
+
+            if (full_str.search(value) > -1) {
+                col_card_socio.fadeIn();
+                //col_card_socio.removeClass('d-none');
+                //grilla_socios.masonry('layout');
+                //grilla_socios.masonry( 'remove', col_card_socio ).masonry('layout');
+            } else {
+                col_card_socio.fadeOut();
+                //col_card_socio.addClass('d-none');
+                // col_card_socio.hide();
+
+                //$('').masonry('layout')
+                //grilla_socios.masonry( 'remove', col_card_socio ).masonry('layout');
+            }
+            //console.log(full_str);
+
+            // if (full_str.search(value) > -1) {
+            //     col_card_socio.fadeIn();
+            //     //col_card_socio.removeClass('d-none');
+            //     //grilla_socios.masonry('layout');
+            //     //grilla_socios.masonry( 'remove', col_card_socio ).masonry('layout');
+            // } else {
+            //     //col_card_socio.addClass('d-none');
+            //     col_card_socio.hide();
+            //
+            //     //$('').masonry('layout')
+            //     //grilla_socios.masonry( 'remove', col_card_socio ).masonry('layout');
+            // }
+
+        });
+
+        // grilla_socios.masonry('destroy');
+        //inicializarGrillaMasonry(grilla_socios);
+
+    });
+
+    //inicializarGrillaMasonry(grilla_socios);
 })
 

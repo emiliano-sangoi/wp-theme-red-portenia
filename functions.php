@@ -44,11 +44,15 @@ function rpt_register_scripts()
     wp_register_script('bootbox_js', RPT_THEME_DIR . '/node_modules/bootbox/dist/bootbox.all.min.js', array('bootstrap_js', 'jquery_v3'), '6.0.0', true);
     wp_enqueue_script('bootbox_js');
 
+
     // Masonry
     // https://github.com/desandro/masonry
     // https://getbootstrap.com/docs/5.0/examples/masonry/
     wp_register_script('masonry_js', RPT_THEME_DIR . '/node_modules/masonry-layout/dist/masonry.pkgd.js', array(), '4.2.2', true);
     wp_enqueue_script('masonry_js');
+
+//    wp_register_script('isotype', RPT_THEME_DIR . '/node_modules/isotope-layout/dist/isotope.pkgd.min.js', array('masonry_js', 'jquery_v3'), '6.0.0', true);
+//    wp_enqueue_script('isotype');
 
     wp_register_script('custom_js', RPT_THEME_DIR . '/js/scripts.js', array('bootstrap_js', 'jquery_v3'), '', true);
     wp_enqueue_script('custom_js');
@@ -85,5 +89,32 @@ function rpt_theme_features()
 }
 
 add_action('after_setup_theme', 'rpt_theme_features');
+
+function slugify($text, string $divider = '-')
+{
+    // replace non letter or digits by divider
+    $text = preg_replace('~[^\pL\d]+~u', $divider, $text);
+
+    // transliterate
+    $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+
+    // remove unwanted characters
+    $text = preg_replace('~[^-\w]+~', '', $text);
+
+    // trim
+    $text = trim($text, $divider);
+
+    // remove duplicate divider
+    $text = preg_replace('~-+~', $divider, $text);
+
+    // lowercase
+    $text = strtolower($text);
+
+    if (empty($text)) {
+        return 'n-a';
+    }
+
+    return $text;
+}
 
 ?>
