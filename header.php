@@ -24,9 +24,10 @@
 <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
         <a class="navbar-brand fst-italic pb-0" href="<?php echo site_url(); ?>">
-            <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/navbar-brand-white.svg'; ?>" alt="..."/>
+            <!--  https://danmarshall.github.io/google-font-to-svg-path/-->
+            <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/navbar-brand-red.svg'; ?>" alt="..."/>
             <div class="mt-1 text-end d-none d-md-block">
-                <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/navbar-brand-sub-white2.svg'; ?>" alt="..."
+                <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/navbar-brand-sub-dark2.svg'; ?>" alt="..."
                      class="w-75"/>
             </div>
         </a>

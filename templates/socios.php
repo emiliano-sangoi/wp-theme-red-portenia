@@ -69,7 +69,7 @@ get_header();
                             <input type="text" class="form-control-lg w-100" id="filtro-socios"
                                    placeholder="Ingrese texto, provincia, email o direccion del socio a buscar.....">
                         </form>
-                        <div class="row position-relative" id="listado-socios">
+                        <div class="row position-relative g-5" id="listado-socios">
 
                             <?php
 
@@ -83,7 +83,7 @@ get_header();
                                         $provincias[$slug_provincia] = $provincia;
                                     }
                                     ?>
-                                    <div class="col-12 col-md-4 mb-4 col-card-socio" data-provincia="<?php echo $slug_provincia; ?>">
+                                    <div class="col-12 col-md-4 col-card-socio" data-provincia="<?php echo $slug_provincia; ?>">
                                         <?php
                                         include locate_template('partials/socio-horizontal2.php');
                                         /* https://developer.wordpress.org/reference/functions/wp_reset_postdata/ */

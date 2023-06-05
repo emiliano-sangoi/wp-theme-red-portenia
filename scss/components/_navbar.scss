@@ -6,7 +6,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     //background-color: $gray-900;
-    background-color: $blue;
+    background-color: $light;
 
     .navbar-toggler {
 
@@ -18,7 +18,7 @@
     }
 
     .navbar-brand {
-        //color: $primary;
+        //color: $navy;
         color: $white;
         font-family: $headings-font-family;
         font-weight: $headings-font-weight;
@@ -35,12 +35,17 @@
             .nav-link {
                 font-family: $headings-font-family;
                 font-size: 0.95rem;
-                color: $white;
+                color: $secondary;
                 letter-spacing: $headings-letter-spacing;
 
-                &.active,
-                &:hover {
+                &.active{
                     color: $primary;
+                    transition: color 0.5s ease;
+                    font-weight: bold;
+                    border-bottom: 2px solid $primary;
+                }
+
+                &:hover {
                     font-weight: bold;
                     transition: color 0.5s ease;
                 }
@@ -54,9 +59,10 @@
     #mainNav {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
-        border: none;
+        //border: none;
         //background-color: transparent;
-        background-color: $blue;
+        border-bottom: 6px solid $primary;
+        background-color: $light;
         transition: padding-top 0.3s ease-in-out,
             padding-bottom 0.3s ease-in-out;
 
@@ -75,7 +81,7 @@
             padding-top: 1rem;
             padding-bottom: 1rem;
             //background-color: $gray-900;
-            background-color: $blue;
+            background-color: $light;
 
             .navbar-brand {
                 font-size: 1.25em;

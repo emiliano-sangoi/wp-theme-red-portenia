@@ -6,6 +6,8 @@ ini_set('display_errors', true);
 
 //Paginas
 define('RPT_THEME_DIR', get_template_directory_uri());
+define('RPT_CAROUSEL_SOCIOS_ITEMS_POR_SLIDE', 5);
+define('RPT_CAROUSEL_SOCIOS_VELOCIDAD', 5000); // 5 segundos
 define('PAGINA_SOBRE_NOSOTROS', 'sobre-nosotros');
 define('PAGINA_CONTACTO', 'contacto');
 define('RPT_CATEGORIA_NOVEDADES', 'novedades');
