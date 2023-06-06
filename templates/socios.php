@@ -54,13 +54,13 @@ get_header();
                             Por provincia
                         </button>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link fs-5" id="mapa-tab" data-bs-toggle="tab"
-                                data-bs-target="#mapa-tab-pane" type="button" role="tab"
-                                aria-controls="mapa-tab-pane" aria-selected="false">
-                            Ver mapa
-                        </button>
-                    </li>
+<!--                    <li class="nav-item" role="presentation">-->
+<!--                        <button class="nav-link fs-5" id="mapa-tab" data-bs-toggle="tab"-->
+<!--                                data-bs-target="#mapa-tab-pane" type="button" role="tab"-->
+<!--                                aria-controls="mapa-tab-pane" aria-selected="false">-->
+<!--                            Ver mapa-->
+<!--                        </button>-->
+<!--                    </li>-->
                 </ul>
                 <div class="tab-content mb-3" id="tabSociosContent">
                     <div class="tab-pane fade show active p-5 bg-white shadow" id="todos-tab-pane" role="tabpanel"
@@ -72,7 +72,7 @@ get_header();
                         <div class="row position-relative g-5" id="listado-socios">
 
                             <?php
-
+                            $slugs = [];
                             if ($query->have_posts()):
                                 while ($query->have_posts()) :
                                     $query->the_post();
@@ -81,7 +81,12 @@ get_header();
                                         $slug_provincia = slugify($provincia);
                                         //$slug_provincia = preg_replace('/[^A-Za-z0-9-]+/', '-', mb_strtolower($provincia));
                                         $provincias[$slug_provincia] = $provincia;
+
+                                        if(!in_array($slug_provincia, $slugs)) {
+                                            $slugs[] = $slug_provincia;
+                                        }
                                     }
+
                                     ?>
                                     <div class="col-12 col-md-4 col-card-socio" data-provincia="<?php echo $slug_provincia; ?>">
                                         <?php
@@ -97,21 +102,23 @@ get_header();
                         </div>
                     </div>
                     <div class="tab-pane fade p-5 bg-white shadow" id="por-provincia-tab-pane" role="tabpanel"
-                         aria-labelledby="vmo-tab" tabindex="0">
+                         aria-labelledby="vmo-tab" tabindex="0" data-slugs="<?php echo htmlspecialchars(json_encode($slugs),ENT_QUOTES, 'UTF-8'); ?>">
                         <div class="accordion accordion-flush" id="accordionSociosPorProvincia">
                             <?php
-                            var_dump($provincias);
+                            //var_dump($provincias);
                             foreach ($provincias as $slug_provincia => $nom_provincia):
                             ?>
                                 <div class="accordion-item">
-                                    <h2 class="accordion-header text-secondary" id="heading-<?php echo $slug_provincia; ?>">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-<?php echo $slug_provincia; ?>" aria-expanded="true" aria-controls="collapse-<?php echo $slug_provincia; ?>">
-                                            <?php echo $nom_provincia; ?>
+                                    <h2 class="accordion-header bg-light text-navy" id="heading-<?php echo $slug_provincia; ?>">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-<?php echo $slug_provincia; ?>" aria-expanded="true" aria-controls="collapse-<?php echo $slug_provincia; ?>" data-slug-provincia="<?php echo $slug_provincia; ?>">
+                                            <?php echo $nom_provincia; ?>&nbsp;<span class="contador-<?php echo $slug_provincia; ?>"></span>
                                         </button>
                                     </h2>
-                                    <div id="collapse-<?php echo $slug_provincia; ?>" class="accordion-collapse collapse" aria-labelledby="heading-<?php echo $slug_provincia; ?>" data-bs-parent="#accordionSociosPorProvincia">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <div id="collapse-<?php echo $slug_provincia; ?>" class="accordion-collapse collapse shadow-sm" aria-labelledby="heading-<?php echo $slug_provincia; ?>" data-bs-parent="#accordionSociosPorProvincia">
+                                        <div class="accordion-body py-4">
+                                            <div class="row position-relative g-5 container-<?php echo $slug_provincia; ?>">
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -120,10 +127,10 @@ get_header();
                             ?>
                         </div>
                     </div>
-                    <div class="tab-pane fade show p-5 bg-white shadow" id="mapa-tab-pane" role="tabpanel"
-                         aria-labelledby="vmo-tab" tabindex="0">
-                        mapa
-                    </div>
+<!--                    <div class="tab-pane fade show p-5 bg-white shadow" id="mapa-tab-pane" role="tabpanel"-->
+<!--                         aria-labelledby="vmo-tab" tabindex="0">-->
+<!--                        mapa-->
+<!--                    </div>-->
                 </div>
             </div>
         </main>

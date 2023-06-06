@@ -138,6 +138,26 @@ $(document).ready(function () {
 
     });
 
-    //inicializarGrillaMasonry(grilla_socios);
+    $('#socios #por-provincia-tab').on('shown.bs.tab', function (e) {
+        var slugs = $('#por-provincia-tab-pane').data("slugs");
+
+        $.each(slugs, function (index, slug) {
+            var socios = $('#listado-socios').find("div[data-provincia='" + slug + "']");
+
+            var container = $('.container-' + slug);
+            container.html('');
+            var contador = 0;
+            socios.each(function (index){
+                var socio = $(this);
+                container.append(socio.clone().fadeIn());
+                contador++;
+            });
+
+            $('.contador-' + slug).hide().text('(' + contador + ')').fadeIn();
+
+        })
+
+    });
+
 })
 
