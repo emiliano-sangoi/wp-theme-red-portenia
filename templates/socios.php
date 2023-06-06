@@ -79,7 +79,6 @@ get_header();
                                     $provincia = get_field('provincia');
                                     if(strlen(trim($provincia)) !== 0){
                                         $slug_provincia = slugify($provincia);
-                                        //$slug_provincia = preg_replace('/[^A-Za-z0-9-]+/', '-', mb_strtolower($provincia));
                                         $provincias[$slug_provincia] = $provincia;
 
                                         if(!in_array($slug_provincia, $slugs)) {

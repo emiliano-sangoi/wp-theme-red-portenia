@@ -1,8 +1,8 @@
 <?php
 // echo the_content();
-$nombre_fantasia = get_field('nombre_fantasia');
+$titulo = get_the_title();
 $razon_social = get_field('razon_social');
-$correo_electronico = get_field('correo_electronico');
+$email = get_field('correo_electronico');
 $telefono = get_field('telefono');
 $direccion = ucwords(mb_strtolower(get_field('direccion')));
 $localidad = get_field('localidad');
@@ -25,7 +25,7 @@ global $provincia;
             <div class="col-md-7 ps-0 h-100 align-self-baseline">
                 <div class="card-title fw-bold text-uppercase text-navy mb-0 pb-0 h-100 searchable-text">
                     <?php
-                        the_title();
+                        echo $titulo;
                     ?>
                 </div>
             </div>
@@ -33,9 +33,9 @@ global $provincia;
     </div>
     <ul class="list-group list-group-flush small border-light px-3 pt-1 pb-2">
 
-        <li class="list-group-item text-<?php echo ($correo_electronico ? 'muted': 'silver'); ?> border-light rounded mb-2 shadow-sm">
+        <li class="list-group-item text-<?php echo ($email ? 'muted': 'silver'); ?> border-light rounded mb-2 shadow-sm">
             <i class="fa-solid fa-envelope"></i>&nbsp;<span class="searchable-text">
-                    <?php echo ($correo_electronico ?: 'Sin definir'); ?>
+                    <?php echo ($email ?: 'Sin definir'); ?>
             </span>
         </li>
 
@@ -61,7 +61,12 @@ global $provincia;
 
     </ul>
     <div class="card-footer bg-light border-light px-3 d-flex justify-content-between">
-        <a class="btn btn-sm btn-navy stretched-link">
+        <a class="btn btn-sm btn-navy stretched-link modal-info-socios" data-titulo="<?php echo $titulo; ?>"
+           data-email="<?php echo $email; ?>"
+           data-telefono="<?php echo $telefono; ?>"
+           data-direccion="<?php echo $direccion; ?>"
+           data-localidad="<?php echo $localidad; ?>"
+           data-provincia="<?php echo $provincia; ?>">
             <i class="fa-solid fa-circle-info"></i>&nbsp;M&aacute;s info ...
         </a>
         <div class="small text-end text-muted d-block fst-italic">
