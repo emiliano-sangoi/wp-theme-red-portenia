@@ -200,7 +200,7 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
                             Podes sumarte fácilmente completando un formulario con tus datos, solo te llevara algunos minutos.
                     </div>
                     <div class="card-footer border-top-0 bg-silver">
-                        <a href="<?php echo site_url('/socios') ?>" class="btn btn-blue stretched-link">
+                        <a href="<?php echo site_url('/sumate') ?>" class="btn btn-blue stretched-link">
                             Completar formulario
                         </a>
                     </div>

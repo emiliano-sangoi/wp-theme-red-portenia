@@ -28,93 +28,74 @@
     <!--            </div>-->
     <!--        </div>-->
     <!--    </div>-->
+    <?php
+    $id_cat = get_cat_id(RPT_CATEGORIA_OFICINAS);
+    if ($id_cat) {
+        $args_otros = array('category' => $id_cat, 'posts_per_page' => -1, 'post_status' => 'publish');
+        $post_oficinas = get_posts($args_otros);
+    }
+    ?>
     <div class="py-5 bg-dark text-light">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col col-lg-3 align-self-start text-start">
-                    <h6 class="text-light mb-3">Oficina Comercial</h6>
-                    <address class="text-light">
-                        <table>
-                            <tr>
-                                <td class="text-center py-1">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </td>
-                                <td class="ps-2 py-1">
-                                    Av. J. Dgo. Peron 2101 (PAER)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center py-1">
-                                    <i class="fa-solid fa-map-location-dot"></i>
-                                </td>
-                                <td class="ps-2 py-1">
-                                    CP 2300, Rafaela, Santa Fe
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center py-1">
-                                    <i class="fa-regular fa-envelope"></i>
-                                </td>
-                                <td class="ps-2 py-1">
-                                    <a href="mailto:comercial2@redportena.com.ar"
-                                       class="text-light text-decoration-none">
-                                        comercial2@redportena.com.ar
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center py-1">
-                                    <i class="fa-solid fa-phone"></i>
-                                </td>
-                                <td class="ps-2 py-1">
-                                    03492 - 15650096 / 5707321
-                                </td>
-                            </tr>
-                        </table>
-                    </address>
-                </div>
-                <div class="col col-lg-3 align-self-start text-start">
-                    <h6 class="text-light mb-3">Oficina Administrativa</h6>
-                    <address class="text-light">
-                        <table>
-                            <tr>
-                                <td class="text-center py-1">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </td>
-                                <td class="ps-2 py-1">
-                                    Av. J. Dgo. Peron 2101 (PAER)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center py-1">
-                                    <i class="fa-solid fa-map-location-dot"></i>
-                                </td>
-                                <td class="ps-2 py-1">
-                                    CP 2300, Rafaela, Santa Fe
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center py-1">
-                                    <i class="fa-regular fa-envelope"></i>
-                                </td>
-                                <td class="ps-2 py-1">
-                                    <a href="mailto:facturacion@redportena.com.ar"
-                                       class="text-light text-decoration-none">
-                                        facturacion@redportena.com.ar
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center py-1">
-                                    <i class="fa-solid fa-phone"></i>
-                                </td>
-                                <td class="ps-2 py-1">
-                                    03492 - 15650098 / 15338122
-                                </td>
-                            </tr>
-                        </table>
-                    </address>
-                </div>
+                <?php if (isset($post_oficinas[0])): ?>    
+                    <?php
+                    foreach ($post_oficinas as $post):
+                        ?>
+                        <div class = "col col-lg-3 align-self-start text-start">
+                            <h6 class = "text-light mb-3"> <?php echo the_title(); ?></h6>
+                            <address class = "text-light">
+                                <table>
+                                    <tr>
+                                        <td class = "text-center py-1">
+                                            <i class = "fa-solid fa-location-dot"></i>
+                                        </td>
+                                        <td class = "ps-2 py-1">
+                                            <?php
+                                            echo nl2br(get_field('calle', $post));
+                                            ?>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "text-center py-1">
+                                            <i class = "fa-solid fa-map-location-dot"></i>
+                                        </td>
+                                        <td class = "ps-2 py-1">
+                                            <?php
+                                            echo nl2br('CP ' . get_field('codigo_postal', $post) . ', ' . get_field('localidad', $post));
+                                            ?>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "text-center py-1">
+                                            <i class = "fa-regular fa-envelope"></i>
+                                        </td>
+                                        <td class = "ps-2 py-1">
+                                            <a href = "mailto:comercial2@redportena.com.ar"
+                                               class = "text-light text-decoration-none">
+                                                   <?php
+                                                   echo nl2br(get_field('correo_electronico', $post));
+                                                   ?> 
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class = "text-center py-1">
+                                            <i class = "fa-solid fa-phone"></i>
+                                        </td>
+                                        <td class = "ps-2 py-1">
+                                            <?php
+                                            echo nl2br(get_field('telefonos', $post));
+                                            ?> 
+                                        </td>
+                                    </tr>
+                                </table>
+                            </address>
+                        </div>
+                        <?php
+                    endforeach;
+                    ?> 
+                <?php endif; ?>
                 <div class="col-lg-6 text-lg-start align-self-start">
                     <iframe class="w-100 rounded" height="300"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.817253841684!2d-61.5084177!3d-31.225792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95caae00a9e3f68f%3A0x49f2714d1610ceb9!2sRED%20PORTE%C3%91A%20SA!5e0!3m2!1sen!2sar!4v1685492620983!5m2!1sen!2sar"
@@ -124,6 +105,7 @@
             </div>
         </div>
     </div>
+
     <div class="py-3 bg-black text-primary">
         <div class="container">
             <div class="row align-items-center">
