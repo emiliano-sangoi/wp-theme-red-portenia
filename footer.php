@@ -131,7 +131,7 @@
     </div>
 </footer>
 
-<a href="<?php echo site_url('/' . PAGINA_SUMATE); ?>" class="btn btn-blue rounded-circle grow"
+<a href="<?php echo site_url('/' . PAGINA_SUMATE); ?>" class="btn btn-red rounded-circle grow"
    style="position: fixed; right: 1.5rem; bottom: 1.5rem;width: 5em; height: 5em;"
    data-bs-toggle="tooltip"
    data-bs-placement="left"

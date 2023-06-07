@@ -155,7 +155,7 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
 <!-- -------------------------------------------------------------------------------------->
 
 <!-- Socios de la red-->
-<section class="page-section bg-primary text-white" id="socios">
+<section class="page-section bg-navy text-white" id="socios">
     <div class="container">
         <div class="text-center mb-4 mb-lg-5">
             <h2 class="section-heading text-uppercase">Socios de la red</h2>
@@ -166,12 +166,12 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
         <div class="row g-5">
             <div class="col">
                 <div class="card bg-silver position-relative h-100 shadow">
-                    <div class="card-header py-4 bg-silver border-blue" style="border-bottom-width: 5px">
+                    <div class="card-header py-4 bg-silver border-navy" style="border-bottom-width: 5px">
                         <span class="fa-stack fa-2x mx-0">
-                            <i class="fas fa-circle fa-stack-2x text-blue"></i>
+                            <i class="fas fa-circle fa-stack-2x text-navy"></i>
                             <i class="fas fa-people-group fa-stack-1x fa-inverse text-light"></i>
                         </span>
-                        <h5 class="my-3 text-start  text-blue fw-bold text-uppercase d-inline-block text-wrap">
+                        <h5 class="my-3 text-start  text-navy fw-bold text-uppercase d-inline-block text-wrap">
                             Conocenos!
                         </h5>
                     </div>
@@ -179,7 +179,7 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
                             En el siguiente enlace podrás acceder a la lista de socios de nuestra red
                     </div>
                     <div class="card-footer border-top-0 bg-silver">
-                        <a href="<?php echo site_url('/socios') ?>" class="btn btn-blue stretched-link">
+                        <a href="<?php echo site_url('/socios') ?>" class="btn btn-navy stretched-link">
                             Ver socios
                         </a>
                     </div>
@@ -187,12 +187,12 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
             </div>
             <div class="col">
                 <div class="card bg-silver position-relative h-100 shadow">
-                    <div class="card-header py-4 bg-silver border-blue" style="border-bottom-width: 5px">
+                    <div class="card-header py-4 bg-silver border-navy" style="border-bottom-width: 5px">
                         <span class="fa-stack fa-2x">
-                            <i class="fas fa-circle fa-stack-2x text-blue"></i>
+                            <i class="fas fa-circle fa-stack-2x text-navy"></i>
                             <i class="fas fa-plus fa-stack-1x fa-inverse text-light"></i>
                         </span>
-                        <h5 class="my-3 text-start text-blue fw-bold text-uppercase d-inline-block">
+                        <h5 class="my-3 text-start text-navy fw-bold text-uppercase d-inline-block">
                             Sumate!
                         </h5>
                     </div>
@@ -200,7 +200,7 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
                             Podes sumarte fácilmente completando un formulario con tus datos, solo te llevara algunos minutos.
                     </div>
                     <div class="card-footer border-top-0 bg-silver">
-                        <a href="<?php echo site_url('/sumate') ?>" class="btn btn-blue stretched-link">
+                        <a href="<?php echo site_url('/sumate') ?>" class="btn btn-navy stretched-link">
                             Completar formulario
                         </a>
                     </div>
@@ -208,12 +208,12 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
             </div>
             <div class="col">
                 <div class="card bg-silver position-relative h-100 shadow">
-                    <div class="card-header py-4 bg-silver border-blue" style="border-bottom-width: 5px">
+                    <div class="card-header py-4 bg-silver border-navy" style="border-bottom-width: 5px">
                         <span class="fa-stack fa-2x">
-                            <i class="fas fa-circle fa-stack-2x text-blue"></i>
+                            <i class="fas fa-circle fa-stack-2x text-navy"></i>
                             <i class="fas fa-question fa-stack-1x fa-inverse text-light"></i>
                         </span>
-                        <h5 class="my-3 text-start  text-blue fw-bold text-uppercase d-inline-block text-wrap">
+                        <h5 class="my-3 text-start  text-navy fw-bold text-uppercase d-inline-block text-wrap">
                             ¿Dudas?
                         </h5>
                     </div>
@@ -221,7 +221,7 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
                             Revis&aacute; la sección de preguntas frecuentes para evacuar alguna inquietud.
                     </div>
                     <div class="card-footer border-top-0 bg-silver">
-                        <a href="<?php echo site_url('/socios') ?>" class="btn btn-blue stretched-link">
+                        <a href="<?php echo site_url('/socios') ?>" class="btn btn-navy stretched-link">
                             Preguntas frecuentes
                         </a>
                     </div>

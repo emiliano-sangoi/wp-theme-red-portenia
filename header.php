@@ -66,12 +66,13 @@
                         Novedades
                     </a>
                 </li>
-                <li class="nav-item <?php echo $pagename == 'contacto' ? 'active' : ''; ?>">
-                    <a class="nav-link" href="<?php echo $is_home_page ? '#contacto' : site_url('/contacto'); ?>">
+                <li class="nav-item">
+                    <a class="nav-link <?php echo $pagename == 'contacto' ? 'active' : ''; ?>"
+                       href="<?php echo $is_home_page ? '#contacto' : site_url('/contacto'); ?>">
                         Contacto
                     </a>
                 </li>
-                <li class="nav-item"><a class="btn btn-primary" href="#contact">
+                <li class="nav-item"><a class="btn btn-primary" href="#">
                         <i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;Acceso socios</a>
                 </li>
             </ul>

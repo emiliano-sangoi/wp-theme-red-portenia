@@ -6,10 +6,10 @@ get_header();
 
         <header class="bg-silver py-5 shadow-sm">
             <div class="container pt-5">
-                <h1 class="fw-bold text-primary text-uppercase mt-5">
+                <h1 class="fw-bold text-navy text-uppercase mt-5">
                     <?php the_title(); ?>
                 </h1>
-                <hr class="border-primary opacity-100 w-25" style="border-width: 5px"/>
+                <hr class="border-navy opacity-100 w-25" style="border-width: 5px"/>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
