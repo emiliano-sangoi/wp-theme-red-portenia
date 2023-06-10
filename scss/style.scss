@@ -12,6 +12,10 @@
 @import "../node_modules/bootstrap/scss/functions.scss";
 
 // 2. Include any default variable overrides here
+
+// https://getbootstrap.com/docs/5.2/components/tooltips/#sass-variables
+$tooltip-max-width: 300px;
+
 @import "./variables/colors.scss";
 @import "./variables/typography.scss";
 @import "./variables/carousel.scss";
@@ -38,6 +42,17 @@ $theme-colors: map-merge($theme-colors, (
     'nickel': $nickel
     //'blue2':       $blue2
 ));
+
+// Override de estilo de acordion
+// https://getbootstrap.com/docs/5.2/components/accordion/#sass-variables
+//$accordion-color: $navy;
+//$accordion-border-color: $navy;
+//$accordion-bg: $light;
+//$accordion-button-bg: $purple;
+//$accordion-button-active-bg: $navy;
+//$accordion-button-active-color: $white;
+//$accordion-icon-active-color: $white;
+
 
 // 5. Include remainder of required parts
 @import "../node_modules/bootstrap/scss/maps";
@@ -139,10 +154,6 @@ body {
     .tab-content {
         //min-height: 70vh;
     }
-}
-
-.custom-tooltip {
-    --bs-tooltip-bg: var(--bs-blue);
 }
 
 .grow {

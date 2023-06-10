@@ -65,17 +65,18 @@ get_header();
                 <div class="tab-content mb-3" id="tabSociosContent">
                     <div class="tab-pane fade show active p-5 bg-white shadow" id="todos-tab-pane" role="tabpanel"
                          aria-labelledby="vmo-tab" tabindex="0">
-                        <form class="mb-5">
-                            <input type="text" class="form-control-lg w-100" id="filtro-socios"
+                        <div class="mb-5 shadow-sm">
+                            <input type="text" class="form-control-lg w-100 border border-navy" id="filtro-socios" style="border-width: 2px !important"
                                    placeholder="Ingrese texto, provincia, email o direccion del socio a buscar.....">
-                        </form>
-                        <div class="row position-relative g-5" id="listado-socios">
+                        </div>
+<!--                        <div class="row position-relative g-4" id="listado-socios">-->
+                        <div class="row row-cols-5 position-relative g-4" id="listado-socios">
 
                             <?php
                             $slugs = [];
                             if ($query->have_posts()):
-                                while ($query->have_posts()) :
-                                    $query->the_post();
+                                $posts = $query->get_posts();
+                                foreach ($posts as $post):
                                     $provincia = get_field('provincia');
                                     if(strlen(trim($provincia)) !== 0){
                                         $slug_provincia = slugify($provincia);
@@ -87,35 +88,32 @@ get_header();
                                     }
 
                                     ?>
-                                    <div class="col-12 col-md-4 col-card-socio" data-provincia="<?php echo $slug_provincia; ?>">
+                                    <div class="col col-card-socio" data-provincia="<?php echo $slug_provincia; ?>">
                                         <?php
-                                        include locate_template('partials/socio-horizontal2.php');
-                                        /* https://developer.wordpress.org/reference/functions/wp_reset_postdata/ */
-                                        wp_reset_postdata();
+                                            include locate_template('partials/socio-horizontal3.php');
                                         ?>
                                     </div>
                                 <?php
-                                endwhile;
+                                endforeach;
                             endif;
                             ?>
                         </div>
                     </div>
                     <div class="tab-pane fade p-5 bg-white shadow" id="por-provincia-tab-pane" role="tabpanel"
                          aria-labelledby="vmo-tab" tabindex="0" data-slugs="<?php echo htmlspecialchars(json_encode($slugs),ENT_QUOTES, 'UTF-8'); ?>">
-                        <div class="accordion accordion-flush" id="accordionSociosPorProvincia">
+                        <div class="accordion shadow" id="accordionSociosPorProvincia">
                             <?php
-                            //var_dump($provincias);
                             foreach ($provincias as $slug_provincia => $nom_provincia):
                             ?>
                                 <div class="accordion-item">
-                                    <h2 class="accordion-header bg-light text-navy" id="heading-<?php echo $slug_provincia; ?>">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-<?php echo $slug_provincia; ?>" aria-expanded="true" aria-controls="collapse-<?php echo $slug_provincia; ?>" data-slug-provincia="<?php echo $slug_provincia; ?>">
+                                    <h2 class="accordion-header" id="heading-<?php echo $slug_provincia; ?>">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-<?php echo $slug_provincia; ?>" aria-expanded="false" aria-controls="collapse-<?php echo $slug_provincia; ?>" data-slug-provincia="<?php echo $slug_provincia; ?>">
                                             <?php echo $nom_provincia; ?>&nbsp;<span class="contador-<?php echo $slug_provincia; ?>"></span>
                                         </button>
                                     </h2>
                                     <div id="collapse-<?php echo $slug_provincia; ?>" class="accordion-collapse collapse shadow-sm" aria-labelledby="heading-<?php echo $slug_provincia; ?>" data-bs-parent="#accordionSociosPorProvincia">
                                         <div class="accordion-body py-4">
-                                            <div class="row position-relative g-5 container-<?php echo $slug_provincia; ?>">
+                                            <div class="row row-cols-5 position-relative g-4 container-<?php echo $slug_provincia; ?>">
 
                                             </div>
                                         </div>

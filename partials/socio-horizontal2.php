@@ -10,7 +10,7 @@ $tiene_img = has_post_thumbnail();
 global $provincia;
 
 ?>
-<div class="card text-bg-light shadow-sm card-socio border-silver h-100" style="min-height: 10rem;">
+<div class="card text-bg-light shadow card-socio border-silver h-100" style="min-height: 10rem;">
     <div class="card-body bg-light h-100">
         <div class="row h-100">
             <div class="col-md-5 py-0 h-100 align-self-center">

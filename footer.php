@@ -1,33 +1,5 @@
 <!-- Footer-->
 <footer class="footer bg-light">
-    <!--    <div class="bg-secondary">-->
-    <!--        <div class="row text-left">-->
-    <!--            <div class="col-lg-8 py-3">-->
-    <!--                <h2 class="section-heading text-white">OFICINAS</h2>-->
-    <!--                <div class="row">-->
-    <!--                    <div class="col-lg-4 col-sm-6 mb-4">-->
-    <!--                        <h4 class="text-white ">COMERCIAL</h4>-->
-
-    <!--                    </div>-->
-    <!--                    <div class="col-lg-4 col-sm-6 mb-4">-->
-    <!--                        <h5 class="text-white">ADMINISTRATIVA</h5>-->
-    <!--                        <p class="lead mb-0 text-white">-->
-    <!--                            Av. J. Dgo. Peron 2101 (PAER)-->
-    <!--                            </br>-->
-    <!--                            (2300) Rafaela, Santa Fe.-->
-    <!--                            </br>-->
-    <!--                            facturacion@redportena.com.ar-->
-    <!--                            </br>-->
-    <!--                            03492 - 15650098 / 15338122-->
-    <!--                        </p>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--            <div class="col-lg-4 py-3">-->
-    <!--                <h2 class="section-heading text-white">REDES</h2>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
     <?php
     $id_cat = get_cat_id(RPT_CATEGORIA_OFICINAS);
     if ($id_cat) {
@@ -38,7 +10,7 @@
     <div class="py-5 bg-dark text-light">
         <div class="container">
             <div class="row align-items-center">
-                <?php if (isset($post_oficinas[0])): ?>    
+                <?php if (isset($post_oficinas[0])): ?>
                     <?php
                     foreach ($post_oficinas as $post):
                         ?>
@@ -75,7 +47,7 @@
                                                class = "text-light text-decoration-none">
                                                    <?php
                                                    echo nl2br(get_field('correo_electronico', $post));
-                                                   ?> 
+                                                   ?>
                                             </a>
                                         </td>
                                     </tr>
@@ -86,7 +58,7 @@
                                         <td class = "ps-2 py-1">
                                             <?php
                                             echo nl2br(get_field('telefonos', $post));
-                                            ?> 
+                                            ?>
                                         </td>
                                     </tr>
                                 </table>
@@ -94,7 +66,7 @@
                         </div>
                         <?php
                     endforeach;
-                    ?> 
+                    ?>
                 <?php endif; ?>
                 <div class="col-lg-6 text-lg-start align-self-start">
                     <iframe class="w-100 rounded" height="300"

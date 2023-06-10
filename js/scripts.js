@@ -84,6 +84,26 @@ function inicializarGrillaMasonry(grilla){
     // }, 1000);
 }
 
+function copyAndPaste(e) {
+
+    var element = $(this);
+    var target = element.data('target');
+
+
+    // Get the text field
+    var copyText = target;
+
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+
+    // Alert the copied text
+    alert("Copied the text: " + copyText.text());
+}
+
 $(document).ready(function () {
     $('.nav-link-contacto').addClass('active');
 
@@ -149,7 +169,10 @@ $(document).ready(function () {
             var contador = 0;
             socios.each(function (index){
                 var socio = $(this);
-                container.append(socio.clone().fadeIn());
+                var socio_clon = socio.clone();
+                new bootstrap.Tooltip(socio_clon.find('.card'));
+                container.append(socio_clon.fadeIn());
+                //console.log(new bootstrap.Tooltip(socio.find('.card')));
                 contador++;
             });
 
@@ -227,7 +250,10 @@ $(document).ready(function () {
     });
 
 
-
+    /// https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
+    $('.copy-and-paste').click(function (e){
+        //continuara ...
+    });
 
 })
 
