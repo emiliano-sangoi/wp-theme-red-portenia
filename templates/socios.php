@@ -25,8 +25,9 @@ get_header();
                 </nav>
             </div>
         </header>
-        <main class="mt-5">
-            <div class="container pb-5">
+        <main>  
+            <iframe src="https://www.google.com/maps/d/embed?mid=1itEERquXh_-E7YUJRtOLiCPviCYt1nc&ehbc=2E312F" width="1350" height="400"></iframe>
+            <div class="container mt-3 pb-5">
                  <?php
 
                             $query = new WP_Query([

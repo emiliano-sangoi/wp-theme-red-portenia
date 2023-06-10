@@ -1,14 +1,13 @@
-<div class="card text-bg-light shadow">
+<!--<div class="card text-bg-light shadow">-->
     <?php
     if (has_post_thumbnail()):
         echo get_the_post_thumbnail(null, 'medium', array('class' => 'card-img-top img-fluid object-fit-cover'));
     endif;
     ?>
-    <div class="card-body">
-        <h5 class="card-title text-black">
-            <?php echo the_title(); ?>
-        </h5>
-        <div class="card-text text-navy">
+<!--    <div class="card-body">-->
+        <h2 class="card-title py-2">
+           Encontranos!
+        </h2>
             <?php // echo the_content(); 
                 $calle = get_field('calle', $post);
                 $localidad = get_field('localidad', $post);
@@ -16,7 +15,6 @@
                 $correo = get_field('correo_electronico', $post);
                 $telefono = get_field('telefonos', $post);
             ?>
-        </div>
         <div class="mb-1 mb-lg-1">
             
             <table>
@@ -61,7 +59,7 @@
                     </td>
                 </tr>
             </table>    
-        </div>
+        <!--</div>-->
     </div>
 
-</div>
+<!--</div>-->
