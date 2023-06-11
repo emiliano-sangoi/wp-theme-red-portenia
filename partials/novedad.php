@@ -5,13 +5,13 @@
     endif;
     ?>
     <div class="card-body">
-        <h5 class="card-title text-primary">
+        <h5 class="card-title text-black">
             <?php echo the_title(); ?>
         </h5>
         <div class="small text-muted my-2 fst-italic">
             <?php echo get_the_date('d/m/Y H:i'); ?>&nbsp;Hs.
         </div>
-        <div class="card-text text-navy">
+        <div class="small card-text text-navy">
             <?php echo the_excerpt(); ?>
         </div>
     </div>
