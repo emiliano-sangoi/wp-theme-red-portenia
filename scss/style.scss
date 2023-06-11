@@ -17,6 +17,11 @@
 $tooltip-max-width: 300px;
 
 @import "./variables/colors.scss";
+
+// https://getbootstrap.com/docs/5.3/components/navs-tabs/#sass-variables
+//$nav-tabs-border-color: $navy;
+//$nav-tabs-border-width: 1px;
+
 @import "./variables/typography.scss";
 @import "./variables/carousel.scss";
 
@@ -185,13 +190,22 @@ body {
 }
 
 #tabSocios{
+    .nav-item{
+
+    }
+
     .nav-link{
-        background-color: $silver;
+        background-color: $whitesmoke !important;
         color: $navy;
+        border: 1px solid $navy;
+
+        &:hover{
+            background-color: darken($whitesmoke, 5%) !important;
+        }
 
         &.active{
-            color: $white;
-            background-color: $primary;
+            color: $white !important;
+            background-color: $primary !important;
         }
     }
 }

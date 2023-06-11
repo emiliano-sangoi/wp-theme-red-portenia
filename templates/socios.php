@@ -73,20 +73,20 @@ get_header();
                             Por provincia
                         </button>
                     </li>
-<!--                    <li class="nav-item" role="presentation">-->
-<!--                        <button class="nav-link fs-5" id="mapa-tab" data-bs-toggle="tab"-->
-<!--                                data-bs-target="#mapa-tab-pane" type="button" role="tab"-->
-<!--                                aria-controls="mapa-tab-pane" aria-selected="false">-->
-<!--                            Ver mapa-->
-<!--                        </button>-->
-<!--                    </li>-->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fs-4" id="mapa-tab" data-bs-toggle="tab"
+                                data-bs-target="#mapa-tab-pane" type="button" role="tab"
+                                aria-controls="mapa-tab-pane" aria-selected="false">
+                            Ver mapa
+                        </button>
+                    </li>
                 </ul>
                 <div class="tab-content mb-3" id="tabSociosContent">
                     <div class="tab-pane fade show active p-5 bg-white shadow border border-silver border-top-0" id="todos-tab-pane" role="tabpanel"
                          aria-labelledby="vmo-tab" tabindex="0">
                         <div class="mb-5 shadow-sm">
-                            <input type="text" class="form-control-lg w-100 border border-navy" id="filtro-socios" style="border-width: 2px !important"
-                                   placeholder="Ingrese texto, provincia, email o direccion del socio a buscar.....">
+                            <input type="text" class="form-control-lg w-100 border border-silver" id="filtro-socios" style=""
+                                   placeholder="Filtrar por nombre o provincia del socio a buscar.....">
                         </div>
 <!--                        <div class="row position-relative g-4" id="listado-socios">-->
                         <div class="row row-cols-5 position-relative g-4" id="listado-socios">
@@ -143,10 +143,10 @@ get_header();
                             ?>
                         </div>
                     </div>
-<!--                    <div class="tab-pane fade show p-5 bg-white shadow" id="mapa-tab-pane" role="tabpanel"-->
-<!--                         aria-labelledby="vmo-tab" tabindex="0">-->
-<!--                        mapa-->
-<!--                    </div>-->
+                    <div class="tab-pane fade show p-5 bg-white shadow" id="mapa-tab-pane" role="tabpanel"
+                         aria-labelledby="vmo-tab" tabindex="0">
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1itEERquXh_-E7YUJRtOLiCPviCYt1nc&ehbc=2E312F&z=7" class="w-100 shadow rounded-3 border border-silver" height="750"></iframe>
+                    </div>
                 </div>
             </div>
         </main>

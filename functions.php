@@ -14,6 +14,7 @@ define('RPT_CATEGORIA_NOVEDADES', 'novedades');
 define('RPT_CATEGORIA_SOCIOS', 'socios');
 define('PAGINA_SUMATE', 'sumate');
 define('RPT_CATEGORIA_OFICINAS', 'oficinas');
+define('RPT_CATEGORIA_CONTACTO', 'contacto');
 
 
 function rpt_register_scripts()

@@ -11096,10 +11096,13 @@ section#contacto {
   border-top-right-radius: var(--bs-border-radius-lg) !important; }
 
 #tabSocios .nav-link {
-  background-color: #DDDDDD;
-  color: #001f3f; }
+  background-color: #F5F5F5 !important;
+  color: #001f3f;
+  border: 1px solid #001f3f; }
+  #tabSocios .nav-link:hover {
+    background-color: #e8e8e8 !important; }
   #tabSocios .nav-link.active {
-    color: #ffffff;
-    background-color: #FF4136; }
+    color: #ffffff !important;
+    background-color: #FF4136 !important; }
 
 /*# sourceMappingURL=style.css.map */
