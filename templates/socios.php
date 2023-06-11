@@ -27,6 +27,25 @@ get_header();
         </header>
         <main class="mt-5">
             <div class="container pb-5">
+                <div class="d-flex alert alert-light justify-content-between align-items-center shadow-sm border border-silver text-navy">
+
+                    <p class="mb-0">
+                        A continuaci&oacute;n te mostramos todos nuestos socios. Si deseas sumarte o tenes alguna duda podes revisar la seccion de preguntas frecuentes o escribirnos para evacuar tus dudas, estaremos respondiendo a la brevedad.
+                    </p>
+
+
+                    <a href="" class="btn btn-navy me-2">
+                        <i class="fa-solid fa-2x fa-plus"></i>
+                    </a>
+                    <a href="#faqSociosModal" class="btn btn-navy me-2" data-bs-toggle="modal">
+                        <i class="fa-solid fa-2x fa-question"></i>
+                    </a>
+                    <a href="<?php echo site_url('/' . PAGINA_CONTACTO); ?>" class="btn btn-navy">
+                        <i class="fa-solid fa-envelope fa-2x"></i>
+                    </a>
+
+
+                </div>
                  <?php
 
                             $query = new WP_Query([
@@ -41,14 +60,14 @@ get_header();
 
                 <ul class="nav nav-tabs nav-justified " id="tabSocios" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active fs-5" id="todos-tab" data-bs-toggle="tab"
+                        <button class="nav-link active fs-4" id="todos-tab" data-bs-toggle="tab"
                                 data-bs-target="#todos-tab-pane" type="button" role="tab" aria-controls="todos-tab-pane"
                                 aria-selected="true">
                             Todos <span class="contador-todos"><?php echo ' (' . $query->post_count . ')'; ?></span>
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link fs-5" id="por-provincia-tab" data-bs-toggle="tab"
+                        <button class="nav-link fs-4" id="por-provincia-tab" data-bs-toggle="tab"
                                 data-bs-target="#por-provincia-tab-pane" type="button" role="tab"
                                 aria-controls="por-provincia-tab-pane" aria-selected="false">
                             Por provincia
@@ -63,7 +82,7 @@ get_header();
 <!--                    </li>-->
                 </ul>
                 <div class="tab-content mb-3" id="tabSociosContent">
-                    <div class="tab-pane fade show active p-5 bg-white shadow" id="todos-tab-pane" role="tabpanel"
+                    <div class="tab-pane fade show active p-5 bg-white shadow border border-silver border-top-0" id="todos-tab-pane" role="tabpanel"
                          aria-labelledby="vmo-tab" tabindex="0">
                         <div class="mb-5 shadow-sm">
                             <input type="text" class="form-control-lg w-100 border border-navy" id="filtro-socios" style="border-width: 2px !important"

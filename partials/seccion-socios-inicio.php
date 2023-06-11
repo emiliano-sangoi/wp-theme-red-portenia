@@ -93,7 +93,7 @@
                 </p>
             </div>
             <div class="card-footer border-0">
-                <a href="<?php echo site_url('/socios') ?>" class="btn btn-outline-white">
+                <a href="<?php echo site_url('/socios') ?>" class="btn btn-primary">
                     Ver socios
                 </a>
             </div>
@@ -115,7 +115,7 @@
             </div>
             <div class="card-footer border-0">
                 <a href="<?php echo site_url('/' . PAGINA_SUMATE); ?>"
-                   class="btn btn-outline-white align-self-baseline">
+                   class="btn btn-primary">
                     Completar formulario
                 </a>
             </div>
@@ -136,7 +136,7 @@
                 </p>
             </div>
             <div class="card-footer border-0">
-                <a class="btn btn-outline-white align-self-baseline" data-bs-toggle="modal"
+                <a class="btn btn-primary" data-bs-toggle="modal"
                    href="#faqSociosModal">
                     Preguntas frecuentes
                 </a>
@@ -168,14 +168,14 @@
                                 ?>
                                 <img src="<?php echo get_the_post_thumbnail_url($post->ID); ?>"
                                      title="<?php echo $post->post_title; ?>"
-                                     class="d-inline-block mx-4 rounded-5 align-middle w-10 h-100 img-fluid"
-                                     style="min-height: 10rem;">
+                                     class="d-inline-block mx-4 rounded-5 align-middle w-8 h-100 img-fluid"
+                                     style="min-height: 9rem;">
                             <?php
                             else:
                                 ?>
                                 <img src="https://fakeimg.pl/400x400?text=Logo"
-                                     class="d-inline-block mx-4 rounded-5 align-middle w-10 h-100 img-fluid"
-                                     title="<?php echo $post->post_title; ?>" style="min-height: 10rem;"/>
+                                     class="d-inline-block mx-4 rounded-5 align-middle w-8 h-100 img-fluid"
+                                     title="<?php echo $post->post_title; ?>" style="min-height: 9rem;"/>
                             <?php
                             endif;
                             array_shift($posts);

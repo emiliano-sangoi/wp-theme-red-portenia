@@ -34,12 +34,16 @@ $theme-colors: map-merge($theme-colors, (
     'olive': $olive,
     'silver': $silver,
     'silver2': $silver2,
+    'silver3': $silver3,
     'white': $white,
     'black': $black,
     'blue': $blue,
     'marengo': $marengo,
     'nevada': $nevada,
-    'nickel': $nickel
+    'nickel': $nickel,
+    'whitesmoke': $whitesmoke,
+    'steel-gray': $steel-gray,
+    'pewter': $pewter
     //'blue2':       $blue2
 ));
 
@@ -133,17 +137,13 @@ body {
 }
 
 
-.w-10 {
-    width: 10%;
-}
-
-.w-15 {
-    width: 15%;
-}
-
-.w-20 {
-    width: 20%;
-}
+.w-8 { width: 8%;}
+.w-10 { width: 10%;}
+.w-15 { width: 15%;}
+.w-20 { width: 20%;}
+.w-40 { width: 40%;}
+.w-60 { width: 60%;}
+.w-65 { width: 65%;}
 
 #sobre-nosotros {
     .nav-tabs .nav-link.active {
@@ -163,3 +163,36 @@ body {
 .grow:hover {
     transform: scale(1.1);
 }
+
+.rounded-bottom-4{
+    border-bottom-left-radius: var(--bs-border-radius-xl) !important;
+    border-bottom-right-radius: var(--bs-border-radius-xl) !important;
+}
+
+.rounded-top-4{
+    border-top-left-radius: var(--bs-border-radius-xl) !important;
+    border-top-right-radius: var(--bs-border-radius-xl) !important;
+}
+
+.rounded-bottom-3{
+    border-bottom-left-radius: var(--bs-border-radius-lg) !important;
+    border-bottom-right-radius: var(--bs-border-radius-lg) !important;
+}
+
+.rounded-top-3{
+    border-top-left-radius: var(--bs-border-radius-lg) !important;
+    border-top-right-radius: var(--bs-border-radius-lg) !important;
+}
+
+#tabSocios{
+    .nav-link{
+        background-color: $silver;
+        color: $navy;
+
+        &.active{
+            color: $white;
+            background-color: $primary;
+        }
+    }
+}
+

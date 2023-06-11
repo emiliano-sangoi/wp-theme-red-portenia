@@ -105,7 +105,7 @@ get_header();
 <!-- -------------------------------------------------------------------------------------->
 
 <!-- Socios de la red-->
-<section class="page-section bg-navy text-white" id="seccion-socios">
+<section class="page-section bg-navy text-white" id="socios">
     <?php
         include locate_template('partials/seccion-socios-inicio.php');
     ?>

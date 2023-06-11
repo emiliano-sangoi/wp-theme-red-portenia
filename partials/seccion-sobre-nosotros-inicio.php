@@ -12,43 +12,63 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
         <h2 class="section-heading text-uppercase text-navy">
             <?php echo get_the_title($paginaSobreNosotros->ID) ?>
         </h2>
-        <h3 class="section-subheading text-muted mb-0">Conoce nuestros objetivos, valores e historia.</h3>
+        <h3 class="section-subheading text-muted mb-0">
+            Conoce nuestros objetivos, valores e historia.
+        </h3>
     </div>
-    <div class="row row-cols-3 g-5">
+    <div class="row row-cols-3 g-4 g-lg-5">
         <div class="col">
-            <div class="text-center pe-lg-3">
-                <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/goal.png'; ?>" class="w-50"
+            <div class="card bg-white border-0 shadow text-center h-100 rounded-3">
+                <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/goal.png'; ?>"
+                     class="card-img-top img-fluid w-40 py-3 py-lg-4 my-1 mx-auto"
                      style="transform: rotate(0deg);">
-            </div>
-            <h4 class="mt-5 text-primary">Misión</h4>
-            <p class="text-dark fst-italic pe-lg-3">
-                <?php echo $mision; ?>
-            </p>
-        </div>
-        <div class="col">
-            <h4 class="text-primary">Visión</h4>
-            <p class="small text-dark fst-italic pe-lg-3">
-                <?php echo $vision; ?>
-            </p>
-            <div class="text-center mt-5 pe-lg-3">
-                <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/vision.png'; ?>" class="w-50"
-                     style="transform: rotate(-45deg);">
+                <div class="card-body bg-whitesmoke text-start px-lg-4 border-top border-secondary rounded-bottom-3"
+                     style="border-top-width: 7px !important;">
+                    <h4 class="card-title text-primary">
+                        Misión
+                    </h4>
+                    <p class="card-text text-navy fst-italic">
+                        <?php echo nl2br($mision); ?>
+                    </p>
+                </div>
             </div>
         </div>
         <div class="col">
-            <div class="text-center pe-lg-3">
-                <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/target.png'; ?>" class="w-50"
+            <div class="card bg-white border-0 shadow text-center h-100 rounded-3">
+                <div class="card-body bg-whitesmoke text-start px-lg-4 border-bottom border-secondary rounded-top-3"
+                     style="border-bottom-width: 7px !important;">
+                    <h4 class="card-title text-primary">
+                        Visión
+                    </h4>
+                    <p class="card-text text-navy fst-italic">
+                        <?php echo nl2br($vision); ?>
+                    </p>
+                </div>
+                <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/vision.png'; ?>"
+                     class="card-img-bottom w-40 py-3 py-lg-4 my-1 mx-auto align-middle"
                      style="transform: rotate(25deg);">
             </div>
-            <h4 class="mt-5 text-primary">Objetivos</h4>
-            <p class="small text-dark fst-italic pe-lg-3">
-                <?php echo $objetivos; ?>
-            </p>
+        </div>
+        <div class="col">
+            <div class="card bg-white border-0 shadow text-center h-100 rounded-3">
+                <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/target.png'; ?>"
+                     class="card-img-top img-fluid w-40 py-3 py-lg-4 my-1 mx-auto"
+                     style="transform: rotate(25deg);">
+                <div class="card-body bg-whitesmoke text-start px-lg-4 border-top border-secondary rounded-bottom-3"
+                     style="border-top-width: 7px !important;">
+                    <h4 class="card-title text-primary">
+                        Objetivos
+                    </h4>
+                    <p class="card-text text-navy fst-italic">
+                        <?php echo nl2br($objetivos); ?>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="text-center mt-5">
-        <a class="btn btn-navy grow btn-xl text-uppercase"
+        <a class="btn btn-navy grow btn-xl text-uppercase shadow"
            href="<?php echo site_url('/' . PAGINA_SOBRE_NOSOTROS); ?>">
             <i class="fa-solid fa-plus"></i>&nbsp;Ver más
         </a>
