@@ -1,6 +1,7 @@
 <?php
 get_header();
-
+/* @var $paginaSobreNosotros WP_Post */
+$paginaSobreNosotros = getPagina(PAGINA_SOBRE_NOSOTROS);
 ?>
 
 <!-- Masthead-->
@@ -96,9 +97,41 @@ get_header();
 </header>
 
 <!-- Sobre Nosotros -->
-<section class="page-section bg-silver" id="sobre-nosotros">
+<section class="page-section bg-white" id="sobre-nosotros">
+    <div class="container">
+        <div class="text-center mb-4 mb-lg-5">
+            <h2 class="section-heading text-uppercase text-navy">
+                <?php echo get_the_title($paginaSobreNosotros->ID) ?>
+            </h2>
+            <h3 class="section-subheading text-muted mb-0">
+                Conoce nuestros objetivos, valores e historia.
+            </h3>
+        </div>
+        <div class="row row-cols-1 row-cols-2 g-4 mt-1">
+            <div class="col-6 mb-6">
+                <img src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/mision-vision-y-valores.jpg'; ?>" 
+                     class="d-inline-block rounded-2" style="width: 85%;">
+            </div>        
+            <div class="col-6 mb-6">
+                <p>
+                    Con el objetivo de satisfacer las exigencias del mercado, 
+                    y en búsqueda permanente de crecimiento y superación de las expectativas, Red Porteña S.A., 
+                    es una empresa que ha sabido proyectar sus ideas en forma mesurada y contínua desde hace más de 30 años. 
+                </p>
+                <p>
+                    Hoy consolida e integra INTERGROUP ARGENTINA, uno de los grupos de compras en artículos para el hogar más grande del país con mas de 300 comercios adheridos.
+                </p> 
+                <div class="text-center mt-5">
+                    <a class="btn btn-navy grow btn-xl text-uppercase shadow"
+                       href="<?php echo site_url('/' . PAGINA_SOBRE_NOSOTROS); ?>">
+                        <i class="fa-solid fa-plus"></i>&nbsp;Ver más
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <?php
-        include locate_template('partials/seccion-sobre-nosotros-inicio.php');
+//        include locate_template('partials/seccion-sobre-nosotros-inicio.php');
     ?>
 </section>
 
@@ -107,14 +140,14 @@ get_header();
 <!-- Socios de la red-->
 <section class="page-section bg-navy text-white" id="socios">
     <?php
-        include locate_template('partials/seccion-socios-inicio.php');
+    include locate_template('partials/seccion-socios-inicio.php');
     ?>
 </section>
 
 
-<section class="page-section bg-silver2" id="novedades">
+<section class="page-section bg-white" id="novedades">
     <?php
-        include locate_template('partials/seccion-novedades-inicio.php');
+    include locate_template('partials/seccion-novedades-inicio.php');
     ?>
 </section>
 
