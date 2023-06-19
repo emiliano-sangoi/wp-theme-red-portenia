@@ -14,18 +14,23 @@ $paginaSobreNosotros = getPagina(PAGINA_SOBRE_NOSOTROS);
                     aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="6000">
-                <!--                    <img src="..." class="d-block w-100" alt="...">-->
+<!--                                    <img src="..." class="d-block w-100" alt="...">
                 <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="1920" height="600"
                      xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide"
                      preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#777"></rect>
-                </svg>
+                </svg>-->
+                <img src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/electro.jpg'; ?>" 
+                     class="d-inline-block rounded-2 w-100" width="1920" height="600">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <!--<h5>First slide label</h5>-->
+                    <!--<p>Some representative placeholder content for the first slide.</p>-->
                     <a class="btn btn-light btn-xl text-uppercase my-4" href="#services">
                         Ver m&aacute;s
                     </a>
@@ -33,15 +38,17 @@ $paginaSobreNosotros = getPagina(PAGINA_SOBRE_NOSOTROS);
             </div>
             <div class="carousel-item" data-bs-interval="4000">
                 <!--                    <img src="..." class="d-block w-100" alt="...">-->
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="1920" height="600"
+<!--                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="1920" height="600"
                      xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide"
                      preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#777"></rect>
-                </svg>
+                </svg>-->
+                <img src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/electtro.jpg'; ?>" 
+                     class="d-inline-block rounded-2 w-100" width="1920" height="600">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <!--<h5>Second slide label</h5>-->
+                    <!--<p>Some representative placeholder content for the second slide.</p>-->
                     <a class="btn btn-light btn-xl text-uppercase my-4" href="#services">
                         Ver m&aacute;s
                     </a>
@@ -49,16 +56,35 @@ $paginaSobreNosotros = getPagina(PAGINA_SOBRE_NOSOTROS);
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="4000">
-                <!--                    <img src="..." class="d-block w-100" alt="...">-->
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="1920" height="600"
+                                    <!--<img src="..." class="d-block w-100" alt="...">-->
+<!--                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="1920" height="600"
                      xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide"
                      preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#777"></rect>
-                </svg>
+                    <title>Placeholder</title>-->
+                <img src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/slide_desayuno.jpg'; ?>" 
+                     class="d-inline-block rounded-2 w-100" width="1920" height="600">
+                    <!--<rect width="100%" height="100%" fill="#777"></rect>-->
+                <!--</svg>-->
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <!--                    <h5>Third slide label</h5>
+                                        <p>Some representative placeholder content for the third slide.</p>-->
+                    <a class="btn btn-light btn-xl text-uppercase my-4" href="#services">
+                        Ver m&aacute;s
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item " data-bs-interval="6000">
+<!--                                    <img src="..." class="d-block w-100" alt="...">
+               <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="1920" height="600"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide"
+                    preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                   <rect width="100%" height="100%" fill="#777"></rect>
+               </svg>-->
+                <img src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/prueba2.jpg'; ?>" 
+                     class="d-inline-block rounded-2 w-100" width="1920" height="600">
+                <div class="carousel-caption d-none d-md-block">
+                    <!--<h5>First slide label</h5>-->
+                    <!--<p>Some representative placeholder content for the first slide.</p>-->
                     <a class="btn btn-light btn-xl text-uppercase my-4" href="#services">
                         Ver m&aacute;s
                     </a>

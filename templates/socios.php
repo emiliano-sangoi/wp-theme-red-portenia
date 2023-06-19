@@ -25,8 +25,11 @@ get_header();
                 </nav>
             </div>
         </header>
-        <main class="mt-5">
-            <div class="container pb-5">
+        <main>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1itEERquXh_-E7YUJRtOLiCPviCYt1nc&ehbc=2E312F&z=7" 
+                    class="w-100 shadow " height="500"></iframe>
+                    
+            <div class="container mt-5 pb-5">
                 <div class="d-flex alert alert-light justify-content-between align-items-center shadow-sm border border-silver text-navy">
 
                     <p class="mb-0">
@@ -73,13 +76,13 @@ get_header();
                             Por provincia
                         </button>
                     </li>
-                    <li class="nav-item" role="presentation">
+<!--                    <li class="nav-item" role="presentation">
                         <button class="nav-link fs-4" id="mapa-tab" data-bs-toggle="tab"
                                 data-bs-target="#mapa-tab-pane" type="button" role="tab"
                                 aria-controls="mapa-tab-pane" aria-selected="false">
                             Ver mapa
                         </button>
-                    </li>
+                    </li>-->
                 </ul>
                 <div class="tab-content mb-3" id="tabSociosContent">
                     <div class="tab-pane fade show active p-5 bg-white shadow border border-silver border-top-0" id="todos-tab-pane" role="tabpanel"
@@ -143,10 +146,10 @@ get_header();
                             ?>
                         </div>
                     </div>
-                    <div class="tab-pane fade show p-5 bg-white shadow" id="mapa-tab-pane" role="tabpanel"
+<!--                    <div class="tab-pane fade show p-5 bg-white shadow" id="mapa-tab-pane" role="tabpanel"
                          aria-labelledby="vmo-tab" tabindex="0">
                         <iframe src="https://www.google.com/maps/d/embed?mid=1itEERquXh_-E7YUJRtOLiCPviCYt1nc&ehbc=2E312F&z=7" class="w-100 shadow rounded-3 border border-silver" height="750"></iframe>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </main>

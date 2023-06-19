@@ -26,10 +26,10 @@
         <a class="navbar-brand fst-italic pb-0" href="<?php echo site_url(); ?>">
             <!--  https://danmarshall.github.io/google-font-to-svg-path/-->
             <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/navbar-brand-red.svg'; ?>" alt="..."/>
-            <div class="mt-1 text-end d-none d-md-block">
-                <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/navbar-brand-sub-dark2.svg'; ?>" alt="..."
+<!--            <div class="mt-1 text-end d-none d-md-block">
+                <img src="<?php // echo RPT_THEME_DIR . '/assets/img/logos/navbar-brand-sub-dark2.svg'; ?>" alt="..."
                      class="w-75"/>
-            </div>
+            </div>-->
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,8 +72,8 @@
                         Contacto
                     </a>
                 </li>
-                <li class="nav-item"><a class="btn btn-primary" href="#">
-                        <i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;Acceso socios</a>
+                <li class="nav-item"><a class="btn btn-primary" href="<?php echo site_url('/sumate'); ?>">
+                        <i class="fa-solid fa-plus"></i>&nbsp;Sumate a la Red</a>
                 </li>
             </ul>
         </div>
