@@ -26,7 +26,7 @@ $paginaSobreNosotros = getPagina(PAGINA_SOBRE_NOSOTROS);
                      preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#777"></rect>
                 </svg>-->
-                <img src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/electro.jpg'; ?>" 
+                <img src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/electro.jpg'; ?>"
                      class="d-inline-block rounded-2 w-100" width="1920" height="600">
                 <div class="carousel-caption d-none d-md-block">
                     <!--<h5>First slide label</h5>-->
@@ -44,7 +44,7 @@ $paginaSobreNosotros = getPagina(PAGINA_SOBRE_NOSOTROS);
                     <title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#777"></rect>
                 </svg>-->
-                <img src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/electtro.jpg'; ?>" 
+                <img src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/electtro.jpg'; ?>"
                      class="d-inline-block rounded-2 w-100" width="1920" height="600">
                 <div class="carousel-caption d-none d-md-block">
                     <!--<h5>Second slide label</h5>-->
@@ -61,7 +61,7 @@ $paginaSobreNosotros = getPagina(PAGINA_SOBRE_NOSOTROS);
                      xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide"
                      preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>Placeholder</title>-->
-                <img src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/slide_desayuno.jpg'; ?>" 
+                <img src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/slide_desayuno.jpg'; ?>"
                      class="d-inline-block rounded-2 w-100" width="1920" height="600">
                     <!--<rect width="100%" height="100%" fill="#777"></rect>-->
                 <!--</svg>-->
@@ -80,7 +80,7 @@ $paginaSobreNosotros = getPagina(PAGINA_SOBRE_NOSOTROS);
                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
                    <rect width="100%" height="100%" fill="#777"></rect>
                </svg>-->
-                <img src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/prueba2.jpg'; ?>" 
+                <img src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/prueba2.jpg'; ?>"
                      class="d-inline-block rounded-2 w-100" width="1920" height="600">
                 <div class="carousel-caption d-none d-md-block">
                     <!--<h5>First slide label</h5>-->
@@ -125,7 +125,7 @@ $paginaSobreNosotros = getPagina(PAGINA_SOBRE_NOSOTROS);
 <!-- Sobre Nosotros -->
 <section class="page-section bg-white" id="sobre-nosotros">
     <div class="container">
-        <div class="text-center mb-4 mb-lg-5">
+        <div class="text-center mb-4">
             <h2 class="section-heading text-uppercase text-navy">
                 <?php echo get_the_title($paginaSobreNosotros->ID) ?>
             </h2>
@@ -133,22 +133,22 @@ $paginaSobreNosotros = getPagina(PAGINA_SOBRE_NOSOTROS);
                 Conoce nuestros objetivos, valores e historia.
             </h3>
         </div>
-        <div class="row row-cols-1 row-cols-2 g-4 mt-1">
-            <div class="col-6 mb-6">
-                <img src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/mision-vision-y-valores.jpg'; ?>" 
-                     class="d-inline-block rounded-2" style="width: 85%;">
-            </div>        
-            <div class="col-6 mb-6">
+        <div class="row g-3 g-lg-5 mt-1">
+            <div class="col-12 col-md-6">
+                <img src="<?php echo RPT_THEME_DIR . '/assets/img/portfolio/mision-vision-y-valores.jpg'; ?>"
+                     class="rounded-2 img-fluid" >
+            </div>
+            <div class="col-12 col-md-6">
                 <p>
-                    Con el objetivo de satisfacer las exigencias del mercado, 
-                    y en búsqueda permanente de crecimiento y superación de las expectativas, Red Porteña S.A., 
-                    es una empresa que ha sabido proyectar sus ideas en forma mesurada y contínua desde hace más de 30 años. 
+                    Con el objetivo de satisfacer las exigencias del mercado,
+                    y en búsqueda permanente de crecimiento y superación de las expectativas, Red Porteña S.A.,
+                    es una empresa que ha sabido proyectar sus ideas en forma mesurada y contínua desde hace más de 30 años.
                 </p>
                 <p>
                     Hoy consolida e integra INTERGROUP ARGENTINA, uno de los grupos de compras en artículos para el hogar más grande del país con mas de 300 comercios adheridos.
-                </p> 
-                <div class="text-center mt-5">
-                    <a class="btn btn-navy grow btn-xl text-uppercase shadow"
+                </p>
+                <div class="mt-5">
+                    <a class="btn btn-outline-navy grow btn-xl text-uppercase shadow-sm"
                        href="<?php echo site_url('/' . PAGINA_SOBRE_NOSOTROS); ?>">
                         <i class="fa-solid fa-plus"></i>&nbsp;Ver más
                     </a>

@@ -26,9 +26,10 @@ get_header();
             </div>
         </header>
         <main>
-            <iframe src="https://www.google.com/maps/d/embed?mid=1itEERquXh_-E7YUJRtOLiCPviCYt1nc&ehbc=2E312F&z=7" 
-                    class="w-100 shadow " height="500"></iframe>
-                    
+                <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1itEERquXh_-E7YUJRtOLiCPviCYt1nc&ehbc=2E312F&z=6"
+                        class="w-100 shadow " height="600"></iframe>
+
+
             <div class="container mt-5 pb-5">
                 <div class="d-flex alert alert-light justify-content-between align-items-center shadow-sm border border-silver text-navy">
 

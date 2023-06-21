@@ -120,11 +120,12 @@ $theme-colors: map-merge($theme-colors, (
 
 // Sections
 //@import "./sections/masthead.scss";
-@import "./sections/portfolio.scss";
 @import "./sections/timeline.scss";
 @import "./sections/team.scss";
 @import "./sections/contact.scss";
 @import "./sections/footer.scss";
+
+@import "modals";
 
 body {
 
@@ -197,7 +198,7 @@ body {
     .nav-link{
         background-color: $whitesmoke !important;
         color: $navy;
-        border: 1px solid $navy;
+        border: 1px solid $silver;
 
         &:hover{
             background-color: darken($whitesmoke, 5%) !important;

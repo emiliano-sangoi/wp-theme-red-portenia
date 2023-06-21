@@ -1,0 +1,59 @@
+//
+// Modals
+//
+
+.modal {
+
+    .modal-header{
+        color: $navy;
+        border-bottom: 4px solid $navy !important;
+    }
+
+    .modal-dialog {
+        //margin: 1rem;
+        //max-width: 75vw;
+    }
+
+    .modal-content {
+        //padding-top: 6rem;
+        //padding-bottom: 6rem;
+        //text-align: center;
+
+        h2 {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+
+        p.item-intro {
+            font-style: italic;
+            margin-bottom: 2rem;
+            font-family: $subheadings-font-family;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+        }
+
+        ul.list-inline {
+            margin-bottom: 2rem;
+        }
+
+        img {
+            margin-bottom: 2rem;
+        }
+    }
+
+    //.close-modal {
+    //    position: absolute;
+    //    top: 1.5rem;
+    //    right: 1.5rem;
+    //    width: 3rem;
+    //    height: 3rem;
+    //    cursor: pointer;
+    //    background-color: transparent;
+    //
+    //    &:hover {
+    //        opacity: 0.3;
+    //    }
+    //}
+}

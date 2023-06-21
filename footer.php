@@ -14,48 +14,48 @@
                     <?php
                     foreach ($post_oficinas as $post):
                         ?>
-                        <div class = "col col-lg-3 align-self-start text-start">
-                            <h6 class = "text-light mb-3"> <?php echo the_title(); ?></h6>
-                            <address class = "text-light">
+                        <div class="col col-lg-3 align-self-start text-start">
+                            <h6 class="text-light mb-3"> <?php echo the_title(); ?></h6>
+                            <address class="text-light">
                                 <table>
                                     <tr>
-                                        <td class = "text-center py-1">
-                                            <i class = "fa-solid fa-location-dot"></i>
+                                        <td class="text-center py-1">
+                                            <i class="fa-solid fa-location-dot"></i>
                                         </td>
-                                        <td class = "ps-2 py-1">
+                                        <td class="ps-2 py-1">
                                             <?php
                                             echo nl2br(get_field('calle', $post));
                                             ?>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class = "text-center py-1">
-                                            <i class = "fa-solid fa-map-location-dot"></i>
+                                        <td class="text-center py-1">
+                                            <i class="fa-solid fa-map-location-dot"></i>
                                         </td>
-                                        <td class = "ps-2 py-1">
+                                        <td class="ps-2 py-1">
                                             <?php
                                             echo nl2br('CP ' . get_field('codigo_postal', $post) . ', ' . get_field('localidad', $post));
                                             ?>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class = "text-center py-1">
-                                            <i class = "fa-regular fa-envelope"></i>
+                                        <td class="text-center py-1">
+                                            <i class="fa-regular fa-envelope"></i>
                                         </td>
-                                        <td class = "ps-2 py-1">
-                                            <a href = "mailto:comercial2@redportena.com.ar"
-                                               class = "text-light text-decoration-none">
-                                                   <?php
-                                                   echo nl2br(get_field('correo_electronico', $post));
-                                                   ?>
+                                        <td class="ps-2 py-1">
+                                            <a href="mailto:comercial2@redportena.com.ar"
+                                               class="text-light text-decoration-none">
+                                                <?php
+                                                echo nl2br(get_field('correo_electronico', $post));
+                                                ?>
                                             </a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class = "text-center py-1">
-                                            <i class = "fa-solid fa-phone"></i>
+                                        <td class="text-center py-1">
+                                            <i class="fa-solid fa-phone"></i>
                                         </td>
-                                        <td class = "ps-2 py-1">
+                                        <td class="ps-2 py-1">
                                             <?php
                                             echo nl2br(get_field('telefonos', $post));
                                             ?>
@@ -64,7 +64,7 @@
                                 </table>
                             </address>
                         </div>
-                        <?php
+                    <?php
                     endforeach;
                     ?>
                 <?php endif; ?>
@@ -114,64 +114,40 @@
 
 <!-- Portfolio Modals-->
 <div class="portfolio-modal modal fade" id="faqSociosModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl">
         <div class="modal-content">
-            <div class="close-modal" data-bs-dismiss="modal"><img
-                    src="<?php echo RPT_THEME_DIR . '/assets/img/close-icon.svg'; ?>" alt="Close modal"/></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="modal-body">
-                            <!-- Project details-->
-                            <h2 class="text-uppercase">Preguntas frecuentes</h2>
-                            <div class="text-align-center">
-                                <hr class="w-50 border-secondary" style="border-width: 3px;"/>
-                            </div>
-                            <div class="text-align-start mt-3">
-                                <div>
-                                    <h3 class="text-secondary">
-                                        Pregunta 1
-                                    </h3>
-                                    <p>
-                                        Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos
-                                        deserunt
-                                        repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores
-                                        repudiandae,
-                                        nostrum, reiciendis facere nemo!
-                                    </p>
-                                </div>
-                                <div>
-                                    <h3 class="text-secondary">
-                                        Pregunta 2
-                                    </h3>
-                                    <p>
-                                        Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos
-                                        deserunt
-                                        repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores
-                                        repudiandae,
-                                        nostrum, reiciendis facere nemo!
-                                    </p>
-                                </div>
-                                <div>
-                                    <h3 class="text-secondary">
-                                        Pregunta 3
-                                    </h3>
-                                    <p>
-                                        Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos
-                                        deserunt
-                                        repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores
-                                        repudiandae,
-                                        nostrum, reiciendis facere nemo!
-                                    </p>
-                                </div>
+            <div class="modal-header">
+                <h2 class="modal-title text-uppercase">
+                    <i class="fa-regular fa-circle-question"></i>
+                    Preguntas frecuentes
+                </h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body px-3 px-lg-4 py-1">
+                <div class="text-align-start mt-3">
+                    <?php
 
+                    $faqs_query = new WP_Query([
+                        'category_name' => RPT_CATEGORIA_PREG_FREC,
+                        'posts_per_page' => -1,
+                        'post_status' => 'publish'
+                    ]);
 
+                    if ($faqs_query->have_posts()):
+                        //var_dump($novedades);
+                        while ( $faqs_query->have_posts() ) : ?>
+                            <div>
+                                <?php
+                                $faqs_query->the_post();
+                                include locate_template('partials/pregunta-frecuente.php');
+                                /* https://developer.wordpress.org/reference/functions/wp_reset_postdata/ */
+                                wp_reset_postdata();
+                                ?>
                             </div>
-                        </div>
-                    </div>
+                        <?php
+                        endwhile;
+                    endif;
+                    ?>
                 </div>
             </div>
         </div>
