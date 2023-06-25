@@ -31,37 +31,46 @@ get_header();
             </header>
             <main class="mt-5">
                 <div class="container pb-5">
-                    <div class=" alert alert-light align-items-center shadow-sm border border-silver text-navy">
-                        <h3 class="text-center font-weight-bold ">BENEFICIOS</h3>
-                        <hr class="w-50 mx-auto" />
-
-                        <p class="text-navy text-start">FORMÁ PARTE DE NUESTRA RED Y OBTENÉ GRANDES RESULTADOS.</p>
-                        <ul>
-                            <li class="fst-italic">
-                                Acceso a grandes marcas
-                            </li>
-                            <li class="fst-italic">
-                                Mejores costos y herramientas financieras
-                            </li>
-                            <li class="fst-italic">
-                                Mayor rentabilidad
-                            </li>
-                            <li class="fst-italic"> 
-                                Gestión comercial - Compra en mayor volumen - Mejores precios
-                            </li>
-                            </br>
-                        </ul>
-
-                        <p>
-                            Además, contamos con un depósito de carga de 1800m2 y un servicio post venta para aquellas localidades que no poseen service oficial.
-                        </p>
+                    <div class="card-footer border-0">
+                        <a class="btn btn-primary" data-bs-toggle="modal"
+                           href="#faqSumateModal">
+                            Conoce los Beneficios
+                        </a>
+                        <!--                <div class=" alert alert-light align-items-center shadow-sm border border-silver text-navy">
+                                                <h3 class="text-center font-weight-bold ">BENEFICIOS</h3>
+                                                <hr class="w-50 mx-auto" />
+                        
+                                                <p class="text-navy text-start">FORMÁ PARTE DE NUESTRA RED Y OBTENÉ GRANDES RESULTADOS.</p>
+                                                <ul>
+                                                    <li class="fst-italic">
+                                                        Acceso a grandes marcas
+                                                    </li>
+                                                    <li class="fst-italic">
+                                                        Mejores costos y herramientas financieras
+                                                    </li>
+                                                    <li class="fst-italic">
+                                                        Mayor rentabilidad
+                                                    </li>
+                                                    <li class="fst-italic"> 
+                                                        Gestión comercial - Compra en mayor volumen - Mejores precios
+                                                    </li>
+                                                    </br>
+                                                </ul>
+                        
+                                                <p>
+                                                    Además, contamos con un depósito de carga de 1800m2 y un servicio post venta para aquellas localidades que no poseen service oficial.
+                                                </p>-->
                     </div>
-
                 </div>
+
+                <!--                    <a class="btn btn-primary" data-bs-toggle="modal"
+                                           href="#faqSumateModal">
+                                           ESCRIBINOS
+                                        </a>-->
 
                 <div class="container pb-3">
                     <h3 class="text-center font-weight-bold">
-                        Completa con los datos
+                        Completa con los datos 
                     </h3>
                     <hr class="w-50 mx-auto" />
                     <p class="text-center text-navy fst-italic">
