@@ -199,66 +199,25 @@
     </div>
 </div>
 
-<!-- Portfolio Modals-->
-<div class="portfolio-modal modal fade" id="faqSumateModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
+<!-- Modal del mapa -->
+<div class="portfolio-modal modal fade" id="faqMapaModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
 
         <div class="modal-content">
-            <!--            <div class="modal-header">
-                            <h3 class="text-center font-weight-bold">
-                                Completa con los datos 
-                            </h3>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            
-                        </div>
-                        <div class="modal-body px-3 px-lg-4 py-1">
-            
-                            <div class="text-align-start mt-3">
-            
-                                <p class="text-center text-navy fst-italic">
-                                    Sumate a nuestra red comercial, dejanos tus datos y comenzá a vivir los beneficios de trabajar con Red Porteña S.A. 
-                                </p>
-            
-                                <div class="container pb-5">
-            <?php // the_content(); ?>
-                                </div>
-                            </div>
-                        </div>-->
-
             <div class="modal-header">
                 <h2 class="modal-title text-uppercase">
-                    <i class="fa-regular fa-cicle-exception"></i>
-                    Beneficios
+                    <i class="fa fa-map-location-dot"></i>
+                Encontra nuestros socios adheridos
                 </h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body px-3 px-lg-4 py-1">
-
-                <div class="text-align-start mt-3">
-                    <p class="text-navy text-start">FORMÁ PARTE DE NUESTRA RED Y OBTENÉ GRANDES RESULTADOS.</p>
-                    <ul>
-                        <i class="fs fa-solid fa-check-circle "></i>  Acceso a grandes marcas.
-                        </br>
-                        <i class="fs fa-solid fa-check-circle "></i>  Mejores costos y herramientas financieras.
-                        </br>
-                        <i class="fs fa-solid fa-check-circle "></i>  Mayor rentabilidad.
-                        </br>
-                        <i class="fs fa-solid fa-check-circle "></i>  Gestión comercial - Compra en mayor volumen - Mejores precios.
-                        </br>
-                        <i class="fs fa-solid fa-check-circle "></i>  Asesoramiento integral.
-                        </br>
-                        <i class="fs fa-solid fa-check-circle "></i>  Sinergia entre comercios adheridos.
-                        </br>    
-                    </ul>
-                    <p>
-                        Además, contamos con un depósito de carga de 1800m2 y un servicio post venta para aquellas localidades que no poseen service oficial.
-                    </p>
-                </div>
+                <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1itEERquXh_-E7YUJRtOLiCPviCYt1nc&ehbc=2E312F&z=6"
+                        class="w-100 shadow " height="600"></iframe>
             </div>
         </div>
     </div>
 </div>
-
 
 <?php
 wp_footer();
