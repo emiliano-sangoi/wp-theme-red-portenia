@@ -45,9 +45,9 @@
                                         <td class="ps-2 py-1">
                                             <a href="mailto:comercial2@redportena.com.ar"
                                                class="text-light text-decoration-none">
-                                                <?php
-                                                echo nl2br(get_field('correo_electronico', $post));
-                                                ?>
+                                                   <?php
+                                                   echo nl2br(get_field('correo_electronico', $post));
+                                                   ?>
                                             </a>
                                         </td>
                                     </tr>
@@ -64,7 +64,7 @@
                                 </table>
                             </address>
                         </div>
-                    <?php
+                        <?php
                     endforeach;
                     ?>
                 <?php endif; ?>
@@ -126,7 +126,6 @@
             <div class="modal-body px-3 px-lg-4 py-1">
                 <div class="text-align-start mt-3">
                     <?php
-
                     $faqs_query = new WP_Query([
                         'category_name' => RPT_CATEGORIA_PREG_FREC,
                         'posts_per_page' => -1,
@@ -135,7 +134,8 @@
 
                     if ($faqs_query->have_posts()):
                         //var_dump($novedades);
-                        while ( $faqs_query->have_posts() ) : ?>
+                        while ($faqs_query->have_posts()) :
+                            ?>
                             <div>
                                 <?php
                                 $faqs_query->the_post();
@@ -144,7 +144,7 @@
                                 wp_reset_postdata();
                                 ?>
                             </div>
-                        <?php
+                            <?php
                         endwhile;
                     endif;
                     ?>
@@ -198,6 +198,67 @@
         </div>
     </div>
 </div>
+
+<!-- Portfolio Modals-->
+<div class="portfolio-modal modal fade" id="faqSumateModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+
+        <div class="modal-content">
+            <!--            <div class="modal-header">
+                            <h3 class="text-center font-weight-bold">
+                                Completa con los datos 
+                            </h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            
+                        </div>
+                        <div class="modal-body px-3 px-lg-4 py-1">
+            
+                            <div class="text-align-start mt-3">
+            
+                                <p class="text-center text-navy fst-italic">
+                                    Sumate a nuestra red comercial, dejanos tus datos y comenzá a vivir los beneficios de trabajar con Red Porteña S.A. 
+                                </p>
+            
+                                <div class="container pb-5">
+            <?php // the_content(); ?>
+                                </div>
+                            </div>
+                        </div>-->
+
+            <div class="modal-header">
+                <h2 class="modal-title text-uppercase">
+                    <i class="fa-regular fa-cicle-exception"></i>
+                    Beneficios
+                </h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body px-3 px-lg-4 py-1">
+
+                <div class="text-align-start mt-3">
+                    <p class="text-navy text-start">FORMÁ PARTE DE NUESTRA RED Y OBTENÉ GRANDES RESULTADOS.</p>
+                    <ul>
+                        <i class="fs fa-solid fa-check-circle "></i>  Acceso a grandes marcas.
+                        </br>
+                        <i class="fs fa-solid fa-check-circle "></i>  Mejores costos y herramientas financieras.
+                        </br>
+                        <i class="fs fa-solid fa-check-circle "></i>  Mayor rentabilidad.
+                        </br>
+                        <i class="fs fa-solid fa-check-circle "></i>  Gestión comercial - Compra en mayor volumen - Mejores precios.
+                        </br>
+                        <i class="fs fa-solid fa-check-circle "></i>  Asesoramiento integral.
+                        </br>
+                        <i class="fs fa-solid fa-check-circle "></i>  Sinergia entre comercios adheridos.
+                        </br>    
+                    </ul>
+                    <p>
+                        Además, contamos con un depósito de carga de 1800m2 y un servicio post venta para aquellas localidades que no poseen service oficial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <?php
 wp_footer();

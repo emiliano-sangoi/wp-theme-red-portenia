@@ -38,15 +38,11 @@ get_header();
             <main class="mt-5">
                 <div class="container pb-5">
                     <div class="bg-white p-4 shadow-sm border border-silver text-navy rounded ">
-
-
                         <div class="container pb-5">
                             <?php the_content(); ?>
                         </div>
                     </div>
-
                 </div>
-
             </main>
         <?php endwhile; ?>
     <?php endif; ?>
