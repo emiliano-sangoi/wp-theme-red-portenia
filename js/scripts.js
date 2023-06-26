@@ -158,7 +158,7 @@ $(document).ready(function () {
 
     });
 
-    $('#socios #por-provincia-tab').on('shown.bs.tab', function (e) {
+    $('#por-provincia-tab').on('shown.bs.tab', function (e) {
         var slugs = $('#por-provincia-tab-pane').data("slugs");
 
         $.each(slugs, function (index, slug) {
@@ -182,7 +182,7 @@ $(document).ready(function () {
 
     });
 
-    $('#socios .modal-info-socios').click(function (e) {
+    $('#pagina-socios .modal-info-socios').click(function (e) {
 
         var element = $(e.target);
         var titulo = element.data('titulo');
@@ -243,8 +243,9 @@ $(document).ready(function () {
 
         var modal_header = modal.find('.modal-header');
         var modal_body = modal.find('.modal-body');
-        modal_header.addClass('bg-navy text-light border-bottom border-primary').css('border-bottom', '3px solid !important');
-        modal_header.find('.bootbox-close-button').addClass('text-bg-light');
+        //modal_header.addClass('bg-navy text-light border-bottom border-primary').css('border-bottom', '3px solid !important');
+        modal_header.addClass('text-uppercase');
+        //modal_header.find('.bootbox-close-button').addClass('text-bg-light');
         //modal_body.addClass('p-2')
         //modal.find('.modal-title').addClass('fs-6');
     });

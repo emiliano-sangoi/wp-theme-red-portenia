@@ -2,7 +2,7 @@
 /* Template Name: Socios */
 get_header();
 ?>
-<div class="py-5 bg-light" id="socios">
+<div class="py-5 bg-light" id="pagina-socios">
     <?php if (have_posts()) while (have_posts()) : the_post(); ?>
 
         <header class="bg-navy py-5 shadow-sm">

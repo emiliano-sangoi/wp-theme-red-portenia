@@ -113,7 +113,7 @@
 </a>
 
 <!-- Portfolio Modals-->
-<div class="portfolio-modal modal fade" id="faqSociosModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="faqSociosModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-xl">
         <div class="modal-content">
             <div class="modal-header">
@@ -159,8 +159,8 @@
      aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
-            <div class="modal-header bg-primary text-white">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">Noticia 1</h1>
+            <div class="modal-header">
+                <h2 class="modal-title" id="staticBackdropLabel">Noticia 1</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
