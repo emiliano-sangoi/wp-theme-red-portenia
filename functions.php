@@ -121,4 +121,6 @@ function slugify($text, string $divider = '-')
     return $text;
 }
 
+require 'ajustes/menu-ajustes.php';
+
 ?>
