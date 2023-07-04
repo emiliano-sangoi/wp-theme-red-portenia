@@ -211,9 +211,9 @@
                 </h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body px-3 px-lg-4 py-1">
+            <div class="modal-body">
                 <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1itEERquXh_-E7YUJRtOLiCPviCYt1nc&ehbc=2E312F&z=6"
-                        class="w-100 shadow " height="600"></iframe>
+                        class="w-100 h-100 shadow rounded"></iframe>
             </div>
         </div>
     </div>

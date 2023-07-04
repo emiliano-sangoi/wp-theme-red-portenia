@@ -6,7 +6,6 @@
 //
 // Scripts
 //
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -171,6 +170,7 @@ $(document).ready(function () {
                 var socio = $(this);
                 var socio_clon = socio.clone();
                 new bootstrap.Tooltip(socio_clon.find('.card'));
+                socio_clon.find('a').click(onClickBtnVerMasInfo);
                 container.append(socio_clon.fadeIn());
                 //console.log(new bootstrap.Tooltip(socio.find('.card')));
                 contador++;
@@ -182,73 +182,88 @@ $(document).ready(function () {
 
     });
 
-    $('#pagina-socios .modal-info-socios').click(function (e) {
+    function onClickBtnVerMasInfo(e){
 
-        var element = $(e.target);
-        var titulo = element.data('titulo');
-        var email = element.data('email');
-        var telefono = element.data('telefono');
-        var direccion = element.data('direccion');
-        var localidad = element.data('localidad');
-        var provincia = element.data('provincia');
-        //console.log(element.data('titulo'), element);
+            var element = $(e.target);
+            var titulo = element.data('titulo');
+            var email = element.data('email');
+            var telefono = element.data('telefono');
+            var direccion = element.data('direccion');
+            var localidad = element.data('localidad');
+            var provincia = element.data('provincia');
+            var website = element.data('website');
+            //console.log(element.data('titulo'), element);
 
-        var tabla_html =
-            "<div class='table-responsive rounded-2 border border-silver'>" +
+            var tabla_html =
+                "<div class='table-responsive rounded-2 border border-silver'>" +
                 "<table class='table table-bordered w-100 border-silver mb-0 rounded' id='tabla-socio-info'>" +
-                    "<tbody>" +
-                    "    <tr class=''>" +
-                    "        <td class='bg-light text-navy fw-bold p-2 fs-5 text-uppercase' colspan='2'>"+ titulo + "</td>" +
-                    "    </tr>" +
-                    "    <tr class=''>" +
-                    "        <td class='bg-light fw-bold p-2 text-end w-25'>Correo electrónico:</td>" +
-                    "        <td class='email p-2'>" + (email ? email : '-') + "</td>" +
-                    "    </tr>" +
-                    "    <tr class=''>" +
-                    "        <td class='bg-light fw-bold p-2 text-end'>Telefóno:</td>" +
-                    "        <td class='telefono p-2'>" + (telefono ? telefono : '-') + "</td>" +
-                    "    </tr>" +
-                    "    <tr class=''>" +
-                    "        <td class='bg-light fw-bold p-2 text-end'>Direccion:</td>" +
-                    "        <td class='direccion p-2'>" + (direccion ? direccion : '-') + "</td>" +
-                    "    </tr>" +
-                    "    <tr class=''>" +
-                    "        <td class='bg-light fw-bold p-2 text-end'>Localidad:</td>" +
-                    "        <td class='localidad p-2'>" +  (localidad ? localidad : '-') + "</td>" +
-                    "    </tr>" +
-                    "    <tr class=''>" +
-                    "        <td class='bg-light fw-bold p-2 text-end'>Provincia:</td>" +
-                    "        <td class='provincia p-2'>" + (provincia ? provincia : '-') + "</td>" +
-                    "    </tr>" +
-                    "</tbody>" +
-                "</table>" +
-            "</div>";
+                "<tbody>" +
+                "    <tr class=''>" +
+                "        <td class='bg-light text-navy fw-bold p-2 fs-5 text-uppercase' colspan='2'>"+ titulo + "</td>" +
+                "    </tr>" +
+                "    <tr class=''>" +
+                "        <td class='bg-light fw-bold p-2 text-end w-25'>Correo electrónico:</td>" +
+                "        <td class='email p-2'>" + (email ? email : '-') + "</td>" +
+                "    </tr>" +
+                "    <tr class=''>" +
+                "        <td class='bg-light fw-bold p-2 text-end'>Telefóno:</td>" +
+                "        <td class='telefono p-2'>" + (telefono ? telefono : '-') + "</td>" +
+                "    </tr>" +
+                "    <tr class=''>" +
+                "        <td class='bg-light fw-bold p-2 text-end'>Direccion:</td>" +
+                "        <td class='direccion p-2'>" + (direccion ? direccion : '-') + "</td>" +
+                "    </tr>" +
+                "    <tr class=''>" +
+                "        <td class='bg-light fw-bold p-2 text-end'>Localidad:</td>" +
+                "        <td class='localidad p-2'>" +  (localidad ? localidad : '-') + "</td>" +
+                "    </tr>" +
+                "    <tr class=''>" +
+                "        <td class='bg-light fw-bold p-2 text-end'>Provincia:</td>" +
+                "        <td class='provincia p-2'>" + (provincia ? provincia : '-') + "</td>" +
+                "    </tr>";
 
-        var tabla = $($.parseHTML(tabla_html));
-        //tabla.find('.titulo').text(element.data('titulo'));
-        //tabla.find('.titulo').text(element.data('titulo'));
-
-        var modal = bootbox.alert({
-            size: 'large',
-            title: 'Información sobre el socio',
-            message: tabla,
-            backdrop: true,
-            buttons: {
-                ok: {
-                    label: 'Cerrar',
-                    className: 'btn-outline-navy'
-                }
+            //TODO: Leer desde el admin este parametro para que se pueda controlar cuando mostrarlo o no
+            if(true){
+                tabla_html += "    <tr class=''>" +
+                    "        <td class='bg-light fw-bold p-2 text-end'>Sitio web:</td>" +
+                    "        <td class='web p-2'>" + (website ? website : '-') + "</td>" +
+                    "    </tr>";
             }
-        });
 
-        var modal_header = modal.find('.modal-header');
-        var modal_body = modal.find('.modal-body');
-        //modal_header.addClass('bg-navy text-light border-bottom border-primary').css('border-bottom', '3px solid !important');
-        modal_header.addClass('text-uppercase');
-        //modal_header.find('.bootbox-close-button').addClass('text-bg-light');
-        //modal_body.addClass('p-2')
-        //modal.find('.modal-title').addClass('fs-6');
-    });
+
+            tabla_html +=
+                "</tbody>" +
+                "</table>" +
+                "</div>";
+
+            var tabla = $($.parseHTML(tabla_html));
+            //tabla.find('.titulo').text(element.data('titulo'));
+            //tabla.find('.titulo').text(element.data('titulo'));
+
+            var modal = bootbox.alert({
+                size: 'large',
+                title: 'Información sobre el socio',
+                message: tabla,
+                backdrop: true,
+                buttons: {
+                    ok: {
+                        label: 'Cerrar',
+                        className: 'btn-outline-navy'
+                    }
+                }
+            });
+
+            var modal_header = modal.find('.modal-header');
+            var modal_body = modal.find('.modal-body');
+            //modal_header.addClass('bg-navy text-light border-bottom border-primary').css('border-bottom', '3px solid !important');
+            modal_header.addClass('text-uppercase');
+            //modal_header.find('.bootbox-close-button').addClass('text-bg-light');
+            //modal_body.addClass('p-2')
+            //modal.find('.modal-title').addClass('fs-6');
+
+    }
+
+    $('#pagina-socios .modal-info-socios').click(onClickBtnVerMasInfo);
 
 
     /// https://www.w3schools.com/howto/howto_js_copy_clipboard.asp

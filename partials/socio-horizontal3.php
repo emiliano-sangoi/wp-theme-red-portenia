@@ -29,8 +29,8 @@ global $provincia;
     <span class="d-none searchable-text"><?php echo $provincia; ?></span>
     <span class="d-none searchable-text"><?php echo $localidad; ?></span>
 
-    <div class="card-footer bg-primary border-primary border-top-0 p-0 rounded-top-0">
-        <a class="btn btn-primary w-100 rounded-0 rounded-bottom stretched-link modal-info-socios" data-titulo="<?php echo $titulo; ?>"
+    <div class="card-footer bg-navy border-primary border-top-0 p-0 rounded-top-0">
+        <a class="btn btn-navy w-100 rounded-0 rounded-bottom stretched-link modal-info-socios" data-titulo="<?php echo $titulo; ?>"
            data-email="<?php echo $email; ?>"
            data-telefono="<?php echo $telefono; ?>"
            data-direccion="<?php echo $direccion; ?>"
