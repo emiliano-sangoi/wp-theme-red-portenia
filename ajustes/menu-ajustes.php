@@ -5,7 +5,7 @@
  * at http://jeremyhixon.com/wp-tools/option-page/
  */
 
-class RedPortea {
+class RedPortena {
 	private $red_portena_options;
 
 	public function __construct() {
@@ -419,7 +419,7 @@ class RedPortea {
 
 }
 if ( is_admin() )
-	$red_portena = new RedPortea();
+	$red_portena = new RedPortena();
 
 /* 
  * Retrieve this value with:
