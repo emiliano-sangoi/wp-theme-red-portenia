@@ -11057,4 +11057,7 @@ section#contacto {
     color: #ffffff !important;
     background-color: #FF4136 !important; }
 
+.grecaptcha-badge {
+  visibility: hidden; }
+
 /*# sourceMappingURL=style.css.map */

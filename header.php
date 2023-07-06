@@ -17,6 +17,16 @@
 
         wp_head();
         ?>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GCLWM4CV0"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-7GCLWM4CV0');
+        </script>
     </head>
     <body id="page-top" <?php body_class(); ?> >
         <!-- Navigation-->
@@ -78,7 +88,7 @@
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <li>
                                     <a class="dropdown-item" type="button" href="http://aplicaciones.xn--redportea-s6a.com.ar" target="_blank">
-                                        <i class="fa-solid fa-arrow-right"></i>&nbsp; Facturación <!--Mandatos--> 
+                                        <i class="fa-solid fa-arrow-right"></i>&nbsp; Facturación <!--Mandatos-->
                                     </a>
                                 </li>
                                 <li>
@@ -87,7 +97,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </div>           
+                        </div>
                     </ul>
                 </div>
             </div>
