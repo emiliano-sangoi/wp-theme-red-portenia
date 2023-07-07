@@ -81,6 +81,7 @@
                                 Contacto
                             </a>
                         </li>
+                        <?php if (getMostrarAcceso()) : ?>
                         <div class="dropdown">
                             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;ACCESO SOCIOS  <!--ACCESO CLIENTES-->
@@ -98,7 +99,8 @@
                                 </li>
                             </ul>   
                         </div>
-                    </ul>
+                        <?php endif; ?>
+                      </ul>
                 </div>
             </div>
         </nav>

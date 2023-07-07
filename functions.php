@@ -134,6 +134,13 @@ function getVelocidadCarrusel() {
     return $valor;
 }
 
+function getMostrarAcceso() {
+    if (redOptGetMostrarEnlaceSistemas() == 'opcion-uno') {
+        return true;
+    }
+    return false;
+}
+
 require 'ajustes/menu-ajustes.php';
 
 ?>
