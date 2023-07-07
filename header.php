@@ -87,16 +87,16 @@
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <li>
-                                    <a class="dropdown-item" type="button" href="http://aplicaciones.xn--redportea-s6a.com.ar" target="_blank">
+                                    <a class="dropdown-item" type="button" href="<?php echo redOptGetEnlaceSistFact() ?>" target="_blank">
                                         <i class="fa-solid fa-arrow-right"></i>&nbsp; Facturación <!--Mandatos-->
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" type="button" href="http://ecompras.xn--redportea-s6a.com.ar:52480/redportena" target="_blank">
+                                    <a class="dropdown-item" type="button" href="<?php echo redOptGetEnlaceSistComp() ?>" target="_blank">
                                         <i class="fa-solid fa-arrow-right"></i>&nbsp; Compras
                                     </a>
                                 </li>
-                            </ul>
+                            </ul>   
                         </div>
                     </ul>
                 </div>

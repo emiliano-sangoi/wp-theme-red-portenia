@@ -443,3 +443,68 @@ if ( is_admin() )
  * $extra_radio_16 = $red_portena_options['extra_radio_16']; // extra-radio
  * $extra_textarea_17 = $red_portena_options['extra_textarea_17']; // extra-textarea
  */
+
+function redOptGetEnlaceWebSocios(){
+    $red_portena_options = get_option( 'red_portena_option_name' );
+    return isset($red_portena_options['enlace_web_socios_0']) ? $red_portena_options['enlace_web_socios_0'] : null;
+}
+
+function redOptGetEnlaceSistFact(){
+    $red_portena_options = get_option( 'red_portena_option_name' );
+    return isset($red_portena_options['enlace_sistema_facturacion_1']) ? $red_portena_options['enlace_sistema_facturacion_1'] : null;
+}
+
+function redOptGetEnlaceSistComp(){
+    $red_portena_options = get_option( 'red_portena_option_name' );
+    return isset($red_portena_options['enlace_sistema_compras_2']) ? $red_portena_options['enlace_sistema_compras_2'] : null;
+}
+
+function redOptGetMostrarEnlaceSistemas(){
+    $red_portena_options = get_option( 'red_portena_option_name' );
+    return isset($red_portena_options['mostrar_acceso_a_sistemas_3']) ? $red_portena_options['mostrar_acceso_a_sistemas_3'] : null;
+}
+
+function redOptGetWhatsUp(){
+    $red_portena_options = get_option( 'red_portena_option_name' );
+    return isset($red_portena_options['whats_up_4']) ? $red_portena_options['whats_up_4'] : null;
+}
+
+function redOptGetTelefonoFijo(){
+    $red_portena_options = get_option( 'red_portena_option_name' );
+    return isset($red_portena_options['telefono_fijo_5']) ? $red_portena_options['telefono_fijo_5'] : null;
+}
+
+function redOptGetDireccion(){
+    $red_portena_options = get_option( 'red_portena_option_name' );
+    return isset($red_portena_options['direccion_6']) ? $red_portena_options['direccion_6'] : null;
+}
+
+function redOptGetInstagram(){
+    $red_portena_options = get_option( 'red_portena_option_name' );
+    return isset($red_portena_options['instagram_7']) ? $red_portena_options['instagram_7'] : null;
+}
+
+function redOptGetFacebook(){
+    $red_portena_options = get_option( 'red_portena_option_name' );
+    return isset($red_portena_options['facebook_8']) ? $red_portena_options['facebook_8'] : null;
+}
+
+function redOptGetLinkedin(){
+    $red_portena_options = get_option( 'red_portena_option_name' );
+    return isset($red_portena_options['linkedin_9']) ? $red_portena_options['linkedin_9'] : null;
+}
+
+function redOptGetUrlMapaSocios(){
+    $red_portena_options = get_option( 'red_portena_option_name' );
+    return isset($red_portena_options['url_mapa_socios_10']) ? $red_portena_options['url_mapa_socios_10'] : null;
+}
+
+function redOptGetUrlMapaDireccion(){
+    $red_portena_options = get_option( 'red_portena_option_name' );
+    return isset($red_portena_options['url_mapa_direccion_11']) ? $red_portena_options['url_mapa_direccion_11'] : null;
+}
+
+function redOptGetVelCarrusel(){
+    $red_portena_options = get_option( 'red_portena_option_name' );
+    return isset($red_portena_options['valocidad_del_carousel_12']) ? $red_portena_options['valocidad_del_carousel_12'] : null;
+}

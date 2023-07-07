@@ -13,13 +13,16 @@ echo do_shortcode('[smartslider3 slider="3"]');
     <div class="container py-2">
         <div class="row row-cols-1 row-cols-md-3 g-3 g-lg-4">
             <div class="col text-center border-end border-secondary" style="border-right-width: 3px !important;">
-                <i class="fa-brands fa-whatsapp"></i>&nbsp;+54 9 1234 567-899
+                <i class="fa-brands fa-whatsapp"></i>&nbsp; <?php echo redOptGetWhatsUp();?>
+                <!--+54 9 1234 567-899-->
             </div>
             <div class="col text-center border-end border-secondary" style="border-right-width: 3px !important;">
-                <i class="fa-solid fa-phone"></i>&nbsp;(03492) 570727 / 5707321
+                <i class="fa-solid fa-phone"></i>&nbsp;<?php echo redOptGetTelefonoFijo();?>
+                <!--(03492) 570727 / 5707321-->                
             </div>
             <div class="col text-center">
-                <i class="fa-solid fa-location-dot"></i>&nbsp;Av. Pte. Perón 2101 (2300), Rafaela, Santa Fe
+                <i class="fa-solid fa-location-dot"></i>&nbsp;<?php echo redOptGetDireccion();?>
+                <!--Av. Pte. Perón 2101 (2300), Rafaela, Santa Fe-->
             </div>
         </div>
     </div>

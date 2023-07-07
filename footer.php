@@ -74,6 +74,7 @@
                             style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+                 <!--src=" <?php // echo redOptGetUrlMapaDireccion(); ?>"-->
             </div>
         </div>
     </div>
@@ -85,16 +86,16 @@
                     Copyright &copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?>
                 </div>
                 <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary btn-social me-1" href="#!" aria-label="Instagram">
+                    <a class="btn btn-primary btn-social me-1" href="<?php echo redOptGetInstagram();?>" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a class="btn btn-primary btn-social me-1" href="#!" aria-label="Facebook"><i
+                    <a class="btn btn-primary btn-social me-1" href="<?php echo redOptGetFacebook();?>" aria-label="Facebook"><i
                             class="fab fa-facebook-f"></i>
                     </a>
-                    <a class="btn btn-primary btn-social me-1" href="#!" aria-label="Twitter"><i
+<!--                    <a class="btn btn-primary btn-social me-1" href="" aria-label="Twitter"><i
                             class="fab fa-twitter"></i>
-                    </a>
-                    <a class="btn btn-primary btn-social" href="#!" aria-label="LinkedIn"><i
+                    </a>-->
+                    <a class="btn btn-primary btn-social" href="<?php echo redOptGetLinkedin();?>" aria-label="LinkedIn"><i
                             class="fab fa-linkedin-in"></i>
                     </a>
                 </div>
@@ -212,7 +213,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1itEERquXh_-E7YUJRtOLiCPviCYt1nc&ehbc=2E312F&z=6"
+                <!--<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1itEERquXh_-E7YUJRtOLiCPviCYt1nc&ehbc=2E312F&z=6"-->
+                <iframe src="<?php echo redOptGetUrlMapaSocios() ?>"
                         class="w-100 h-100 shadow rounded"></iframe>
             </div>
         </div>
