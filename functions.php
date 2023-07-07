@@ -7,7 +7,7 @@ ini_set('display_errors', true);
 //Paginas
 define('RPT_THEME_DIR', get_template_directory_uri());
 define('RPT_CAROUSEL_SOCIOS_ITEMS_POR_SLIDE', 7);
-define('RPT_CAROUSEL_SOCIOS_VELOCIDAD', 3000); // 5 segundos
+//define('RPT_CAROUSEL_SOCIOS_VELOCIDAD', 3000); // 5 segundos
 define('PAGINA_SOBRE_NOSOTROS', 'sobre-nosotros');
 define('PAGINA_CONTACTO', 'contacto');
 define('RPT_CATEGORIA_NOVEDADES', 'novedades');
@@ -119,6 +119,19 @@ function slugify($text, string $divider = '-')
     }
 
     return $text;
+}
+
+function getVelocidadCarrusel() {
+    $valor = 0;
+    $velocidad = redOptGetVelCarrusel();
+    if ($velocidad == 'opcion-uno') {
+        $valor = 2000;
+    } elseif ($velocidad == 'opcion-dos') {
+        $valor = 3000;
+    } else {
+        $valor = 4000;
+    }
+    return $valor;
 }
 
 require 'ajustes/menu-ajustes.php';

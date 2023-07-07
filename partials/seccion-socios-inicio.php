@@ -161,7 +161,7 @@
                     $subgrupo_posts = array_slice($posts, 0, RPT_CAROUSEL_SOCIOS_ITEMS_POR_SLIDE);
                     ?>
                     <div class="carousel-item <?php echo $c++ == 0 ? 'active' : ''; ?> text-center"
-                         data-bs-interval="<?php echo RPT_CAROUSEL_SOCIOS_VELOCIDAD; ?>">
+                         data-bs-interval="<?php echo getVelocidadCarrusel(); ?>">
                         <?php
                         foreach ($subgrupo_posts as $post):
                             if (has_post_thumbnail($post->ID)):
