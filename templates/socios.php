@@ -2,6 +2,9 @@
 /* Template Name: Socios */
 get_header();
 ?>
+
+<span id="mostrar-web-socios" class="d-none" data-mostrar-web-socios="<?php echo redOptGetMostrarWebSocios(); ?>"></span>
+
 <div class="py-5 bg-light" id="pagina-socios">
     <?php if (have_posts()) while (have_posts()) : the_post(); ?>
 
@@ -48,7 +51,7 @@ get_header();
                             <i class="fa-solid fa-envelope fa-2x"></i>
                         </a>
                         <a href="#faqMapaModal" class="btn btn-navy" data-bs-toggle="modal" >
-                            <i class="fa-solid fa-map-location-dot fa-2x"></i> 
+                            <i class="fa-solid fa-map-location-dot fa-2x"></i>
                         </a>
 
                     </div>

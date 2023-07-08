@@ -85,19 +85,30 @@
                 <div class="col-lg-6 text-lg-start">
                     Copyright &copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?>
                 </div>
+                <?php
+                    $ig = redOptGetInstagram();;
+                    $fb =  redOptGetFacebook();
+                    $ld =  redOptGetLinkedin();
+                ?>
                 <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary btn-social me-1" href="<?php echo redOptGetInstagram();?>" aria-label="Instagram">
+                    <?php if($ig) : ?>
+                    <a class="btn btn-primary btn-social me-1" href="<?php echo $ig;?>" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a class="btn btn-primary btn-social me-1" href="<?php echo redOptGetFacebook();?>" aria-label="Facebook"><i
+                    <?php endif; ?>
+                    <?php if($fb) : ?>
+                    <a class="btn btn-primary btn-social me-1" href="<?php echo $fb;?>" aria-label="Facebook"><i
                             class="fab fa-facebook-f"></i>
                     </a>
+                    <?php endif; ?>
 <!--                    <a class="btn btn-primary btn-social me-1" href="" aria-label="Twitter"><i
                             class="fab fa-twitter"></i>
                     </a>-->
-                    <a class="btn btn-primary btn-social" href="<?php echo redOptGetLinkedin();?>" aria-label="LinkedIn"><i
+                    <?php if($ld) : ?>
+                    <a class="btn btn-primary btn-social" href="<?php echo $ld; ?>" aria-label="LinkedIn"><i
                             class="fab fa-linkedin-in"></i>
                     </a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

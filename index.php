@@ -18,7 +18,7 @@ echo do_shortcode('[smartslider3 slider="3"]');
             </div>
             <div class="col text-center border-end border-secondary" style="border-right-width: 3px !important;">
                 <i class="fa-solid fa-phone"></i>&nbsp;<?php echo redOptGetTelefonoFijo();?>
-                <!--(03492) 570727 / 5707321-->                
+                <!--(03492) 570727 / 5707321-->
             </div>
             <div class="col text-center">
                 <i class="fa-solid fa-location-dot"></i>&nbsp;<?php echo redOptGetDireccion();?>

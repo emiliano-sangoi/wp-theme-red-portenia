@@ -222,14 +222,13 @@ $(document).ready(function () {
                 "        <td class='provincia p-2'>" + (provincia ? provincia : '-') + "</td>" +
                 "    </tr>";
 
-            //TODO: Leer desde el admin este parametro para que se pueda controlar cuando mostrarlo o no
-            if(true){
+            var mostrar_web_socios = $('#mostrar-web-socios').data('mostrar-web-socios');
+            if(typeof mostrar_web_socios == 'number' && mostrar_web_socios){
                 tabla_html += "    <tr class=''>" +
                     "        <td class='bg-light fw-bold p-2 text-end'>Sitio web:</td>" +
                     "        <td class='web p-2'>" + (website ? website : '-') + "</td>" +
                     "    </tr>";
             }
-
 
             tabla_html +=
                 "</tbody>" +

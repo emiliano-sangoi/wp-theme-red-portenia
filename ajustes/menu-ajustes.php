@@ -89,6 +89,14 @@ class RedPortena {
 			'red_portena_setting_section' // section
 		);
 
+        add_settings_field(
+            'mostrar_web_socios_18', // id
+            'Mostrar web socios', // title
+            array( $this, 'mostrar_mostrar_web_socios_18_callback' ), // callback
+            'red-portena-admin', // page
+            'red_portena_setting_section' // section
+        );
+
 		add_settings_field(
 			'whats_up_4', // id
 			'Whats Up', // title
@@ -152,54 +160,56 @@ class RedPortena {
 			'red-portena-admin', // page
 			'red_portena_setting_section' // section
 		);
+        /*
+                add_settings_field(
+                    'valocidad_del_carousel_12', // id
+                    'Valocidad del carousel', // title
+                    array( $this, 'valocidad_del_carousel_12_callback' ), // callback
+                    'red-portena-admin', // page
+                    'red_portena_setting_section' // section
+                );
 
-		add_settings_field(
-			'valocidad_del_carousel_12', // id
-			'Valocidad del carousel', // title
-			array( $this, 'valocidad_del_carousel_12_callback' ), // callback
-			'red-portena-admin', // page
-			'red_portena_setting_section' // section
-		);
 
-		add_settings_field(
-			'extra_text_13', // id
-			'extra-text', // title
-			array( $this, 'extra_text_13_callback' ), // callback
-			'red-portena-admin', // page
-			'red_portena_setting_section' // section
-		);
+                add_settings_field(
+                    'extra_text_13', // id
+                    'extra-text', // title
+                    array( $this, 'extra_text_13_callback' ), // callback
+                    'red-portena-admin', // page
+                    'red_portena_setting_section' // section
+                );
 
-		add_settings_field(
-			'extra_select_14', // id
-			'extra-select', // title
-			array( $this, 'extra_select_14_callback' ), // callback
-			'red-portena-admin', // page
-			'red_portena_setting_section' // section
-		);
+                add_settings_field(
+                    'extra_select_14', // id
+                    'extra-select', // title
+                    array( $this, 'extra_select_14_callback' ), // callback
+                    'red-portena-admin', // page
+                    'red_portena_setting_section' // section
+                );
 
-		add_settings_field(
-			'extra_checkbox_15', // id
-			'extra-checkbox', // title
-			array( $this, 'extra_checkbox_15_callback' ), // callback
-			'red-portena-admin', // page
-			'red_portena_setting_section' // section
-		);
+                add_settings_field(
+                    'extra_checkbox_15', // id
+                    'extra-checkbox', // title
+                    array( $this, 'extra_checkbox_15_callback' ), // callback
+                    'red-portena-admin', // page
+                    'red_portena_setting_section' // section
+                );
 
-		add_settings_field(
-			'extra_radio_16', // id
-			'extra-radio', // title
-			array( $this, 'extra_radio_16_callback' ), // callback
-			'red-portena-admin', // page
-			'red_portena_setting_section' // section
-		);
+                add_settings_field(
+                    'extra_radio_16', // id
+                    'extra-radio', // title
+                    array( $this, 'extra_radio_16_callback' ), // callback
+                    'red-portena-admin', // page
+                    'red_portena_setting_section' // section
+                );
 
-		add_settings_field(
-			'extra_textarea_17', // id
-			'extra-textarea', // title
-			array( $this, 'extra_textarea_17_callback' ), // callback
-			'red-portena-admin', // page
-			'red_portena_setting_section' // section
-		);
+                add_settings_field(
+                    'extra_textarea_17', // id
+                    'extra-textarea', // title
+                    array( $this, 'extra_textarea_17_callback' ), // callback
+                    'red-portena-admin', // page
+                    'red_portena_setting_section' // section
+                );
+                */
 	}
 
 	public function red_portena_sanitize($input) {
@@ -218,6 +228,10 @@ class RedPortena {
 
 		if ( isset( $input['mostrar_acceso_a_sistemas_3'] ) ) {
 			$sanitary_values['mostrar_acceso_a_sistemas_3'] = $input['mostrar_acceso_a_sistemas_3'];
+		}
+
+        if ( isset( $input['mostrar_mostrar_web_socios_18'] ) ) {
+			$sanitary_values['mostrar_mostrar_web_socios_18'] = $input['mostrar_mostrar_web_socios_18'];
 		}
 
 		if ( isset( $input['whats_up_4'] ) ) {
@@ -280,7 +294,7 @@ class RedPortena {
 	}
 
 	public function red_portena_section_info() {
-		
+
 	}
 
 	public function enlace_web_socios_0_callback() {
@@ -311,6 +325,15 @@ class RedPortena {
 			<?php $selected = (isset( $this->red_portena_options['mostrar_acceso_a_sistemas_3'] ) && $this->red_portena_options['mostrar_acceso_a_sistemas_3'] === 'opcion-dos') ? 'selected' : '' ; ?>
 			<option value="opcion-dos" <?php echo $selected; ?>> No</option>
 		</select> <?php
+	}
+
+    public function mostrar_mostrar_web_socios_18_callback() {
+		?> <select name="red_portena_option_name[mostrar_mostrar_web_socios_18]" id="mostrar_mostrar_web_socios_18">
+			<?php $selected = (isset( $this->red_portena_options['mostrar_mostrar_web_socios_18'] ) && $this->red_portena_options['mostrar_mostrar_web_socios_18'] === '1') ? 'selected' : '' ; ?>
+			<option value="1" <?php echo $selected; ?>> Si</option>
+			<?php $selected = (isset( $this->red_portena_options['mostrar_mostrar_web_socios_18'] ) && $this->red_portena_options['mostrar_mostrar_web_socios_18'] === '0') ? 'selected' : '' ; ?>
+			<option value="0" <?php echo $selected; ?>> No</option>
+		</select><?php
 	}
 
 	public function whats_up_4_callback() {
@@ -421,7 +444,7 @@ class RedPortena {
 if ( is_admin() )
 	$red_portena = new RedPortena();
 
-/* 
+/*
  * Retrieve this value with:
  * $red_portena_options = get_option( 'red_portena_option_name' ); // Array of All Options
  * $enlace_web_socios_0 = $red_portena_options['enlace_web_socios_0']; // Enlace web socios
@@ -463,6 +486,12 @@ function redOptGetMostrarEnlaceSistemas(){
     $red_portena_options = get_option( 'red_portena_option_name' );
     return isset($red_portena_options['mostrar_acceso_a_sistemas_3']) ? $red_portena_options['mostrar_acceso_a_sistemas_3'] : null;
 }
+
+function redOptGetMostrarWebSocios(){
+    $red_portena_options = get_option( 'red_portena_option_name' );
+    return isset($red_portena_options['mostrar_mostrar_web_socios_18']) ? $red_portena_options['mostrar_mostrar_web_socios_18'] : null;
+}
+
 
 function redOptGetWhatsUp(){
     $red_portena_options = get_option( 'red_portena_option_name' );

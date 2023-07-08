@@ -6,7 +6,7 @@
         <meta name="description" content=""/>
         <meta name="author" content=""/>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="<?php echo RPT_THEME_DIR . '/assets/favicon.ico'; ?>"/>
+        <link rel="icon" type="image/x-icon" href="<?php echo RPT_THEME_DIR . '/assets/favicon/favicon.ico'; ?>"/>
 
         <?php
         $pagina_sobre_nosotros = getLinkPagina(PAGINA_SOBRE_NOSOTROS);
@@ -84,20 +84,20 @@
                         <?php if (getMostrarAcceso()) : ?>
                         <div class="dropdown">
                             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;ACCESO SOCIOS  <!--ACCESO CLIENTES-->
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;ACCESOS  <!--ACCESO CLIENTES-->
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <li>
-                                    <a class="dropdown-item" type="button" href="<?php echo redOptGetEnlaceSistFact() ?>" target="_blank">
+                                    <a class="dropdown-item" type="button" href="<?php echo redOptGetEnlaceSistFact(); ?>" target="_blank">
                                         <i class="fa-solid fa-arrow-right"></i>&nbsp; Facturación <!--Mandatos-->
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" type="button" href="<?php echo redOptGetEnlaceSistComp() ?>" target="_blank">
+                                    <a class="dropdown-item" type="button" href="<?php echo redOptGetEnlaceSistComp(); ?>" target="_blank">
                                         <i class="fa-solid fa-arrow-right"></i>&nbsp; Compras
                                     </a>
                                 </li>
-                            </ul>   
+                            </ul>
                         </div>
                         <?php endif; ?>
                       </ul>
