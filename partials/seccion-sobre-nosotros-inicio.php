@@ -1,21 +1,11 @@
 <?php
-
 /* @var $paginaSobreNosotros WP_Post */
 $paginaSobreNosotros = getPagina(PAGINA_SOBRE_NOSOTROS);
 $vision = get_field('vision', $paginaSobreNosotros->ID);
 $mision = get_field('mision', $paginaSobreNosotros->ID);
 $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
-
 ?>
 <div class="container">
-<!--    <div class="text-center mb-4 mb-lg-5">
-        <h2 class="section-heading text-uppercase text-navy">
-            <?php // echo get_the_title($paginaSobreNosotros->ID) ?>
-        </h2>
-        <h3 class="section-subheading text-muted mb-0">
-            Conoce nuestros objetivos, valores e historia.
-        </h3>
-    </div>-->
     <div class="row row-cols-3 g-4 g-lg-5">
         <div class="col">
             <div class="card bg-white border-0 shadow text-center h-100 rounded-3">
@@ -28,7 +18,7 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
                         Misión
                     </h4>
                     <p class="card-text text-navy fst-italic">
-                        <?php echo nl2br($mision); ?>
+<?php echo nl2br($mision); ?>
                     </p>
                 </div>
             </div>
@@ -41,7 +31,7 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
                         Visión
                     </h4>
                     <p class="card-text text-navy fst-italic">
-                        <?php echo nl2br($vision); ?>
+<?php echo nl2br($vision); ?>
                     </p>
                 </div>
                 <img src="<?php echo RPT_THEME_DIR . '/assets/iconos/vision.png'; ?>"
@@ -60,17 +50,10 @@ $objetivos = get_field('objetivos', $paginaSobreNosotros->ID);
                         Objetivos
                     </h4>
                     <p class="card-text text-navy fst-italic">
-                        <?php echo nl2br($objetivos); ?>
+<?php echo nl2br($objetivos); ?>
                     </p>
                 </div>
             </div>
         </div>
     </div>
-
-<!--    <div class="text-center mt-5">
-        <a class="btn btn-navy grow btn-xl text-uppercase shadow"
-           href="<?php // echo site_url('/' . PAGINA_SOBRE_NOSOTROS); ?>">
-            <i class="fa-solid fa-plus"></i>&nbsp;Ver más
-        </a>
-    </div>-->
 </div>

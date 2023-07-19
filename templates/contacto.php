@@ -57,6 +57,5 @@ get_header();
 <?php get_footer(); ?>
 
 <script>
-    //    $('a.nav-link').removeClass('active');
     $('.nav-link-contacto').addClass('active');
 </script>

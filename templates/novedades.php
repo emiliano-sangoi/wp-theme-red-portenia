@@ -28,7 +28,6 @@ get_header();
         <main class="mt-5">
             <div class="container pb-5">
                 <div>
-                    <?php //the_content(); ?>
                 </div>
                 <div class="row position-relative" data-masonry='{"percentPosition": true }'>
 

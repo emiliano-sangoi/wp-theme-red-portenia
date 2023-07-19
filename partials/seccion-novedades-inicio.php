@@ -7,7 +7,6 @@
     </div>
     <div class="row position-relative g-5" data-masonry='{"percentPosition": true }'>
         <?php
-
         $query = new WP_Query([
             'category_name' => RPT_CATEGORIA_NOVEDADES,
             'posts_per_page' => 3,
@@ -15,8 +14,8 @@
         ]);
 
         if ($query->have_posts()):
-            //var_dump($novedades);
-            while ($query->have_posts()) : ?>
+            while ($query->have_posts()) :
+                ?>
                 <div class="col-12 col-sm-6 col-md-4 mb-4">
                     <?php
                     $query->the_post();
@@ -25,7 +24,7 @@
                     wp_reset_postdata();
                     ?>
                 </div>
-            <?php
+                <?php
             endwhile;
         endif;
         ?>

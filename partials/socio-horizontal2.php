@@ -8,7 +8,6 @@ $direccion = ucwords(mb_strtolower(get_field('direccion')));
 $localidad = get_field('localidad');
 $tiene_img = has_post_thumbnail();
 global $provincia;
-
 ?>
 <div class="card text-bg-light shadow card-socio border-silver h-100" style="min-height: 10rem;">
     <div class="card-body bg-light h-100">
@@ -25,7 +24,7 @@ global $provincia;
             <div class="col-md-7 ps-0 h-100 align-self-baseline">
                 <div class="card-title fw-bold text-uppercase text-navy mb-0 pb-0 h-100 searchable-text">
                     <?php
-                        echo $titulo;
+                    echo $titulo;
                     ?>
                 </div>
             </div>
@@ -33,32 +32,17 @@ global $provincia;
     </div>
     <ul class="list-group list-group-flush small border-light px-3 pt-1 pb-2">
 
-        <li class="list-group-item text-<?php echo ($email ? 'muted': 'silver'); ?> border-light rounded mb-2 shadow-sm">
+        <li class="list-group-item text-<?php echo ($email ? 'muted' : 'silver'); ?> border-light rounded mb-2 shadow-sm">
             <i class="fa-solid fa-envelope"></i>&nbsp;<span class="searchable-text">
-                    <?php echo ($email ?: 'Sin definir'); ?>
+                <?php echo ($email ?: 'Sin definir'); ?>
             </span>
         </li>
 
-        <li class="list-group-item text-<?php echo ($telefono ? 'muted': 'silver'); ?> border-light rounded shadow-sm">
-        <i class="fa-solid fa-phone"></i>&nbsp;<span class="searchable-text">
-                    <?php echo ($telefono ?: 'Sin definir'); ?>
+        <li class="list-group-item text-<?php echo ($telefono ? 'muted' : 'silver'); ?> border-light rounded shadow-sm">
+            <i class="fa-solid fa-phone"></i>&nbsp;<span class="searchable-text">
+                <?php echo ($telefono ?: 'Sin definir'); ?>
             </span>
         </li>
-
-<!--        <li class="list-group-item text---><?php //echo ($direccion ? 'muted': 'silver'); ?><!-- border-light rounded mb-2 shadow-sm">-->
-<!--            <i class="fa-solid fa-location-dot"></i>&nbsp;<span class="searchable-text">-->
-<!--                    --><?php //echo ($direccion ?: 'Sin definir'); ?>
-<!--            </span>-->
-<!--        </li>-->
-
-<!--        <li class="list-group-item text---><?php //echo ($provincia ? 'muted': 'silver'); ?><!-- border-light rounded shadow-sm">-->
-<!--            <i class="fa-solid fa-city"></i>&nbsp;<span class="searchable-text">-->
-<!--                    --><?php //echo ($provincia ?: 'Sin definir'); ?>
-<!--            </span>-->
-<!--        </li>-->
-
-
-
     </ul>
     <div class="card-footer bg-light border-light px-3 d-flex justify-content-between">
         <a class="btn btn-sm btn-navy stretched-link modal-info-socios" data-titulo="<?php echo $titulo; ?>"

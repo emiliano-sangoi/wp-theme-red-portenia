@@ -29,11 +29,6 @@ get_header();
                 </div>
             </header>
             <main class="mt-5">
-        <!--                <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1itEERquXh_-E7YUJRtOLiCPviCYt1nc&ehbc=2E312F&z=6"
-                            class="w-100 shadow " height="600"></iframe>-->
-        <!--                <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1itEERquXh_-E7YUJRtOLiCPviCYt1nc&ehbc=2E312F&z=6"
-                            class="w-100 shadow " height="600"></iframe>-->
-
                 <div class="container mt-5 pb-5">
                     <div class="d-flex alert alert-light justify-content-between align-items-center shadow-sm border border-silver text-navy">
 
@@ -80,13 +75,6 @@ get_header();
                                 Por provincia
                             </button>
                         </li>
-                        <!--                    <li class="nav-item" role="presentation">
-                                                <button class="nav-link fs-4" id="mapa-tab" data-bs-toggle="tab"
-                                                        data-bs-target="#mapa-tab-pane" type="button" role="tab"
-                                                        aria-controls="mapa-tab-pane" aria-selected="false">
-                                                    Ver mapa
-                                                </button>
-                                            </li>-->
                     </ul>
                     <div class="tab-content mb-3" id="tabSociosContent">
                         <div class="tab-pane fade show active p-5 bg-white shadow border border-silver border-top-0" id="todos-tab-pane" role="tabpanel"
@@ -95,7 +83,6 @@ get_header();
                                 <input type="text" class="form-control-lg w-100 border border-silver" id="filtro-socios" style=""
                                        placeholder="Filtrar por nombre o provincia del socio a buscar.....">
                             </div>
-                            <!--                        <div class="row position-relative g-4" id="listado-socios">-->
                             <div class="row row-cols-5 position-relative g-4" id="listado-socios">
 
                                 <?php
@@ -149,10 +136,6 @@ get_header();
                                 ?>
                             </div>
                         </div>
-                        <!--                    <div class="tab-pane fade show p-5 bg-white shadow" id="mapa-tab-pane" role="tabpanel"
-                                                 aria-labelledby="vmo-tab" tabindex="0">
-                                                <iframe src="https://www.google.com/maps/d/embed?mid=1itEERquXh_-E7YUJRtOLiCPviCYt1nc&ehbc=2E312F&z=7" class="w-100 shadow rounded-3 border border-silver" height="750"></iframe>
-                                            </div>-->
                     </div>
                 </div>
             </main>

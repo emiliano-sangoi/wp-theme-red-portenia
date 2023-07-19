@@ -1,13 +1,12 @@
 <?php
+
 ini_set('display_errors', true);
 
 // Incluir este archivo permite la utilizacion de la funcion is_plugin_active() en el frontend.
 //include_once(ABSPATH .'wp-admin/includes/plugin.php');
-
 //Paginas
 define('RPT_THEME_DIR', get_template_directory_uri());
 define('RPT_CAROUSEL_SOCIOS_ITEMS_POR_SLIDE', 7);
-//define('RPT_CAROUSEL_SOCIOS_VELOCIDAD', 3000); // 5 segundos
 define('PAGINA_SOBRE_NOSOTROS', 'sobre-nosotros');
 define('PAGINA_CONTACTO', 'contacto');
 define('RPT_CATEGORIA_NOVEDADES', 'novedades');
@@ -17,9 +16,7 @@ define('PAGINA_SUMATE', 'sumate');
 define('RPT_CATEGORIA_OFICINAS', 'oficinas');
 define('RPT_CATEGORIA_CONTACTO', 'contacto');
 
-
-function rpt_register_scripts()
-{
+function rpt_register_scripts() {
 
     //style (Custom + Bootstrap 5):
     wp_register_style('screen', RPT_THEME_DIR . '/style.css', array());
@@ -33,7 +30,6 @@ function rpt_register_scripts()
 
 //    wp_register_style( 'fontawesome', RPT_THEME_DIR . '/node_modules/font-awesome/css/font-awesome.min.css', array(), '4.7.0' );
 //    wp_enqueue_style( 'fontawesome' );
-
     //JS
     //=============================================================================================================================================================
     wp_register_script('jquery_v3', RPT_THEME_DIR . '/node_modules/jquery/dist/jquery.min.js', array(), '3.7.0', true);
@@ -48,7 +44,6 @@ function rpt_register_scripts()
     wp_register_script('bootbox_js', RPT_THEME_DIR . '/node_modules/bootbox/dist/bootbox.all.min.js', array('bootstrap_js', 'jquery_v3'), '6.0.0', true);
     wp_enqueue_script('bootbox_js');
 
-
     // Masonry
     // https://github.com/desandro/masonry
     // https://getbootstrap.com/docs/5.0/examples/masonry/
@@ -62,12 +57,10 @@ function rpt_register_scripts()
     wp_enqueue_script('custom_js');
 }
 
-
 // Hooks
 add_action('wp_enqueue_scripts', 'rpt_register_scripts');
 
-function getLinkPagina($slug)
-{
+function getLinkPagina($slug) {
     $pagina = get_page_by_path($slug);
     if ($pagina instanceof WP_Post && $pagina->post_status == 'publish') {
         return get_permalink($pagina);
@@ -75,8 +68,7 @@ function getLinkPagina($slug)
     return null;
 }
 
-function getPagina($slug)
-{
+function getPagina($slug) {
     $pagina = get_page_by_path($slug);
     if ($pagina instanceof WP_Post && $pagina->post_status == 'publish') {
         return $pagina;
@@ -84,8 +76,7 @@ function getPagina($slug)
     return null;
 }
 
-function rpt_theme_features()
-{
+function rpt_theme_features() {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
 
@@ -94,8 +85,7 @@ function rpt_theme_features()
 
 add_action('after_setup_theme', 'rpt_theme_features');
 
-function slugify($text, string $divider = '-')
-{
+function slugify($text, string $divider = '-') {
     // replace non letter or digits by divider
     $text = preg_replace('~[^\pL\d]+~u', $divider, $text);
 
@@ -142,5 +132,4 @@ function getMostrarAcceso() {
 }
 
 require 'ajustes/menu-ajustes.php';
-
 ?>

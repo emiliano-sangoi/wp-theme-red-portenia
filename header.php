@@ -22,7 +22,9 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GCLWM4CV0"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag() {
+                dataLayer.push(arguments);
+            }
             gtag('js', new Date());
 
             gtag('config', 'G-7GCLWM4CV0');
@@ -35,10 +37,6 @@
                 <a class="navbar-brand fst-italic pb-0" href="<?php echo site_url(); ?>">
                     <!--  https://danmarshall.github.io/google-font-to-svg-path/-->
                     <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/navbar-brand-red.svg'; ?>" alt="..."/>
-                    <!--            <div class="mt-1 text-end d-none d-md-block">
-                                    <img src="<?php // echo RPT_THEME_DIR . '/assets/img/logos/navbar-brand-sub-dark2.svg';  ?>" alt="..."
-                                         class="w-75"/>
-                                </div>-->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,15 +52,12 @@
                                 Inicio
                             </a>
                         </li>
-                        <!--<li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Sobre nosotros</a></li>-->
-                        <?php // if ($pagina_sobre_nosotros):  ?>
                         <li class="nav-item">
                             <a class="nav-link <?php echo $pagename == PAGINA_SOBRE_NOSOTROS ? 'active' : ''; ?>"
                                href="<?php echo $is_home_page ? '#sobre-nosotros' : site_url('/' . PAGINA_SOBRE_NOSOTROS); ?>">
                                 Sobre nosotros
                             </a>
                         </li>
-                        <?php // endif;  ?>
                         <li class="nav-item">
                             <a class="nav-link <?php echo $pagename == 'socios' ? 'active' : ''; ?>"
                                href="<?php echo $is_home_page ? '#socios' : site_url('/socios'); ?>">
@@ -82,25 +77,25 @@
                             </a>
                         </li>
                         <?php if (getMostrarAcceso()) : ?>
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;ACCESOS  <!--ACCESO CLIENTES-->
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <li>
-                                    <a class="dropdown-item" type="button" href="<?php echo redOptGetEnlaceSistFact(); ?>" target="_blank">
-                                        <i class="fa-solid fa-arrow-right"></i>&nbsp; Facturación <!--Mandatos-->
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" type="button" href="<?php echo redOptGetEnlaceSistComp(); ?>" target="_blank">
-                                        <i class="fa-solid fa-arrow-right"></i>&nbsp; Compras
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;ACCESOS  <!--ACCESO CLIENTES-->
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <li>
+                                        <a class="dropdown-item" type="button" href="<?php echo redOptGetEnlaceSistFact(); ?>" target="_blank">
+                                            <i class="fa-solid fa-arrow-right"></i>&nbsp; Facturación <!--Mandatos-->
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" type="button" href="<?php echo redOptGetEnlaceSistComp(); ?>" target="_blank">
+                                            <i class="fa-solid fa-arrow-right"></i>&nbsp; Compras
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         <?php endif; ?>
-                      </ul>
+                    </ul>
                 </div>
             </div>
         </nav>
