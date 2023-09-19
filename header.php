@@ -36,7 +36,8 @@
             <div class="container">
                 <a class="navbar-brand fst-italic pb-0" href="<?php echo site_url(); ?>">
                     <!--  https://danmarshall.github.io/google-font-to-svg-path/-->
-                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/navbar-brand-red.svg'; ?>" alt="..."/>
+<!--                    <img src="--><?php //echo RPT_THEME_DIR . '/assets/img/logos/navbar-brand-red.svg'; ?><!--" alt="..."/>-->
+                    <img src="<?php echo RPT_THEME_DIR . '/assets/img/logos/logo_red_portenia.png'; ?>" class="img-fluid w-100" style="min-height: 3.5rem" alt="Red Porteña S.A."/>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">

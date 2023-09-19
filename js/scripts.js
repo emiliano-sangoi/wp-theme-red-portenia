@@ -192,6 +192,7 @@ $(document).ready(function () {
             var localidad = element.data('localidad');
             var provincia = element.data('provincia');
             var website = element.data('website');
+            var sucursales = element.data('sucursales');
             //console.log(element.data('titulo'), element);
 
             var tabla_html =
@@ -220,6 +221,10 @@ $(document).ready(function () {
                 "    <tr class=''>" +
                 "        <td class='bg-light fw-bold p-2 text-end'>Provincia:</td>" +
                 "        <td class='provincia p-2'>" + (provincia ? provincia : '-') + "</td>" +
+                "    </tr>" +
+                "    <tr class=''>" +
+                "        <td class='bg-light fw-bold p-2 text-end'>Sucursales:</td>" +
+                "        <td class='sucursales p-2'>" + (sucursales ? sucursales : '-') + "</td>" +
                 "    </tr>";
 
             var mostrar_web_socios = $('#mostrar-web-socios').data('mostrar-web-socios');
@@ -272,3 +277,4 @@ $(document).ready(function () {
 
 })
 
+//

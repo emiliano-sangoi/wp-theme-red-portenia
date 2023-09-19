@@ -65,7 +65,8 @@ get_header();
                             <button class="nav-link active fs-4" id="todos-tab" data-bs-toggle="tab"
                                     data-bs-target="#todos-tab-pane" type="button" role="tab" aria-controls="todos-tab-pane"
                                     aria-selected="true">
-                                Todos <span class="contador-todos"><?php echo ' (' . $query->post_count . ')'; ?></span>
+                                Socios adheridos y mas de 80 sucursales
+<!--                                <span class="contador-todos">--><?php //echo ' (' . $query->post_count . ')'; ?><!--</span>-->
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">

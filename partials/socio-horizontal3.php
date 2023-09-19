@@ -7,6 +7,7 @@ $telefono = get_field('telefono');
 $direccion = ucwords(mb_strtolower(get_field('direccion')));
 $localidad = get_field('localidad');
 $website = get_field('website');
+$sucursales = get_field('sucursales');
 $tiene_img = has_post_thumbnail();
 global $provincia;
 ?>
@@ -36,6 +37,7 @@ global $provincia;
            data-direccion="<?php echo $direccion; ?>"
            data-localidad="<?php echo $localidad; ?>"
            data-provincia="<?php echo $provincia; ?>"
+           data-sucursales="<?php echo nl2br($sucursales); ?>"
            data-website="<?php echo $website; ?>">
             <i class="fa-solid fa-circle-info"></i>&nbsp;M&aacute;s info ...
         </a>

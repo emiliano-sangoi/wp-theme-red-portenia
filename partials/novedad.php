@@ -17,8 +17,7 @@
     </div>
     <div class="card-footer bg-light border-top-0 pb-3 rounded-bottom-3">
         <a href="<?php echo the_permalink(); ?>" class="btn btn-outline-primary stretched-link"
-           data-bs-toggle="modal"
-           data-bs-target="#staticBackdrop">
+           data-titulo="<?php echo the_title(); ?>">
             <i class="fa-solid fa-plus"></i>&nbsp;Leer más
         </a>
     </div>
